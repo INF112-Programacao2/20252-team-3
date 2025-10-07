@@ -7,4 +7,5 @@ O sistema analisa a ingestão diária de alimentos do usuário e fornece um resu
 
 Desenvolvedores:
 João Pedro Castro da Rocha,
-Gustavo Freitas Santos
+Gustavo Freitas Santos,
+Pedro Cremonezi Fiorini
