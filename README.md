@@ -9,3 +9,4 @@ Desenvolvedores:
 João Pedro Castro da Rocha,
 Gustavo Freitas Santos,
 Pedro Cremonezi Fiorini
+Anthony de Paula Cândido
