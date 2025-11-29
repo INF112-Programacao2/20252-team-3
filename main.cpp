@@ -9,7 +9,7 @@ int main() {
 
 // 0) DECLARACOES
 	int resposta_int; // variavel para leitura do numero digitado na tela
-	Usuario usuario;  // Objeto usuario (inicialmente vazio)	
+	Usuario usuario;  // Objeto usuario (inicializado com um construtor vazio)	
 	
 // 1) Menu inicial	
 	std::cout << "\n===DIARIO ALIMENTAR===\n";
@@ -25,16 +25,16 @@ int main() {
 			case 1:
 				std::cout << "Iniciando o programa...\n";
 				// Decido qual o diretorio em que as informacoes do usuario serao salvas
-				if (!(usuario.lerCaminhoDiretorioDiario())) // se usuario parar a excecucao, volta para menu
-					continue; // em caso de erro, volta para o loop while
+				if (!(usuario.lerCaminhoDiretorioDiario())) // se o usuario parar a excecucao da funcao, volta para menu
+					continue; 
 				// Faço o cadastro do Usuario (preencher informacoes pessoais e nutricionais
-				if (!(usuario.cadastrarUsuario())) 
-					continue; // em caso de erro, volta para o loop while
+				if (!(usuario.cadastrarUsuario())) // se o usuario parar a excecucao da funcao, volta para menu
+					continue; 
 				iniciar_programa = true;
 				break;
 			case 2:
 				std::cout << "Fechando o programa...\n";
-				exit(0)
+				exit(0);
 				break;
 			
 		}
@@ -135,9 +135,10 @@ int main() {
 				std::cout << "Pedro Cremonezi Fiorini \n";
 				break;
 			case 4:
-				std::cout << "Salvar e fechar programa (digite 4)\n";
+				std::cout << "Seus arquivos de historico do Diario Alimentar e Perfil pessoal foram salvos.\n";
+				std::cout << "Local: " << usuario.getCaminhoDiretorioDiario() << std::endl;
 				std::cout << "Fechando o programa...\n";
-				exit(0)
+				exit(0);
 		}
 	}
 	return 0;

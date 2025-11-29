@@ -3,12 +3,13 @@
 
 #include "nutriente.hpp"
 #include <string>
+#include <vector>
 
 class PerfilNutricional {
 private:
-	double _metaCalorias;
+	double _metaCalorica;
 	std::string _fatorFisico; 
-	std:vector<Nutriente> _vectorMetaNutrientes;
+	std::vector<Nutriente> _vectorMetaNutrientes;
 public:
 	PerfilNutricional(std::string fator_fisico, double meta_calorica);
 	~PerfilNutricional();
@@ -17,11 +18,11 @@ public:
 	double getMetaCalorica();
 	
 	void setFatorFisico(std::string fator_fisico);
-	void setMetaCalorias(double meta_calorias);
+	void setMetaCalorica(double meta_calorica);
 	
-	void calcularMetaCalorias(int idade, double peso, double altura, std::string fator_fisico);
+	void calcularMetaCalorica(int idade, double peso, double altura, std::string fator_fisico);
 	void calcularMetaNutrientes();
-}
+};
 
 
 #endif

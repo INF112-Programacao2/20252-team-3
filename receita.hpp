@@ -1,3 +1,6 @@
+#ifndef RECEITA_HPP
+#define RECEITA_HPP
+
 #include "alimento.hpp"
 #include <vector>
 
@@ -9,3 +12,5 @@ class Receita {
 		void criarReceita();
 		//void editarReceita();
 };
+
+#endif

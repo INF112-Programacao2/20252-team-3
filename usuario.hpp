@@ -14,7 +14,7 @@ private:
 	double _altura;
 	PerfilNutricional _perfilNutricional;
 	DiarioAlimentar _diario;
-	std::vector <Receita> _receitas;
+	std::vector<Receita> _receitas;
 	std::string _caminhoDiretorioDiario;
 	
 	enum CategoriaAlimento {
@@ -35,11 +35,11 @@ private:
 	};
 	
 	enum Refeicao {
-		Cafe_Manha
+		Cafe_Manha,
 		Almoco,
 		Jantar,
 		Lanche
-	}
+	};
 
 public:
 	Usuario();
@@ -54,7 +54,6 @@ public:
 	PerfilNutricional getPerfilNutricional();
 	DiarioAlimentar getDiarioAlimentar();
 	std::string getCaminhoDiretorioDiario();
-	void cadastrarNovoAlimentoDB();
 	
 	// Setters
 	void setNome(std::string nome);

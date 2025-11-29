@@ -6,6 +6,10 @@
 #include "usuario.hpp"
 #include "funcoes_leitura.hpp"
 
+#include "perfil_nutricional.hpp"
+#include "diario_alimentar.hpp"
+#include "receita.hpp"
+
 namespace fs = std::filesystem; // namespace para filesystem
 
 // Construtores e Destrutores
@@ -32,8 +36,16 @@ void setAltura(double altura) {_altura = altura;}
 
 
 bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa 2
+	// variaveis auxiliares
 	std::string caminho_diretorio;
 	int resposta_int;
+	bool ha_usuario_diretorio = true;
+	bool aviso = false;
+	
+	// variaveis para caminho do diretorio
+	std::string novo_caminho;
+	fs::directory_iterator primeiro_arq_diretorio; // sera inicializado
+	fs::directory_iterator fim_diretorio; // fica vazio
 	
 	std::cout << "\nEscolher diretorio para salvar dados.............\n";
 	std::cout << 
@@ -67,7 +79,7 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 					}
 					std::cout << "Diretorio " << caminho_diretorio << " encontrado\n";
 					// GERACAO DE UMA PASTA DIARIO_ALIMENTAR NESSE DIRETORIO
-					std::string novo_caminho = caminho_diretorio + "\\DIARIO_ALIMENTAR"; // coloco 2 \ ("\\") para mostrar que nao \ de escape
+					novo_caminho = caminho_diretorio + "\\DIARIO_ALIMENTAR"; // coloco 2 \ ("\\") para mostrar que nao \ de escape
 					try {
 						bool diretorio_foi_criado = fs::create_directory(fs::path(novo_caminho));
 						if (diretorio_foi_criado)
@@ -103,7 +115,6 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 				}
 				std::cout << "Diretorio " << caminho_diretorio << " encontrado\n";
 				// INFORMAR OS USUARIOS JA CADASTRADOS (DENTRO DA PASTA DE DIARIO ALIMENTAR)
-				bool ha_usuario_diretorio = true;
 				std::cout << "Usuarios ja cadastrados:\n";
 				try {
 					if (fs::is_empty(caminho_diretorio)) // funcao me disse se o diretorio tem conteudo dentro 
@@ -112,11 +123,11 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 					std::cerr << e.what() << std::endl;
 					ha_usuario_diretorio = false;
 				}
-					fs::directory_iterator primeiro_arq_diretorio = fs::directory_iterator(caminho_diretorio);
-					fs::directory_iterator fim_diretorio; // fica vazio
+				
+				primeiro_arq_diretorio = fs::directory_iterator(caminho_diretorio);
+				fim_diretorio; // fica vazio
 					
 				if (ha_usuario_diretorio) {
-					bool aviso = false;
 					for (fs::directory_iterator i = primeiro_arq_diretorio; i != fim_diretorio; i++) {
 						// i é um ponteiro para o caminho do arquivo no d iretorio
 						// que aponta para um objeto fs::directory_entry
@@ -337,7 +348,8 @@ void Usuario::lerDadosNutricionaisUsuario() {
 							
 // Meta calorica
 	// 1) Fazer o calculo da meta calorica recomendada para o individuo, usando as informacoes do usuario
-	meta_calorica_recomendada = perfilNutricional.calcularMetaCalorica(_idade, _peso, _altura, fator_fisico);
+	_perfilNutricional.calcularMetaCalorica(_idade, _peso, _altura, fator_fisico);
+	meta_calorica_recomendada = _perfilNutricional.getMetaCalorica();
 	
 	// 2) Decidir o valor da meta calorica (recomendado ou personalizado)
 	while (true) {
@@ -487,19 +499,20 @@ std::string Usuario::lerAlimento() {
 	int* ID_alimento_match;
 	bool alimento_encontrado;
 	std::string nome_alimento;
+	int resposta_int;
 
 	while (true) {
-		std::cout << "\nPesquisando pelo alimento.....\n"
+		std::cout << "\nPesquisando pelo alimento.....\n";
 		std::cout << "Nome do Alimento: ";
 		nome_alimento = ler_nome();
 		if (nome_alimento.empty())
 			continue;
-		break
+		break;
 	}
 	std::cout << "Buscando no Banco de Dados " << nome_alimento << "...\n";
 	try {
-		ID_alimento_match = _diario.buscarAlimento(nome_alimento); // retorna o endereco para um array dos IDs
-		if(ID_alimento_match == nullptr)
+		ID_alimento_match = _diario.buscarAlimentoPeloNome(nome_alimento); // retorna o endereco para um array dos IDs
+		if (ID_alimento_match == nullptr)
 			throw std::invalid_argument("Alimento nao encontrado no Banco de Dados");
 		else {
 			std::cout << "Alimento encontrado no Banco de Dados";
@@ -515,14 +528,21 @@ std::string Usuario::lerAlimento() {
 	}
 	else {
 		// Exibir quais foram os alimentos encontrados
-		int num_ID_alimento_match = ID_alimento_match[0];
+		int num_de_IDs_alimento_match;
+		try {
+			num_de_IDs_alimento_match = ID_alimento_match[0];
+		} catch (std::exception &e) {
+			std::cout << "ERRO FATAL\nFim do programa\n";
+			exit(0);
+		}
+		
 		std::cout << "\nLista dos alimentos encontrados\n";
-		for (int i=1; i<num_ID_alimento_match; i++) {
+		for (int i=1; i<num_de_IDs_alimento_match; i++) {
 			try {
 				nome_alimento = _diario.buscarAlimentoPeloID(ID_alimento_match[i]);
 			}
 			catch (std::out_of_range &e) {
-				std::cerr << "Acesso a posicao invalida do vetor\n";
+				std::cerr << "Acesso a posicao invalida do vetor\nFim do programa";
 				exit(0);
 			}
 			catch (std::exception &e) {
@@ -534,8 +554,8 @@ std::string Usuario::lerAlimento() {
 		
 		// Decidir quais dos alimentos o usuario quer
 		while (true) {
-			std::cout << "Escolha uma opcao (1 - " << num_alimentos_encontrados-1 << ")\n";
-			resposta_int = ler_num_no_intervalo(1, num_alimentos_encontrados-1);
+			std::cout << "Escolha uma opcao (1 - " << num_de_IDs_alimento_match << ")\n";
+			resposta_int = ler_num_no_intervalo(1, num_de_IDs_alimento_match);
 			if (!resposta_int)
 				continue;
 		}
@@ -564,9 +584,18 @@ void Usuario::adicionarAlimentoAoDiario() {
 		break;
 	}
 	
+	// variaveis auxiliares
+	char resposta_char;
+	bool confirmou_cadastro;
+	int num_medidas;
+	int quantidade;
+	std::string unidade_medida;
+	std::string refeicao_escolhida;
+	std::vector<std::string> medidas_alimento;
+			
 	switch (resposta_int) {
 		case 1:
-			nome_alimento = ler_alimento();
+			nome_alimento = lerAlimento();
 			if (nome_alimento.empty()) {
 				while (true) {
 					std::cout << "\nAlimento nao encontrado................\n";
@@ -600,12 +629,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			alimento.setNome(nome_alimento); 
 			
 			// Prosseguir com o cadastro do alimento
-			
 			// Ler a Quantidade e a Unidade de Medida
-			int num_medidas;
-			std::string medidas_alimento[50];
-			std::string unidade_medida
-			
 			medidas_alimento = buscarMedidas(_diario.buscarSubClasse(nome_alimento)); // funcao recebe o tipo de subclasse do alimento (SC, SNC ou L) e retorna as medidas para essa subclasse
 			num_medidas = buscarNumMedidas(_diario.buscarSubClasse(nome_alimento)); // igual a outra, mas me retorna quantas medidas
 			
@@ -635,11 +659,11 @@ void Usuario::adicionarAlimentoAoDiario() {
 							continue;
 						break;
 					}
-					unidade_medida = medida_alimento[resposta_int-1];
+					unidade_medida = medidas_alimento[resposta_int-1];
 				}
 					
 				else
-					unidade_medida = medida_alimento[resposta_int-1];
+					unidade_medida = medidas_alimento[resposta_int-1];
 				
 				break; // paro o while da leitura de unidade de medida
 			}
@@ -647,7 +671,6 @@ void Usuario::adicionarAlimentoAoDiario() {
 			// 2) Coloco a unidade de medida dentro do objeto alimento
 			alimento.setUnidadeMedida(unidade_medida); 
 			
-			int quantidade;
 			while (true) {
 				std::cout << "Digite a quantidade de alimento (em " << unidade_medida << "): ";
 				quantidade = ler_inteiro();
@@ -660,7 +683,6 @@ void Usuario::adicionarAlimentoAoDiario() {
 			alimento.setQuantidade(quantidade);
 			
 			// Ler a refeicao a qual o alimento pertence
-			std::string refeicao_escolhida;
 			while (true) {
 				std::cout << "\nRefeicao em que o alimento foi consumido\n";
 				std::cout << "Cafe da Manha (digite 1)\n";
@@ -668,7 +690,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 				std::cout << "Jantar (digite 3)\n";
 				std::cout << "Lanche (digite 4)\n";
 				std::cout << "Digite sua opcao (1 - 4): ";
-				resposta_int = ler_num_intervalo();
+				resposta_int = ler_num_no_intervalo(1, 4);
 				if (!resposta_int)
 					continue;
 				refeicao_escolhida = static_cast<Refeicao>(resposta_int-1);
@@ -678,12 +700,9 @@ void Usuario::adicionarAlimentoAoDiario() {
 			// 4) Coloco a refeicao dentro do objeto alimento
 			alimento.setRefeicao(refeicao_escolhida);
 			
-			
-			char resposta_char;
-			bool confirmou_cadastro;
 			std::cout << "\nConfirmar informacoes do alimento......\n";
 			std::cout << "Nome do alimento: " << nome_alimento;
-			std::cout << "Quantidade: " << quantidade << " " << medida_escolhida << std::endl;
+			std::cout << "Quantidade: " << alimento.getQuantidade() << " " << alimento.getUnidadeMedida() << std::endl;
 			std::cout << "Refeicao: " << refeicao_escolhida << std::endl;
 			while (true) {
 				std::cout << "Adicionar alimento no Diario Alimentar [S/N]: ";
@@ -702,7 +721,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			// 5) Passar o objeto alimento com os atributos setados para o diario
 			if (confirmou_cadastro) {
 				std::cout << "Alimento adicionado ao seu Diario!\n";
-				_diario.adicionarAlimento(alimento); 
+				_diario.adicionarAlimentoAoVetor(alimento); 
 				// Para cada alimento adicionado, um contador de num de alimento no diario aumenta
 				// E o alimento é colocado em uma outra posicao do vetor de Alimento do Diario
 				// Logo, dentro dessa funcao a minha unica preocuopacao deve ser ter um objeto Alimento,
@@ -721,7 +740,6 @@ void Usuario::adicionarAlimentoAoDiario() {
 	}
 	
 	// 6) Adicionar mais alimentos
-	char resposta_char
 	while (true) {
 		std::cout << "Adicionar mais alimentos? [S/N]\n";
 		resposta_char = ler_S_ou_N();
@@ -730,7 +748,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 		break;
 	}
 	if (resposta_char == 'S')
-		ler_alimento(); //chama a funcao recursivamente
+		lerAlimento();
 	else {
 		std::cout << "Fim do cadastro\n";
 		std::cout << "Voltando ao menu principal\n";
@@ -738,7 +756,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 	}
 }
 
-std::vector<std::string> buscarMedidas(std:string subclasse_alimento="") {
+std::vector<std::string> buscarMedidas(std::string subclasse_alimento="") {
 	std::vector<std::string> medidas_solido_contaveis = {
 		"Unidades", "Meia Duzia", "Duzia"
 	};
@@ -752,9 +770,9 @@ std::vector<std::string> buscarMedidas(std:string subclasse_alimento="") {
 	
 	std::vector<std::string> todas_medidas;
 	// funcao insert(posicao em que o insert comecao, comeco do vetor inserido, fim do vetor inserido)
-	todas_medidas.insert(todas_medidas.end(), medidas_solido_contaveis().begin(), medidas_solido_contaveis().end());
-	todas_medidas.insert(todas_medidas.end(), medidas_solido_nao_contaveis().begin(), medidas_solido_nao_contaveis().end());
-	todas_medidas.insert(todas_medidas.end(), medidas_liquido().begin(), medidas_liquido().end());
+	todas_medidas.insert(todas_medidas.end(), medidas_solido_contaveis.begin(), medidas_solido_contaveis.end());
+	todas_medidas.insert(todas_medidas.end(), medidas_solido_nao_contaveis.begin(), medidas_solido_nao_contaveis.end());
+	todas_medidas.insert(todas_medidas.end(), medidas_liquido.begin(), medidas_liquido.end());
 	
 	
 	if (subclasse_alimento.empty()) { // quando nao especifica nenhuma subclasse, retorno todas as medidas
@@ -764,13 +782,13 @@ std::vector<std::string> buscarMedidas(std:string subclasse_alimento="") {
 		if (subclasse_alimento == "SolidoContavel")
 			return medidas_solido_contaveis;
 		else if (subclasse_alimento == "SolidoNaoContavel")
-			return medidas_nao_solido_contaveis;
+			return medidas_solido_nao_contaveis;
 		else
 			return medidas_liquido;
 	}
 	
 }
-int buscarNumMedidas(std:string subclasse_alimento="") {
+int buscarNumMedidas(std::string subclasse_alimento="") {
 	return buscarMedidas(subclasse_alimento).size();
 }
 
@@ -789,7 +807,7 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 			continue;
 	}
 	// 1) Coloco o nome no objeto alimento
-	alimento.setNome(nome);
+	novo_alimento.setNome(nome);
 	
 	CategoriaAlimento categoria; // crio enum CategoriaAlimento
 	while (true) {
@@ -816,7 +834,7 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 	categoria = static_cast<CategoriaAlimento>(resposta_int-1);
 	
 	//2) Passo a variavel do tipo CategoriaAlimento para o objeto alimento
-	alimento.setCategoria(categoria);
+	novo_alimento.setCategoria(categoria);
 	
 	double valor_nutriente;
 	std::string nome_nutriente, nome_unidade;
@@ -824,7 +842,7 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 	"Lipidios", "Colesterol", "FibraAlimentar"};
 	std::string micronutrientes[10] = {"Calcio", "Magnesio", "Sodio", "Potassio", "Ferro", 
 	"VitaminaA/Retinol", "VitaminaB1/Tiamina", "VitaminaC"};
-	std::string unidades = {"gramas/g", "kilocalorias/kcal", "miligramas/mg", "microgramas/mcg"};
+	std::string unidades[10] = {"gramas/g", "kilocalorias/kcal", "miligramas/mg", "microgramas/mcg"};
 
 	std::cout << "Informacoes dos macronutrientes do alimento.........\n";
 	std::cout << "Coloque 0 (zero) caso nao saiba a quantidade\n";
@@ -834,14 +852,14 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 		if (nome_nutriente == "Colesterol")
 			nome_unidade = unidades[2];
 		while (true) {
-			std::cout << nome_nutriente << " (em " << nome_unidade << ") (valor decimal): "
+			std::cout << nome_nutriente << " (em " << nome_unidade << ") (valor decimal): ";
 			valor_nutriente = ler_double();
-			if (!nutriente)
+			if (!valor_nutriente)
 				continue;
 		}
 		
 		// 3) Passo os macronutrientes (um de cada vez) para o objeto alimentoo
-		alimento.setMacroNutriente(valor_nutriente, nome_nutriente);
+		novo_alimento.setMacroNutriente(valor_nutriente, nome_nutriente);
 	}
 	std::cout << "Informacoes dos micronutrientes do alimento.........\n";
 	std::cout << "Coloque 0 (zero) caso nao saiba a quantidade\n";
@@ -851,18 +869,18 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 		if (nome_nutriente == "VitaminaA/Retinol")
 			nome_unidade = unidades[3];
 		while (true) {
-			std::cout << nome_nutriente << " (em " << nome_unidade << ") (valor decimal): "
+			std::cout << nome_nutriente << " (em " << nome_unidade << ") (valor decimal): ";
 			valor_nutriente = ler_double();
-			if (!nutriente)
+			if (!valor_nutriente)
 				continue;
 		}
 		// 4) Passo os micronutrientes (um de cada vez) para o objeto alimentoo
-		alimento.setMicroNutriente(valor_nutriente, nome_nutriente);
+		novo_alimento.setMicroNutriente(valor_nutriente, nome_nutriente);
 	}
 	
-	_diario.adicionarAlimentoAoDB(alimento);
+	_diario.adicionarAlimentoAoDB(novo_alimento);
 	
-	std:cout << "Cadastro do novo alimento realizado com sucesso\n";
+	std::cout << "Cadastro do novo alimento realizado com sucesso\n";
 	return nome;
 }
 
@@ -923,6 +941,8 @@ void verAlimentosAdicionados() {
 
 void editarAlimentosAdicionados() {
 	std::string nome_alimento;
+	int quantidade, nova_quantidade;
+	std::string unidade_medida;
 	int resposta_int;
 	
 	// 1) Mostra todos os alimentos cadastrados
@@ -936,9 +956,8 @@ void editarAlimentosAdicionados() {
 		if (nome_alimento.empty())
 			continue;
 	}
-	// 3) Vejo se esse alimento esta no Diario
-	nome_alimento = _diario.buscarAlimentoDiario(nome_alimento); // retorna "" se nao encontrar o nome
-	if (nome_alimento.empty())
+	// 3) Vejo se esse alimento esta no Diario (e aproveito para atualizar o nome)
+	if (!(_diario.buscarAlimentoNoDiario(nome_alimento))) // retorna false se nao encontrar o nome
 		std::cout << "Alimento nao encontrado";
 	else {
 		std::cout << "Alimento encontrado\n";
@@ -955,16 +974,14 @@ void editarAlimentosAdicionados() {
 		switch (resposta_int) {
 			case 1:
 				_diario.remover(nome_alimento);
-				break
+				break;
 			case 2:
-				int quantidade, nova_quantidade;
-				std::string unidade_medida;
 				quantidade = _diario.getAlimento(nome_alimento).getQuantidade();
 				unidade_medida = _diario.getAlimento(nome_alimento).getUnidadeMedida();
 				std::cout << "Antiga quantidade de alimento\n";
 				std::cout << "Nome: " << nome_alimento << std::endl;
 				std::cout << "Quantidade (em" << unidade_medida << ") " << quantidade << std::endl;
-				std::cout << "Nova quantidade de alimento\n"
+				std::cout << "Nova quantidade de alimento\n";
 				while (true) {
 					std::cout << "Quantidade (em " << unidade_medida << "): ";
 					resposta_int = ler_inteiro();
@@ -1017,7 +1034,7 @@ void verNutrientesCalculados() {
 		std::cout << "Analisar os micronutrientes (digite 3)\n";
 		std::cout << "Voltar ao menu principal (digite 4)\n";
 		resposta_int = ler_num_no_intervalo(1, 4);
-		if (!reposta_int)
+		if (!resposta_int)
 			continue;
 		break;
 	}
@@ -1032,7 +1049,7 @@ void verNutrientesCalculados() {
 				std::cout << "Lanche (digite 4)\n";
 				std::cout << "Digite uma opcao (1 - 4)\n";
 				resposta_int = ler_num_no_intervalo(1, 4);
-				if (!reposta_int)
+				if (!resposta_int)
 					continue;
 				break;
 			}
@@ -1129,8 +1146,8 @@ void criarReceita() {
 		// 2) Unidade de Medida
 		
 		// CRIAR A FUNCAO LER MEDIDA.....................................
-		std::string medidas_alimento[50] = buscarMedidas(_diario.buscarSubClasse(nome_alimento))
-		int num_medidas = buscarNumMedidas(_diario.buscarSubClasse(nome_alimento))
+		std::vector<std::string> medidas_alimento = buscarMedidas(_diario.buscarSubClasse(nome_ingrediente));
+		int num_medidas = buscarNumMedidas(_diario.buscarSubClasse(nome_ingrediente));
 		while (true) {
 			std::cout << "Unidade de medida";
 			std::cout << "Medidas disponiveis: ";

@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <iostream>
 #include "diario_alimentar.hpp"
-#include "alimentoAB.h"
+#include "alimento.hpp"
 
 int* DiarioAlimentar::buscarAlimentoPeloNome(std::string nome_alimento){
     std::ifstream arquivo("informacoes.csv");
@@ -94,7 +94,7 @@ std::string DiarioAlimentar::buscarAlimentoPeloID(int id){
     return "";
 }
 
-void DiarioAlimentar::adicionarAlimentoAoVetor(AlimentoAB alimento){
+void DiarioAlimentar::adicionarAlimentoAoVetor(Alimento alimento){
     _vectorAlimentos.push_back(alimento);
 }
 
