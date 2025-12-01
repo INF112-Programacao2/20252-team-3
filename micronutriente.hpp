@@ -1,65 +1,29 @@
-#ifndef MICRONUTRIENTE_H
-#define MICRONUTRIENTE_H
+#ifndef MICRONUTRIENTE_HPP
+#define MICRONUTRIENTE_HPP
 
-#include "Nutriente.h"
+#include "nutriente.hpp"
 
-// Enumeração corrigida para todos os Micronutrientes
+// Enum com os principais micros que constam na tabela CSV
 enum class TipoMicro {
-    // Vitaminas
-    VITAMINA_A,
-    B1_TIAMINA,
-    B2_RIBOFLAVINA,
-    B3_NIACINA,
-    B5_ACIDO_PANTOTENICO,
-    B6_PIRIDOXINA,
-    B7_BIOTINA,
-    B9_FOLATO,
-    B12_COBALAMINA,
-    VITAMINA_C,
-    VITAMINA_D,
-    VITAMINA_K,
-    // Minerais
-    CALCIO,
-    FERRO,
-    MAGNESIO,
-    ZINCO
+    CALCIO, FERRO, MAGNESIO, SODIO, POTASSIO, // Minerais
+    VITAMINA_A, VITAMINA_B1, VITAMINA_C       // Vitaminas
 };
 
-/**
- * @class Micronutriente
- * @brief Implementação de Nutriente para Micros.
- * Calcula a meta (quantidadeIdeal) com base na RDA (Idade/Sexo)
- * lida do PerfilNutricional.
- */
 class Micronutriente : public Nutriente {
 private:
     TipoMicro tipo;
-    std::string tipoCategoria; // Ex: "Vitamina Hidrossolúvel"
-    double limiteSuperiorSeguro; // UL (Tolerable Upper Intake Level)
+    std::string categoria; // "Mineral" ou "Vitamina"
+    double limiteSuperior; // Tolerable Upper Intake Level (UL)
 
 public:
-    /**
-     * @brief Construtor que define o tipo de micro (Opção A).
-     * @param tipo O tipo de micro (ex: TipoMicro::VITAMINA_A).
-     */
     Micronutriente(TipoMicro tipo);
+    virtual ~Micronutriente() = default;
 
-    // --- Sobrescrita (Override) dos Métodos Virtuais ---
-
-    /**
-     * @brief Calcula a meta (RDA) em mg/mcg.
-     * Lê perfil.getIdade() e perfil.getSexo().
-     */
-    void calcularMetaIdeal(const PerfilNutricional& perfil) override;
-
-    /**
-     * @brief Retorna "Micronutriente".
-     */
+    // Implementação da lógica de cálculo baseada em RDA (Médias Gerais)
+    void calcularMetaIdeal(PerfilNutricional& perfil) override;
+    
     std::string getTipo() const override;
-
-    // --- Métodos Específicos ---
     double getLimiteSuperior() const;
-    std::string getCategoria() const;
 };
 
-#endif // MICRONUTRIENTE_H
+#endif
