@@ -1,28 +1,18 @@
-#include "Macronutriente.h"
-#include "PerfilNutricional.h" // Necessário para getMetaCalorica(), etc.
-#include <stdexcept>
+#include "macronutriente.hpp"
+#include "perfil_nutricional.hpp" // Necessário para acessar getMetaCalorica()
 #include <iostream>
 
-/**
- * @brief Construtor usa um switch para configurar o objeto (Opção A).
- * Chama o construtor da classe base (Nutriente) na lista de inicialização.
- */
 Macronutriente::Macronutriente(TipoMacro tipo)
     : Nutriente(
-        // 1. Define o nome (baseado no tipo)
-        (tipo == TipoMacro::PROTEINA ? "Proteína" : 
-        (tipo == TipoMacro::CARBOIDRATO ? "Carboidrato" : "Gordura")),
-        // 2. Define a unidade (sempre "g")
-        "g"
+        // Define o nome (String) baseado no Enum recebido
+        (tipo == TipoMacro::PROTEINA ? "Proteínas" : 
+        (tipo == TipoMacro::CARBOIDRATO ? "Carboidratos" : "Lipídios")), 
+        "g" // Unidade sempre gramas
       ),
-      // 3. Define os membros locais
-      tipo(tipo),
-      caloriasPorGrama(
-        (tipo == TipoMacro::GORDURA ? 9.0 : 4.0)
-      ) 
+      tipo(tipo) 
 {
-    // O corpo do construtor fica vazio,
-    // pois a lista de inicialização fez todo o trabalho.
+    // Configura calorias automaticamente
+    this->caloriasPorGrama = (tipo == TipoMacro::GORDURA) ? 9.0 : 4.0;
 }
 
 std::string Macronutriente::getTipo() const {
@@ -33,33 +23,28 @@ double Macronutriente::getCaloriasPorGrama() const {
     return this->caloriasPorGrama;
 }
 
-/**
- * @brief Calcula e define a 'quantidadeIdeal' (Meta).
- * Esta é a lógica de negócio principal desta classe.
- */
-void Macronutriente::calcularMetaIdeal(const PerfilNutricional& perfil) {
-    try {
-        double metaCaloricaTotal = perfil.getMetaCalorica();
-        double metaEmGramas = 0.0;
-
-        // Calcula a meta em gramas baseado no percentual definido no perfil
-        switch (this->tipo) {
-            case TipoMacro::PROTEINA:
-                metaEmGramas = (metaCaloricaTotal * perfil.getPctProteina()) / this->caloriasPorGrama;
-                break;
-            case TipoMacro::CARBOIDRATO:
-                metaEmGramas = (metaCaloricaTotal * perfil.getPctCarboidrato()) / this->caloriasPorGrama;
-                break;
-            case TipoMacro::GORDURA:
-                metaEmGramas = (metaCaloricaTotal * perfil.getPctGordura()) / this->caloriasPorGrama;
-                break;
-        }
-        
-        // Define o atributo protegido da classe base
-        this->quantidadeIdeal = metaEmGramas;
-
-    } catch (const std::exception& e) {
-        std::cerr << "Erro ao calcular meta de " << this->nome << ": " << e.what() << std::endl;
-        this->quantidadeIdeal = 0.0; // Define 0 em caso de falha
+void Macronutriente::calcularMetaIdeal(PerfilNutricional& perfil) {
+    // Obtém a meta calórica total do usuário (único dado disponível no Perfil)
+    double metaCaloricaTotal = perfil.getMetaCalorica(); 
+    
+    // Proteção contra divisão por zero ou valores inválidos
+    if (metaCaloricaTotal <= 0) {
+        this->quantidadeIdeal = 0;
+        return;
     }
+
+    // --- DEFINIÇÃO DE PERCENTUAIS PADRÃO ---
+    // Como a classe PerfilNutricional não armazena a divisão da dieta (Low Carb, etc),
+    // adotamos uma distribuição padrão balanceada para adultos saudáveis:
+    // 50% Carbo, 20% Proteína, 30% Gordura.
+    double pctAlvo = 0.0;
+
+    switch (this->tipo) {
+        case TipoMacro::PROTEINA:    pctAlvo = 0.20; break;
+        case TipoMacro::CARBOIDRATO: pctAlvo = 0.50; break;
+        case TipoMacro::GORDURA:     pctAlvo = 0.30; break;
+    }
+
+    // Fórmula: (Calorias Totais * Porcentagem) / Calorias por Grama
+    this->quantidadeIdeal = (metaCaloricaTotal * pctAlvo) / this->caloriasPorGrama;
 }
