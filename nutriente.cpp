@@ -1,13 +1,10 @@
-#include "Nutriente.h"
+#include "nutriente.hpp"
 
-// Construtor inicializa os membros. Metas e consumo começam em zero.
 Nutriente::Nutriente(const std::string& nome, const std::string& unidade)
     : nome(nome), 
       unidadeDeMedida(unidade), 
       quantidadeDiaria(0.0), 
       quantidadeIdeal(0.0) {}
-
-// --- Getters e Setters ---
 
 std::string Nutriente::getNome() const {
     return this->nome;
@@ -27,4 +24,11 @@ double Nutriente::getConsumoDiario() const {
 
 void Nutriente::setConsumoDiario(double consumo) {
     this->quantidadeDiaria = consumo;
+}
+
+// Útil para verificar se os cálculos estão rodando sem precisar abrir a interface completa
+void Nutriente::exibirInformacoes() const {
+    std::cout << "Nutriente: " << nome 
+              << " | Consumo Atual: " << quantidadeDiaria << " " << unidadeDeMedida
+              << " | Meta: " << quantidadeIdeal << " " << unidadeDeMedida << std::endl;
 }
