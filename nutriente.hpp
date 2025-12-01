@@ -1,78 +1,41 @@
-#ifndef NUTRIENTE_H
-#define NUTRIENTE_H
+#ifndef NUTRIENTE_HPP
+#define NUTRIENTE_HPP
 
 #include <string>
+#include <iostream>
 
-// Declaração antecipada (Forward Declaration)
-// Evita incluir "PerfilNutricional.h" aqui, melhorando a compilação.
+// Forward declaration: avisa que a classe existe sem precisar incluir o arquivo todo aqui.
+// Evita erro de inclusão circular.
 class PerfilNutricional;
 
-/**
- * @class Nutriente
- * @brief Classe base abstrata para todos os nutrientes.
- * Define a interface comum para cálculo de metas e armazenamento de consumo.
- */
 class Nutriente {
 protected:
     std::string nome;
-    std::string unidadeDeMedida; // "g", "mg", "mcg"
-    
-    // quantidadeDiaria: O CONSUMO (será atualizado pelo DiarioAlimentar)
-    double quantidadeDiaria;
-    
-    // quantidadeIdeal: A META (será calculada pelo nosso método)
-    double quantidadeIdeal;
+    std::string unidadeDeMedida; // Ex: "g", "mg", "mcg"
+    double quantidadeDiaria;     // Quanto o usuário consumiu (acumulado)
+    double quantidadeIdeal;      // A meta calculada para o usuário
 
 public:
-    /**
-     * @brief Construtor base.
-     * @param nome Nome do nutriente (ex: "Proteína").
-     * @param unidade Unidade de medida (ex: "g").
-     */
     Nutriente(const std::string& nome, const std::string& unidade);
+    virtual ~Nutriente() = default; // Destrutor virtual é obrigatório para herança
 
-    /**
-     * @brief Destrutor virtual padrão. Essencial para polimorfismo.
-     */
-    virtual ~Nutriente() = default;
-
-    // --- MÉTODOS VIRTUAIS PUROS (O "Contrato") ---
-
-    /**
-     * @brief Calcula e define a meta (quantidadeIdeal) deste nutriente.
-     * Esta é a principal função polimórfica. Ela lê os dados do perfil
-     * (calorias, percentuais, idade, sexo) para definir a meta.
-     * @param perfil O perfil nutricional do usuário.
-     */
-    virtual void calcularMetaIdeal(const PerfilNutricional& perfil) = 0;
-
-    /**
-     * @brief Retorna o tipo de nutriente.
-     * @return "Macronutriente" ou "Micronutriente".
-     */
+    // --- MÉTODOS VIRTUAIS PUROS (O Polimorfismo acontece aqui) ---
+    // Cada filho (Macro/Micro) deve implementar sua própria lógica de cálculo.
+    // Nota: Recebe PerfilNutricional sem 'const' para compatibilidade com o código atual do grupo.
+    virtual void calcularMetaIdeal(PerfilNutricional& perfil) = 0;
+    
     virtual std::string getTipo() const = 0;
 
-    // --- Getters e Setters ---
+    // --- Getters e Setters Comuns ---
     std::string getNome() const;
     std::string getUnidade() const;
-
-    /**
-     * @brief Obtém a meta ideal (RDA) calculada.
-     */
     double getMetaIdeal() const;
-
-    /**
-     * @brief Obtém o consumo diário (calculado pelo DiarioAlimentar).
-     */
+    
     double getConsumoDiario() const;
+    void setConsumoDiario(double consumo); // Usado pelo Diario para somar o consumo
 
-    /**
-     * @brief Define o consumo diário.
-     * Este método será chamado por outra classe (ex: DiarioAlimentar)
-     * após somar o consumo de todas as refeições.
-     * @param consumo O valor total consumido.
-     */
-    void setConsumoDiario(double consumo);
+    // Método prático para debug: mostra o estado atual do nutriente no console
+    virtual void exibirInformacoes() const;
 };
 
-#endif // NUTRIENTE_H
+#endif
