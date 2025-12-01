@@ -1,50 +1,30 @@
-#ifndef MACRONUTRIENTE_H
-#define MACRONUTRIENTE_H
+#ifndef MACRONUTRIENTE_HPP
+#define MACRONUTRIENTE_HPP
 
-#include "Nutriente.h"
+#include "nutriente.hpp"
 
-// Enumeração de tipo "classe" (modern C++) para os macros.
-// Este é o "número inteiro" que você mencionou.
+// Enum class evita conflitos de nomes globais
 enum class TipoMacro {
     PROTEINA,
     CARBOIDRATO,
     GORDURA
 };
 
-/**
- * @class Macronutriente
- * @brief Implementação de Nutriente para Macros.
- * Calcula a meta (quantidadeIdeal) com base nas calorias e percentuais
- * lidos do PerfilNutricional.
- */
 class Macronutriente : public Nutriente {
 private:
     TipoMacro tipo;
-    double caloriasPorGrama;
+    double caloriasPorGrama; // Proteína/Carbo = 4kcal, Gordura = 9kcal
 
 public:
-    /**
-     * @brief Construtor que define o tipo de macro.
-     * Este construtor faz o trabalho da "Opção A".
-     * @param tipo O tipo de macro (ex: TipoMacro::PROTEINA).
-     */
+    // Construtor recebe apenas o tipo, o resto ele configura sozinho
     Macronutriente(TipoMacro tipo);
+    virtual ~Macronutriente() = default;
 
-    // --- Sobrescrita (Override) dos Métodos Virtuais ---
-
-    /**
-     * @brief Calcula a meta em gramas.
-     * Lê perfil.getMetaCalorica() e perfil.getPctProteina() etc.
-     */
-    void calcularMetaIdeal(const PerfilNutricional& perfil) override;
-
-    /**
-     * @brief Retorna "Macronutriente".
-     */
+    // Implementação da lógica de cálculo baseada em calorias
+    void calcularMetaIdeal(PerfilNutricional& perfil) override;
+    
     std::string getTipo() const override;
-
-    // --- Métodos Específicos ---
     double getCaloriasPorGrama() const;
 };
 
-#endif // MACRONUTRIENTE_H
+#endif
