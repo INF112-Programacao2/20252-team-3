@@ -132,6 +132,8 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 					}
 					break; // paro o while do case 1
 				}
+				// Atribuindo caminho para membro da classe
+				_caminhoDiretorioDiario = novo_caminho;
 				break; // paro o case 1:
 					
 				
@@ -184,6 +186,9 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 						std::cout << "Retire quaisquer outros arquivos ou diretorios que nao estejam relacionados";
 					}
 				}
+				// Atribuindo caminho para membro da classe
+				_caminhoDiretorioDiario = caminho_diretorio;
+				
 				break; // break para case 2 do switch
 			case 3:
 				std::cout << "Voltando para o menu do programa\n";
@@ -193,9 +198,6 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 		std::cout << "Caminho do diretorio para Diario Alimentar do usuario salvo!\n";
 		break; // break para loop while
 	}
-	
-	// Atribuindo caminho para membro da classe
-	_caminhoDiretorioDiario = caminho_diretorio;
 	
 	return true;
 }
@@ -301,22 +303,31 @@ void Usuario::leituraDadosUsuario() {
     while (true) {
         std::cout << "Idade (numero inteiro em anos): ";
         idade = ler_inteiro();
-        if (idade > 0 && idade < 120) 
-            break;
+        if (idade > 0 && idade < 120)  {
+			break;
+		}
+		else
+			std::cout << "Coloque uma idade valida (de 0 a 120 anos)\n";;
     }
     // Peso (Em kg)
     while (true) {
         std::cout << "Peso (numero decimal em metros - use ponto): ";
         peso_kg_int = ler_double();
-        if (peso_kg_int > 0)
+        if (peso_kg_int > 0) {
             break;
+		}
+		else
+			std::cout << "Coloque um peso valido (maior que 0 kg)\n";
     }
     // Altura (Em metros)
     while (true) {
         std::cout << "Altura (numero decimal em metros - use ponto): ";
         altura_m = ler_double();
-        if (altura_m > 0.5 && altura_m < 3.0) 
+        if (altura_m > 0.5 && altura_m < 3.0) {
             break;
+		}
+		else
+			std::cout << "Coloque uma altura valida (0.5 - 3.0 metros)\n";
     }
 
     // --- 2. Leitura de Dados Nutricionais (Sexo e Nivel de Atividade) ---
@@ -393,8 +404,8 @@ void Usuario::leituraDadosUsuario() {
 		
 		while (true) {	
 			std::cout << "Deseja adicionar:\n";
-			std::cout << "1. Deficit (subir meta calorica)\n";
-			std::cout << "2. Superavit (diminuir a meta calorica)\n";
+			std::cout << "1. Deficit (diminuir meta calorica)\n";
+			std::cout << "2. Superavit (subir a meta calorica)\n";
 			std::cout << "Digite sua opcao: (1-2): ";
 			resposta_int = ler_num_no_intervalo(1, 2);
 			if (!resposta_int)
@@ -407,9 +418,11 @@ void Usuario::leituraDadosUsuario() {
 				resposta_double = ler_double();
 				if (!resposta_double)
 					continue;
-				if (resposta_double > 250.0)
+				if (resposta_double > 250.0) {
 					std::cerr << "ERRO: Valor desse ser no maximo 250.0 kcal\n";
-				meta_calorica_final = meta_calorica_recomendada + resposta_double;
+					continue;
+				}
+				meta_calorica_final = meta_calorica_recomendada - resposta_double;
 				break;
 			}
 			else if (resposta_int == 2) { // superavit
@@ -417,9 +430,12 @@ void Usuario::leituraDadosUsuario() {
 				resposta_double = ler_double();
 				if (!resposta_double)
 					continue;
-				if (resposta_double > 250.0)
+				if (resposta_double > 250.0) {
 					std::cerr << "ERRO: Valor desse ser no maximo 250.0 kcal\n";
-				meta_calorica_final = meta_calorica_recomendada - resposta_double;
+					continue;
+				}
+				meta_calorica_final = meta_calorica_recomendada + resposta_double;
+				break;
 			}
 		}
     }
@@ -769,8 +785,8 @@ std::string Usuario::lerAlimento() {
 		
 		// Decidir quais dos alimentos o usuario quer
 		while (true) {
-			std::cout << "Escolha uma opcao (1 - " << num_de_IDs_alimento_match << "): ";
-			resposta_int = ler_num_no_intervalo(1, num_de_IDs_alimento_match);
+			std::cout << "Escolha uma opcao (1 - " << num_de_IDs_alimento_match-1 << "): ";
+			resposta_int = ler_num_no_intervalo(1, num_de_IDs_alimento_match-1);
 			if (!resposta_int)
 				continue;
 			break;
