@@ -893,7 +893,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			std::cout << "Nome do alimento: " << nome_alimento << std::endl;
 			std::cout << "Quantidade: " << alimento_do_usuario->getQuantidade() << " " << alimento_do_usuario->getUnidadeDeMedida() << std::endl;
 			std::cout << "Refeicao: " << refeicao_escolhida << std::endl;
-			std::cout << "Categoria: " << alimento_do_usuario->getCategoria() << std::endl;
+			//std::cout << "Categoria: " << alimento_do_usuario->getCategoria() << std::endl;
 			while (true) {
 				std::cout << "Adicionar alimento no Diario Alimentar [S/N]: ";
 				resposta_char = ler_S_ou_N();
