@@ -91,6 +91,8 @@ std::string Alimento::CategoriaAlimentoParaString(CategoriaAlimento categoria) c
             return "Ovos e derivados";
         case CategoriaAlimento::Miscelâneas:
             return "Miscelaneas";
+		case CategoriaAlimento::ProdutosAçucarados:
+			return "Produtos açucarados";
         case CategoriaAlimento::Outros_alimentos_industrializados:
             return "Outros alimentos industrializados"; 
         case CategoriaAlimento::Alimentos_preparados:
@@ -126,6 +128,8 @@ CategoriaAlimento Alimento::StringParaCategoriaAlimento(const std::string& categ
         return CategoriaAlimento::Miscelâneas;
     } else if (categoria_str == "Outros alimentos industrializados") {
         return CategoriaAlimento::Outros_alimentos_industrializados;
+	} else if (categoria_str == "Produtos açucarados" || "Produtos acucarados") {
+		return CategoriaAlimento::ProdutosAçucarados;
     } else if (categoria_str == "Alimentos preparados") {
         return CategoriaAlimento::Alimentos_preparados;
     } 

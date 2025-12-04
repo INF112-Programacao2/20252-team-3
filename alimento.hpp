@@ -23,6 +23,7 @@ enum class CategoriaAlimento {
     Bebidas,
     Ovos_derivados,
     Miscelâneas,
+	ProdutosAçucarados,
     Outros_alimentos_industrializados,
     Alimentos_preparados,
     CategoriaDesconhecida 

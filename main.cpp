@@ -130,9 +130,9 @@ int main() {
 				break;
 			case 3:
 				std::cout << "Desenvolvedores do programa...\n";
-				std::cout << "Anthony de Paula Cândido\n";
+				std::cout << "Anthony de Paula Candido\n";
 				std::cout << "Gustavo Freitas Santos\n";
-				std::cout << "João Pedro Castro da Rocha\n";
+				std::cout << "Joao Pedro Castro da Rocha\n";
 				std::cout << "Leandro Henrique Costa de Sousa\n";
 				std::cout << "Pedro Cremonezi Fiorini \n";
 				break;

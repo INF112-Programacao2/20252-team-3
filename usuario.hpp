@@ -7,6 +7,9 @@
 #include "diario_alimentar.hpp"
 //#include "receita.hpp"
 
+std::string montarCaminhoDiario(const std::string& caminho_base, const std::string& segmento);
+std::string montarCaminhoDiario(const std::string& caminho_base, const std::string& segmento1, const std::string& segmento2);
+
 class Usuario { 
 private:
 	std::string _nome;

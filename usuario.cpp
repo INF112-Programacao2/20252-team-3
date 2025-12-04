@@ -19,6 +19,26 @@
 
 namespace fs = std::filesystem; // namespace para filesystem
 
+
+std::string montarCaminhoDiario(const std::string& caminho_base, const std::string& segmento) {
+    // 1. Cria um fs::path com o caminho base. O fs::path lida com diferentes barras.
+    fs::path caminho_final(caminho_base);
+    
+    // 2. Anexa o novo segmento usando o operador /, que insere o separador correto.
+    caminho_final /= segmento;
+    
+    // 3. Converte de volta para string
+    return caminho_final.string();
+}
+
+
+std::string montarCaminhoDiario(const std::string& caminho_base, const std::string& segmento1, const std::string& segmento2) {
+    fs::path caminho_final(caminho_base);
+    caminho_final /= segmento1;
+    caminho_final /= segmento2;
+    return caminho_final.string();
+}
+
 // Construtores e Destrutores
 Usuario::Usuario() {_diario.preencherAlimentosNoVetor();} // assim que eu crio a classe usuario, ja leio todo o csv e coloco dentro de Diario Alimentar
 // CONSTRUTOR REMOVIDO
@@ -51,7 +71,7 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 	bool aviso = false;
 	
 	// variaveis para caminho do diretorio
-	std::string novo_caminho;
+	std::string novo_caminho; 
 	fs::directory_iterator primeiro_arq_diretorio; // sera inicializado
 	fs::directory_iterator fim_diretorio; // fica vazio
 	
@@ -71,7 +91,6 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 		resposta_int = ler_num_no_intervalo(1, 3);
 		if(!resposta_int)
 			continue;
-		
 		switch (resposta_int) {
 			case 1:
 				std::cout << "\nCriando diretorio...............\n";
@@ -86,10 +105,12 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 						break;
 					}
 					std::cout << "Diretorio " << caminho_diretorio << " encontrado\n";
-					// GERACAO DE UMA PASTA DIARIO_ALIMENTAR NESSE DIRETORIO
-					novo_caminho = caminho_diretorio + "\\DIARIO_ALIMENTAR"; // coloco 2 \ ("\\") para mostrar que nao \ de escape
+					
+					novo_caminho = montarCaminhoDiario(caminho_diretorio, "DIARIO_ALIMENTAR"); 
+					
 					try {
-						bool diretorio_foi_criado = fs::create_directory(fs::path(novo_caminho));
+						// Usa o novo caminho (string) na função do filesystem
+						bool diretorio_foi_criado = fs::create_directory(fs::path(novo_caminho)); 
 						if (diretorio_foi_criado)
 							std::cout << "Diretorio DIARIO_ALIMENTAR criado em " << novo_caminho << std::endl;
 						else { // se nao foi criado, testar para ver se caminho ja existia
@@ -97,6 +118,8 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 								throw std::invalid_argument("Diretorio DIARIO ALIMENTAR ja existe no caminho informado\n"
 							"Selecione a opcao: (Ja tenho um diretorio salvo para o programa) e passe o caminho do DIARIO\n");
 						}
+                        // Atualiza a variável de controle principal para o caminho final
+                        caminho_diretorio = novo_caminho; 
 					} catch (fs::filesystem_error &e) { // erro na geracao do diretorio
 						std::cerr << "Erro: " << e.what() << std::endl;
 						continue;
@@ -113,7 +136,7 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 					
 				
 			case 2:
-				std::cout << "\nAbrindo diretorio DIARIO_ALIMENTAR\n";
+                std::cout << "\nAbrindo diretorio DIARIO_ALIMENTAR\n";
 				while (true) {
 					std::cout << "\nInforme o caminho para a pasta DIARIO_ALIMENTAR: ";
 					caminho_diretorio = ler_caminho_dir("DIARIO_ALIMENTAR");
@@ -133,12 +156,9 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 				}
 				
 				primeiro_arq_diretorio = fs::directory_iterator(caminho_diretorio);
-				fim_diretorio; // fica vazio
 					
 				if (ha_usuario_diretorio) {
 					for (fs::directory_iterator i = primeiro_arq_diretorio; i != fim_diretorio; i++) {
-						// i é um ponteiro para o caminho do arquivo no d iretorio
-						// que aponta para um objeto fs::directory_entry
 						const fs::directory_entry conteudo = *i;
 						std::string nome_arq = conteudo.path().filename().string();
 						std::string tipo_arq;
@@ -175,7 +195,7 @@ bool Usuario::lerCaminhoDiretorioDiario() { // chamado pela funcao main na Etapa
 	}
 	
 	// Atribuindo caminho para membro da classe
-	_caminhoDiretorioDiario = caminho_diretorio + "/DIARIO_ALIMENTAR";
+	_caminhoDiretorioDiario = caminho_diretorio;
 	
 	return true;
 }
@@ -350,6 +370,7 @@ void Usuario::leituraDadosUsuario() {
     
     double meta_calorica_recomendada = _perfilNutricional.getCaloriasDiariasTotais();
     char resposta_char;
+	double resposta_double;
     double meta_calorica_final;
 
     while (true) {
@@ -364,13 +385,43 @@ void Usuario::leituraDadosUsuario() {
     if (resposta_char == 'S') {
         meta_calorica_final = meta_calorica_recomendada;
     } else { // resposta_char == 'N'
-        while (true) {
-            std::cout << "\nDigite a sua meta calorica personalizada (numero decimal): ";
-            meta_calorica_final = ler_double();
-            // Validação simples: meta deve ser positiva
-            if (meta_calorica_final > 0)
-                break;
-        }
+		std::cout << 
+		"\nAVISO: RECOMENDA-SE UTILIZAR A META CALORICA RECOMENDADA\n"
+		"PARA QUE A SUA ALIMENTACAO ESTEJA DENTRO DOS PARAMETROS RECOMENDADOS\n"
+		"PELO ORGAO DE SAUDE. CASO QUEIRA COLOCAR UM deficit OU UM superavit\n"
+		"NA META CALORICA, O MESMO DEVE SER DE NO MAXIMO DE 250 kcal\n\n";
+		
+		while (true) {	
+			std::cout << "Deseja adicionar:\n";
+			std::cout << "1. Deficit (subir meta calorica)\n";
+			std::cout << "2. Superavit (diminuir a meta calorica)\n";
+			std::cout << "Digite sua opcao: (1-2): ";
+			resposta_int = ler_num_no_intervalo(1, 2);
+			if (!resposta_int)
+				continue;
+			break;
+		}
+		while (true) {
+			if (resposta_int == 1) { // deficit
+				std::cout << "Digite o valor do deficit (maximo de 250.0 kcal): ";
+				resposta_double = ler_double();
+				if (!resposta_double)
+					continue;
+				if (resposta_double > 250.0)
+					std::cerr << "ERRO: Valor desse ser no maximo 250.0 kcal\n";
+				meta_calorica_final = meta_calorica_recomendada + resposta_double;
+				break;
+			}
+			else if (resposta_int == 2) { // superavit
+				std::cout << "Digite o valor do superavit (maximo de 250.0 kcal): ";
+				resposta_double = ler_double();
+				if (!resposta_double)
+					continue;
+				if (resposta_double > 250.0)
+					std::cerr << "ERRO: Valor desse ser no maximo 250.0 kcal\n";
+				meta_calorica_final = meta_calorica_recomendada - resposta_double;
+			}
+		}
     }
     
     // --- 5. Armazenamento Final ---
@@ -520,8 +571,8 @@ bool Usuario::salvarDadosEmArquivo() const {
 
     // --- Caminho Completo (Usando o atributo _caminhoDiretorioDiario) ---
     // Cria o caminho completo concatenando o diretorio, a barra (/) e o nome do arquivo.
-    std::string caminho_arquivo_pessoal = _caminhoDiretorioDiario + "/" + nome_arquivo_pessoal;
-    std::string caminho_arquivo_nutricional = _caminhoDiretorioDiario + "/" + nome_arquivo_nutricional;
+    std::string caminho_arquivo_pessoal = montarCaminhoDiario(_caminhoDiretorioDiario, nome_arquivo_pessoal);
+	std::string caminho_arquivo_nutricional = montarCaminhoDiario(_caminhoDiretorioDiario, nome_arquivo_nutricional);
 
     // ===============================================
     // 2. Escrevendo o arquivo com os DADOS PESSOAIS
@@ -584,56 +635,78 @@ bool Usuario::salvarDadosEmArquivo() const {
     return sucesso;
 }
 
+
 bool Usuario::buscarDadosEmDiretorio() {
-	// Buscar em _caminhoDiretorioDiario pela pasta USUARIO_nomeUsuario
-	fs::directory_iterator primeiro_arq_diretorio = fs::directory_iterator(_caminhoDiretorioDiario); // ponteiro para lista dos arquivos
-	fs::directory_iterator fim_diretorio; // fica vazio
-	fs::directory_entry arquivo;
-	std::string nome_arq;
-	std::string nome_esperado;
-	bool encontrou_pasta = false;
-	// E SE A PASTA ESTIVER VAZIA? R: o loop nao sera executado
-	for (fs::directory_iterator i = primeiro_arq_diretorio; i != fim_diretorio; i++) {
-		arquivo = *i;
-		nome_arq = arquivo.path().filename().string();
-		nome_esperado = "USUARIO_"+_nome;
-		if (nome_arq == nome_esperado) {
-			std::cout << "Pasta " << nome_arq << " encontrada em " << _caminhoDiretorioDiario << std::endl;
-			encontrou_pasta = true;
-			break;
-		}
-	}
-	if (!encontrou_pasta) {
-		std::cout << "Pasta " << nome_arq << " nao encontrada em " << _caminhoDiretorioDiario << std::endl;
-		return false;
-	}
-	
-	// Verificar se na pasta ha os arquivos "DadosPessoais_nomeUsuario" e DadosNutricionais_nomeUsuario"
-	std::string nome_esperado_p = "DadosPessoais_"+_nome;
-	std::string nome_esperado_n = "DadosNutricionais_"+_nome;
-	bool encontrou_arq_p = false;
-	bool encontrou_arq_n = false;
-	primeiro_arq_diretorio = fs::directory_iterator(arquivo);
-	
-	for (fs::directory_iterator j = primeiro_arq_diretorio; j != fim_diretorio; j++) {
-		arquivo = *j;
-		nome_arq = arquivo.path().filename().string();
-		if (nome_arq == nome_esperado_p){ // se nao for igual a nenhum dos arquivos
-			std::cout << "Arquivo " << nome_arq << " encontrado em" << _caminhoDiretorioDiario << std::endl;
-			encontrou_arq_p = true;
-		}
-		if (nome_arq == nome_esperado_n) { // se nao for igual a nenhum dos arquivos
-			std::cout << "Arquivo " << nome_arq << " encontrado em" << _caminhoDiretorioDiario << std::endl;
-			encontrou_arq_n = true;
-		} 
-	}
-	if (!encontrou_arq_p)
-		std::cout << "Arquivo " << nome_esperado_p << " nao encontrado em" << _caminhoDiretorioDiario << std::endl;
-	if (!encontrou_arq_n)
-		std::cout << "Arquivo " << nome_esperado_n << " nao encontrado em" << _caminhoDiretorioDiario << std::endl;
-	if (!encontrou_arq_p || !encontrou_arq_n)
-		return false;
-	return true;
+    
+    // Caminho da pasta que esperamos encontrar (ex: USUARIO_Joao)
+    std::string nome_pasta_usuario = "USUARIO_" + _nome;
+    
+    // Caminho COMPLETO da pasta do usuário (ex: .../DIARIO_ALIMENTAR/USUARIO_Joao)
+    fs::path caminho_pasta_usuario_completo; 
+    
+    // 1. Busca pela subpasta USUARIO_nomeUsuario DENTRO de _caminhoDiretorioDiario (DIARIO_ALIMENTAR)
+    bool encontrou_pasta = false;
+    try {
+        // Itera sobre o conteúdo do diretório DIARIO_ALIMENTAR
+        for (const auto& entry : fs::directory_iterator(_caminhoDiretorioDiario)) {
+            // Verifica se é um diretório e se o nome corresponde
+            if (entry.is_directory() && entry.path().filename().string() == nome_pasta_usuario) {
+                // Salva o caminho completo da subpasta
+                caminho_pasta_usuario_completo = entry.path(); 
+                std::cout << "Pasta " << nome_pasta_usuario << " encontrada em " << _caminhoDiretorioDiario << std::endl;
+                encontrou_pasta = true;
+                break;
+            }
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cerr << "Erro ao acessar o diretorio DIARIO_ALIMENTAR: " << e.what() << std::endl;
+        return false;
+    }
+
+    if (!encontrou_pasta) {
+        std::cout << "Pasta " << nome_pasta_usuario << " nao encontrada em " << _caminhoDiretorioDiario << std::endl;
+        return false;
+    }
+    
+    // 2. Verificar se na subpasta do usuário há os arquivos necessários
+    std::string nome_esperado_p = "DadosPessoais_" + _nome + ".txt";
+    std::string nome_esperado_n = "DadosNutricionais_" + _nome + ".txt";
+    bool encontrou_arq_p = false;
+    bool encontrou_arq_n = false;
+    
+    try {
+        for (const auto& entry : fs::directory_iterator(caminho_pasta_usuario_completo)) {
+            if (entry.is_regular_file()) {
+                std::string nome_arq = entry.path().filename().string();
+                
+                if (nome_arq == nome_esperado_p){ 
+                    std::cout << "Arquivo " << nome_esperado_p << " encontrado em " << caminho_pasta_usuario_completo.string() << std::endl;
+                    encontrou_arq_p = true;
+                }
+                if (nome_arq == nome_esperado_n) { 
+                    std::cout << "Arquivo " << nome_esperado_n << " encontrado em " << caminho_pasta_usuario_completo.string() << std::endl;
+                    encontrou_arq_n = true;
+                }
+            }
+            if (encontrou_arq_p && encontrou_arq_n) {
+                break;
+            }
+        }
+    } catch (const fs::filesystem_error& e) {
+        std::cerr << "Erro ao acessar o diretorio da pasta do usuario: " << e.what() << std::endl;
+        return false;
+    }
+    
+    // Relatório final
+    if (!encontrou_arq_p)
+        std::cout << "Arquivo " << nome_esperado_p << " nao encontrado em " << caminho_pasta_usuario_completo.string() << std::endl;
+    if (!encontrou_arq_n)
+        std::cout << "Arquivo " << nome_esperado_n << " nao encontrado em " << caminho_pasta_usuario_completo.string() << std::endl;
+        
+    if (!encontrou_arq_p || !encontrou_arq_n)
+        return false;
+        
+    return true;
 }
 
 std::string Usuario::lerAlimento() {
@@ -893,7 +966,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			std::cout << "Nome do alimento: " << nome_alimento << std::endl;
 			std::cout << "Quantidade: " << alimento_do_usuario->getQuantidade() << " " << alimento_do_usuario->getUnidadeDeMedida() << std::endl;
 			std::cout << "Refeicao: " << refeicao_escolhida << std::endl;
-			//std::cout << "Categoria: " << alimento_do_usuario->getCategoria() << std::endl;
+			std::cout << "Categoria: " << alimento_do_usuario->getCategoria() << std::endl;
 			while (true) {
 				std::cout << "Adicionar alimento no Diario Alimentar [S/N]: ";
 				resposta_char = ler_S_ou_N();
@@ -1031,10 +1104,11 @@ std::string Usuario::cadastrarNovoAlimentoDB() {
 		std::cout << "10. Bebidas (alcoólicas e não alcoolicas)\n";
 		std::cout << "11. Ovos e derivados\n";
 		std::cout << "12. Miscelaneas (molhos, condimentos e temperos)\n";
-		std::cout << "13. Outros alimentos industrializados (molhos, condimentos e temperos)\n";
-		std::cout << "14. Alimentos preparados\n";
-		std::cout << "Digite uma opcao (1 - 14): ";
-        resposta_int = ler_num_no_intervalo(1, 14);
+		std::cout << "13. Produtos açucarados\n";
+		std::cout << "14. Outros alimentos industrializados (molhos, condimentos e temperos)\n";
+		std::cout << "15. Alimentos preparados\n";
+		std::cout << "Digite uma opcao (1 - 15): ";
+        resposta_int = ler_num_no_intervalo(1, 15);
         if (resposta_int != 0)
             break;
     }
@@ -1104,7 +1178,7 @@ void Usuario::verAlimentosAdicionados() {
     // Vetor de mapeamento das categorias
 	const std::vector<std::string> map_categorias = {
         "Todas",                                     // Índice 0: Mapeia opção 1
-        "Cereais e Derivados",                       // Índice 1: Mapeia opção 2
+        "Cereais e derivados",                       // Índice 1: Mapeia opção 2
         "Verduras, hortalicas e derivados",         // Índice 2: Mapeia opção 3
         "Frutas e derivados",                        // Índice 3: Mapeia opção 4
         "Leguminosas e derivados",                   // Índice 4: Mapeia opção 5
@@ -1113,11 +1187,12 @@ void Usuario::verAlimentosAdicionados() {
         "Pescados e frutos do mar",                  // Índice 7: Mapeia opção 8
         "Carnes e derivados",                        // Índice 8: Mapeia opção 9
         "Leite e derivados",                         // Índice 9: Mapeia opção 10
-        "Bebidas",                                   // Índice 10: Mapeia opção 11
+        "Bebidas (alcoolicas e nao alcoolicas)",                                   // Índice 10: Mapeia opção 11
         "Ovos e derivados",                          // Índice 11: Mapeia opção 12
         "Miscelaneas",                               // Índice 12: Mapeia opção 13
-        "Outros alimentos industrializados",          // Índice 13: Mapeia opção 14
-        "Alimentos preparados"                       // Índice 14: Mapeia opção 15
+		"Produtos acucarados"						// Índice 13: Mapeia opção 14
+        "Outros alimentos industrializados",        // Índice 14: Mapeia opção 15
+        "Alimentos preparados"                      // Índice 15: Mapeia opção 16
     };
 
 	std::cout << "\nAlimentos ja adicionados ao Diario Alimentar\n";

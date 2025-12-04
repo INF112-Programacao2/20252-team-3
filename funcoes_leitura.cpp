@@ -3,11 +3,20 @@
 
 #include <exception>
 #include <limits>
+#include <cctype>
+#include <algorithm>
 #include <iostream>
 #include <filesystem>
 #include "funcoes_leitura.hpp"
 
+namespace fs = std::filesystem;
 namespace fs = std::filesystem; // namespace para filesystem
+
+std::string to_lower_case(std::string str) {
+    std::transform(str.begin(), str.end(), str.begin(),
+                   [](unsigned char c){ return std::tolower(c); });
+    return str;
+}
 
 char ler_S_ou_N() {
 	char resposta_char;
@@ -50,31 +59,36 @@ int ler_num_no_intervalo(int num_inicial, int num_final) {
 	 
 	return inteiro;
 }
-
 std::string ler_caminho_dir(std::string dir_especifico) {
 	std::string caminho_diretorio;
 	try {
-		if (!(std::getline(std::cin, caminho_diretorio))) { // Leio a linha inteira. comando retorna true quando valor e valido
-			std::cin.clear(); // limpo o estado do cin
-			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // ignoro o valor informado
+		if (!(std::getline(std::cin, caminho_diretorio))) {
+			std::cin.clear();
+			std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 			throw std::exception();
 		}
-		else { // se foi possivel fazer a leitura, retiro as "" no começo e fim do caminho (algo comum de haver)
+		else {
 			// 1. Remove aspas do início (se existir)
 			if (!caminho_diretorio.empty() && caminho_diretorio.front() == '"') {
 				caminho_diretorio.erase(0, 1);
 			}
 			// 2. Remove aspas do final (se existir)
 			if (!caminho_diretorio.empty() && caminho_diretorio.back() == '"') {
-				caminho_diretorio.pop_back(); // Remove o último caractere
+				caminho_diretorio.pop_back();
 			}
 		}
-		if (dir_especifico != "") // significa que foi especificado uma Pasta
-			if (fs::path(caminho_diretorio).filename() != fs::path(dir_especifico)) // metodo .filename() vem da classe path
+
+		if (dir_especifico != "") {
+            // Conversão para string, depois para minúsculas
+            // fs::path::filename().string() retorna o nome do diretório/arquivo como string.
+			if (to_lower_case(fs::path(caminho_diretorio).filename().string()) != to_lower_case(dir_especifico)) {
 				throw std::invalid_argument("Caminho informado nao pertence ao diretorio solicitado");
-		if (!(fs::exists(caminho_diretorio))) // verifica se diretorio existe
+            }
+        }
+
+		if (!(fs::exists(caminho_diretorio)))
 			throw std::runtime_error("Caminho informado nao encontrado");
-		if (!(fs::is_directory(caminho_diretorio))) // verifica se o caminho se refere a um diretorio
+		if (!(fs::is_directory(caminho_diretorio)))
 			throw std::logic_error("Caminho informado nao se configura como diretorio (pasta)");
 	} catch (std::invalid_argument &e){
 		std::cerr << "Erro: " << e.what() << std::endl;
@@ -89,7 +103,7 @@ std::string ler_caminho_dir(std::string dir_especifico) {
 		std::cerr << "Erro inesperado: " << e.what() << std::endl;
 		return "";
 	}
-	return caminho_diretorio; // converte para string
+	return caminho_diretorio;
 }
 
 std::string ler_nome() {
@@ -142,7 +156,7 @@ double ler_double() {
 		}
 		if (cont_ponto <= 0 || cont_ponto > 1) // se houver mais pontos do que deveria
 			throw std::invalid_argument("Valor precisa ser decimal - com ponto");
-		if (std::stod(decimal_str) < 0)
+		if (std::stod(decimal_str) <= 0)
 			throw std::logic_error("Valor informado precisa ser maior que 0");
 	} catch (std::invalid_argument &e) {
 		std::cerr << "Erro: " << e.what() << std::endl;
