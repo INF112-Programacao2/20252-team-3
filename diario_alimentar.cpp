@@ -587,11 +587,9 @@ void DiarioAlimentar::exibirNutrientesNoDiario(const std::string& refeicao_alvo,
 void DiarioAlimentar::exibirAlimentosNoDiario(const std::string& refeicao_filtro, const std::string& categoria_filtro) {
     int contador_alimentos = 0;
 	
-    std::cout << "\n======================================================\n";
-    std::cout << "  ALIMENTOS CADASTRADOS NO DIÁRIO\n";
+    std::cout << "  \nALIMENTOS CADASTRADOS NO DIARIO\n";
     std::cout << "  Filtro de Refeição: " << refeicao_filtro << std::endl;
     std::cout << "  Filtro de Categoria: " << categoria_filtro << std::endl;
-    std::cout << "------------------------------------------------------\n";
 
     // 1. Iterar sobre o vetor de alimentos
     for (const auto& alimento_ptr : _vectorAlimentosDoUsuario) {
@@ -617,13 +615,11 @@ void DiarioAlimentar::exibirAlimentosNoDiario(const std::string& refeicao_filtro
     }
 
     // 5. Exibir mensagem de finalização/ausência de resultados
-    std::cout << "------------------------------------------------------\n";
     if (contador_alimentos == 0) {
         std::cout << "Nenhum alimento encontrado com os filtros aplicados\n";
     } else {
         std::cout << contador_alimentos << " alimentos exibidos\n";
     }
-    std::cout << "======================================================\n";
 }
 
 void DiarioAlimentar::exibirAlimentosNoDiario() {
@@ -631,7 +627,7 @@ void DiarioAlimentar::exibirAlimentosNoDiario() {
     int contador_alimentos = 0;
 
     std::cout << "\n======================================================\n";
-    std::cout << "  TODOS OS ALIMENTOS CADASTRADOS NO DIÁRIO\n";
+    std::cout << "  TODOS OS ALIMENTOS CADASTRADOS NO DIARIO\n";
     std::cout << "------------------------------------------------------\n";
 
     // 1. Iterar sobre o vetor de alimentos
@@ -646,7 +642,7 @@ void DiarioAlimentar::exibirAlimentosNoDiario() {
 
     std::cout << "------------------------------------------------------\n";
     if (contador_alimentos == 0) {
-        std::cout << "Nenhum alimento encontrado no diário\n";
+        std::cout << "Nenhum alimento encontrado no diario\n";
     } else {
         std::cout << contador_alimentos << " alimentos exibidos\n";
     }

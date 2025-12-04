@@ -66,6 +66,7 @@ int main() {
 					std::cout << "4. Ver status da Meta Calorica/Nutrientes\n";
 					std::cout << "5. Gerar historico de consumo diario\n";
 					std::cout << "6. Voltar para o menu principal\n";
+					std::cout << "Digite sua opcao (1-6): ";
 					resposta_int = ler_num_no_intervalo(1, 6);
 					if (!resposta_int)
 						continue;

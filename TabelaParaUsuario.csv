@@ -1,597 +1,597 @@
-"ID_Alimento","Categoria_Alimento","Nome_Alimento","SubClasse_Alimento","Energia","Proteina","Lipidios","Colesterol","Carboidrato","FibraAlimentar..g.","Calcio..mg.","Magnesio..mg.","Ferro..mg.","Sodio..mg.","Potassio..mg.","Tiamina..mg.","VitaminaC..mg."
-"1","Cereais e derivados","Arroz integral cozido","SolidoNaoContavel","124.0","2.6","1.0","NA","25.8","2.7","5.0","59.0","0.3","1.0","75.0","0.08","NA"
-"2","Cereais e derivados","Arroz integral cru","SolidoNaoContavel","360.0","7.3","1.9","NA","77.5","4.8","8.0","110.0","0.9","2.0","173.0","0.26","NA"
-"3","Cereais e derivados","Arroz tipo 1 cozido","SolidoNaoContavel","128.0","2.5","0.2","NA","28.1","1.6","4.0","2.0","0.1","1.0","15.0","Traco","NA"
-"4","Cereais e derivados","Arroz tipo 1 cru","SolidoNaoContavel","358.0","7.2","0.3","NA","78.8","1.6","4.0","30.0","0.7","1.0","62.0","0.16","NA"
-"5","Cereais e derivados","Arroz tipo 2 cozido","SolidoNaoContavel","130.0","2.6","0.4","NA","28.2","1.1","3.0","6.0","0.1","2.0","20.0","Traco","NA"
-"6","Cereais e derivados","Arroz tipo 2 cru","SolidoNaoContavel","358.0","7.2","0.3","NA","78.9","1.7","5.0","29.0","0.6","1.0","57.0","0.16","NA"
-"7","Cereais e derivados","Aveia flocos crua","SolidoNaoContavel","394.0","13.9","8.5","NA","66.6","9.1","48.0","119.0","4.4","5.0","336.0","0.55","1.4"
-"8","Cereais e derivados","Biscoito doce maisena","SolidoContavel","443.0","8.1","12.0","NA","75.2","2.1","54.0","37.0","1.8","352.0","142.0","1.01","6.2"
-"9","Cereais e derivados","Biscoito doce recheado com chocolate","SolidoContavel","472.0","6.4","19.6","Traco","70.5","3.0","27.0","48.0","2.3","239.0","232.0","0.32","3.5"
-"10","Cereais e derivados","Biscoito doce recheado com morango","SolidoContavel","471.0","5.7","19.6","Traco","71.0","1.5","36.0","27.0","1.5","230.0","113.0","0.9","Traco"
-"11","Cereais e derivados","Biscoito doce wafer recheado de chocolate","SolidoContavel","502.0","5.6","24.7","Traco","67.5","1.8","23.0","48.0","2.4","137.0","240.0","0.37","Traco"
-"12","Cereais e derivados","Biscoito doce wafer recheado de morango","SolidoContavel","513.0","4.5","26.4","1.0","67.4","0.8","14.0","19.0","1.1","120.0","75.0","0.36","NA"
-"13","Cereais e derivados","Biscoito salgado cream cracker","SolidoContavel","432.0","10.1","14.4","NA","68.7","2.5","20.0","40.0","2.2","854.0","181.0","0.71","NA"
-"14","Cereais e derivados","Bolo mistura para","SolidoNaoContavel","419.0","6.2","6.1","Traco","84.7","1.7","59.0","28.0","1.2","463.0","75.0","0.18","Traco"
-"15","Cereais e derivados","Bolo pronto aipim","SolidoContavel","324.0","4.4","12.7","73.0","47.9","0.7","85.0","10.0","0.5","111.0","135.0","0.13","Traco"
-"16","Cereais e derivados","Bolo pronto chocolate","SolidoContavel","410.0","6.2","18.5","77.0","54.7","1.4","75.0","28.0","2.1","283.0","212.0","0.13","Traco"
-"17","Cereais e derivados","Bolo pronto coco","SolidoContavel","333.0","5.7","11.3","63.0","52.3","1.1","57.0","16.0","0.8","190.0","143.0","0.15","Traco"
-"18","Cereais e derivados","Bolo pronto milho","SolidoContavel","311.0","4.8","12.4","82.0","45.1","0.7","83.0","10.0","0.7","134.0","118.0","0.11","Traco"
-"19","Cereais e derivados","Canjica branca crua","SolidoNaoContavel","358.0","7.2","1.0","NA","78.1","5.5","2.0","12.0","0.3","1.0","93.0","Traco","Traco"
-"20","Cereais e derivados","Canjica com leite integral","SolidoNaoContavel","112.0","2.4","1.2","1.0","23.6","1.2","43.0","6.0","0.1","28.0","70.0","Traco","Traco"
-"21","Cereais e derivados","Cereais milho flocos com sal","SolidoNaoContavel","370.0","7.3","1.6","NA","80.8","5.3","2.0","20.0","0.5","272.0","69.0","0.12","Traco"
-"22","Cereais e derivados","Cereais milho flocos sem sal","SolidoNaoContavel","363.0","6.9","1.2","NA","80.4","1.8","2.0","17.0","1.7","31.0","29.0","0.05","Traco"
-"23","Cereais e derivados","Cereais mingau milho infantil","SolidoNaoContavel","394.0","6.4","1.1","NA","87.3","3.2","219.0","16.0","3.0","399.0","82.0","3.72","109.4"
-"24","Cereais e derivados","Cereais mistura para vitamina trigo cevada e aveia","SolidoNaoContavel","381.0","8.9","2.1","NA","81.6","5.0","584.0","72.0","12.6","1163.0","244.0","0.76","13.1"
-"25","Cereais e derivados","Cereal matinal milho","SolidoNaoContavel","365.0","7.2","1.0","NA","83.8","4.1","143.0","11.0","3.1","655.0","83.0","0.76","17.3"
-"26","Cereais e derivados","Cereal matinal milho acucar","SolidoNaoContavel","377.0","4.7","0.7","NA","88.8","2.1","56.0","8.0","3.9","405.0","52.0","0.73","14.6"
-"27","Cereais e derivados","Creme de arroz po","SolidoNaoContavel","386.0","7.0","1.2","NA","83.9","1.1","7.0","51.0","0.6","1.0","115.0","0.22","Traco"
-"28","Cereais e derivados","Creme de milho po","SolidoNaoContavel","333.0","4.8","1.6","NA","86.1","3.7","323.0","30.0","4.3","594.0","166.0","0.74","96.3"
-"29","Cereais e derivados","Curau milho verde","SolidoNaoContavel","78.0","2.4","1.6","5.0","13.9","0.5","53.0","16.0","0.4","21.0","162.0","0.04","Traco"
-"30","Cereais e derivados","Curau milho verde mistura para","SolidoNaoContavel","402.0","2.2","13.4","NA","79.8","2.5","31.0","9.0","0.9","223.0","55.0","0.13","Traco"
-"31","Cereais e derivados","Farinha de arroz enriquecida","SolidoNaoContavel","363.0","1.3","0.3","NA","85.5","0.6","1.0","4.0","31.4","17.0","13.0","3.23","173.6"
-"32","Cereais e derivados","Farinha de centeio integral","SolidoNaoContavel","336.0","12.5","1.8","NA","73.3","15.5","34.0","120.0","4.7","41.0","334.0","0.29","Traco"
-"33","Cereais e derivados","Farinha de milho amarela","SolidoNaoContavel","351.0","7.2","1.5","NA","79.1","5.5","1.0","31.0","2.3","45.0","58.0","0.25","Traco"
-"34","Cereais e derivados","Farinha de rosca","SolidoNaoContavel","371.0","11.4","1.5","NA","75.8","4.8","35.0","57.0","6.7","333.0","212.0","0.25","Traco"
-"35","Cereais e derivados","Farinha de trigo","SolidoNaoContavel","360.0","9.8","1.4","NA","75.1","2.3","18.0","31.0","1.0","1.0","151.0","0.31","Traco"
-"36","Cereais e derivados","Farinha lactea de cereais","SolidoNaoContavel","415.0","11.9","5.8","11.0","77.8","1.9","196.0","58.0","8.7","125.0","366.0","1.43","24.3"
-"37","Cereais e derivados","Lasanha massa fresca cozida","SolidoNaoContavel","164.0","5.8","1.2","NA","32.5","1.6","10.0","4.0","1.2","207.0","54.0","0.04","NA"
-"38","Cereais e derivados","Lasanha massa fresca crua","SolidoNaoContavel","220.0","7.0","1.3","NA","45.1","1.6","17.0","13.0","1.9","667.0","137.0","0.08","NA"
-"39","Cereais e derivados","Macarrao instantaneo","SolidoNaoContavel","436.0","8.8","17.2","NA","62.4","5.6","18.0","19.0","0.8","1516.0","148.0","1.18","Traco"
-"40","Cereais e derivados","Macarrao trigo cru","SolidoNaoContavel","371.0","10.0","1.3","NA","77.9","2.9","17.0","28.0","0.9","7.0","147.0","0.18","Traco"
-"41","Cereais e derivados","Macarrao trigo cru com ovos","SolidoNaoContavel","371.0","10.3","2.0","18.0","76.6","2.3","19.0","Traco","0.9","15.0","134.0","0.11","Traco"
-"42","Cereais e derivados","Milho amido cru","SolidoNaoContavel","361.0","0.6","Traco","NA","87.1","0.7","1.0","3.0","0.1","8.0","9.0","Traco","Traco"
-"43","Cereais e derivados","Milho fuba cru","SolidoNaoContavel","353.0","7.2","1.9","NA","78.9","4.7","3.0","41.0","0.9","Traco","168.0","0.25","Traco"
-"44","Cereais e derivados","Milho verde cru","SolidoNaoContavel","138.0","6.6","0.6","NA","28.6","3.9","2.0","33.0","0.4","1.0","185.0","0.3","Traco"
-"45","Cereais e derivados","Milho verde enlatado drenado","SolidoNaoContavel","98.0","3.2","2.4","NA","17.1","4.6","2.0","20.0","0.6","260.0","162.0","Traco","1.7"
-"46","Cereais e derivados","Mingau tradicional po","SolidoNaoContavel","373.0","0.6","0.4","NA","89.3","0.9","522.0","4.0","42.0","15.0","Traco","3.41","Traco"
-"47","Cereais e derivados","Pamonha barra para cozimento pre-cozida","SolidoNaoContavel","171.0","2.6","4.8","NA","30.7","2.4","4.0","15.0","0.4","132.0","125.0","Traco","Traco"
-"48","Cereais e derivados","Pao aveia forma","SolidoContavel","343.0","12.4","5.7","Traco","59.6","6.0","109.0","57.0","4.7","606.0","210.0","0.09","Traco"
-"49","Cereais e derivados","Pao de soja","SolidoContavel","309.0","11.3","3.6","NA","56.5","5.7","90.0","48.0","3.3","663.0","296.0","0.07","Traco"
-"50","Cereais e derivados","Pao gluten forma","SolidoContavel","253.0","12.0","2.7","NA","44.1","2.5","156.0","24.0","5.7","22.0","65.0","0.04","Traco"
-"51","Cereais e derivados","Pao milho forma","SolidoContavel","292.0","8.3","3.1","6.0","56.4","4.3","78.0","29.0","3.0","507.0","89.0","0.08","Traco"
-"52","Cereais e derivados","Pao trigo forma integral","SolidoContavel","253.0","9.4","3.7","NA","49.9","6.9","132.0","60.0","3.0","506.0","163.0","0.08","Traco"
-"53","Cereais e derivados","Pao trigo frances","SolidoContavel","300.0","8.0","3.1","NA","58.6","2.3","16.0","25.0","1.0","648.0","142.0","0.39","NA"
-"54","Cereais e derivados","Pao trigo sovado","SolidoContavel","311.0","8.4","2.8","17.0","61.5","2.4","52.0","22.0","2.3","431.0","91.0","0.08","Traco"
-"55","Cereais e derivados","Pastel de carne cru","SolidoContavel","289.0","10.7","8.8","18.0","42.0","1.0","17.0","18.0","2.0","1309.0","166.0","0.06","Traco"
-"56","Cereais e derivados","Pastel de carne frito","SolidoContavel","388.0","10.1","20.1","25.0","43.8","1.0","13.0","14.0","2.5","1040.0","156.0","0.06","NA"
-"57","Cereais e derivados","Pastel de queijo cru","SolidoContavel","308.0","9.9","9.6","14.0","45.9","1.1","155.0","16.0","1.0","985.0","103.0","0.07","Traco"
-"58","Cereais e derivados","Pastel de queijo frito","SolidoContavel","422.0","8.7","22.7","15.0","48.1","0.9","126.0","15.0","1.3","821.0","124.0","0.09","Traco"
-"59","Cereais e derivados","Pastel massa crua","SolidoContavel","310.0","6.9","5.5","NA","57.4","1.4","13.0","14.0","1.1","1344.0","167.0","0.15","NA"
-"60","Cereais e derivados","Pastel massa frita","SolidoContavel","570.0","6.0","40.9","NA","49.3","1.3","11.0","13.0","1.4","1175.0","143.0","0.16","NA"
-"61","Cereais e derivados","Pipoca com oleo de soja sem sal","SolidoNaoContavel","448.0","9.9","15.9","NA","70.3","14.3","3.0","91.0","1.2","4.0","256.0","0.03","Traco"
-"62","Cereais e derivados","Polenta pre-cozida","SolidoNaoContavel","103.0","2.3","0.3","NA","23.3","2.4","1.0","4.0","Traco","442.0","100.0","0.04","Traco"
-"63","Cereais e derivados","Torrada pao frances","SolidoContavel","377.0","10.5","3.3","NA","74.6","3.4","19.0","32.0","1.2","829.0","189.0","0.38","Traco"
-"64","Verduras, hortalicas e derivados","Abobora, cabotian, cozida","SolidoNaoContavel","201.0","1.4","0.7","NA","10.8","0.7","8.0","33.0","0.3","1.0","NA","Traco","7.5"
-"65","Verduras, hortalicas e derivados","Abobora, cabotian, crua","SolidoNaoContavel","161.0","1.7","0.5","NA","8.4","0.8","18.0","26.0","0.4","Traco","223.0","Traco","5.1"
-"66","Verduras, hortalicas e derivados","Abobora, menina brasileira, crua","SolidoNaoContavel","57.0","0.6","Traco","NA","3.3","0.4","9.0","12.0","0.2","Traco","554.0","Traco","1.5"
-"67","Verduras, hortalicas e derivados","Abobora, moranga, crua","SolidoNaoContavel","52.0","1.0","0.1","NA","2.7","0.4","3.0","8.0","Traco","Traco","139.0","Traco","9.6"
-"68","Verduras, hortalicas e derivados","Abobora, moranga, refogada","SolidoNaoContavel","121.0","0.4","0.8","NA","6.0","0.4","19.0","12.0","0.1","3.0","48.0","Traco","6.7"
-"69","Verduras, hortalicas e derivados","Abobora, pescoco, crua","SolidoNaoContavel","102.0","0.7","0.1","NA","6.1","0.6","9.0","32.0","0.3","1.0","NA","Traco","2.1"
-"70","Verduras, hortalicas e derivados","Abobrinha, italiana, cozida","SolidoNaoContavel","63.0","1.1","0.2","NA","3.0","0.4","17.0","22.0","0.2","1.0","NA","Traco","2.1"
-"71","Verduras, hortalicas e derivados","Abobrinha, italiana, crua","SolidoNaoContavel","81.0","1.1","0.1","NA","4.3","0.6","15.0","32.0","0.2","Traco","20.0","Traco","6.9"
-"72","Verduras, hortalicas e derivados","Abobrinha, italiana, refogada","SolidoNaoContavel","102.0","1.1","0.8","NA","4.2","0.4","21.0","32.0","0.4","2.0","21.0","Traco","7.5"
-"73","Verduras, hortalicas e derivados","Abobrinha, paulista, crua","SolidoNaoContavel","129.0","0.6","0.1","NA","7.9","0.5","19.0","33.0","0.2","1.0","NA","Traco","17.5"
-"74","Verduras, hortalicas e derivados","Acelga, crua","SolidoNaoContavel","88.0","1.4","0.1","NA","4.6","0.6","43.0","40.0","0.3","1.0","NA","Traco","22.6"
-"75","Verduras, hortalicas e derivados","Agriao, cru","SolidoNaoContavel","69.0","2.7","0.2","NA","2.3","0.9","133.0","51.0","3.1","7.0","229.0","1.19","60.1"
-"76","Verduras, hortalicas e derivados","Aipo, cru","SolidoNaoContavel","80.0","0.8","0.1","NA","4.3","1.1","65.0","28.0","0.7","10.0","458.0","Traco","5.9"
-"77","Verduras, hortalicas e derivados","Alface, americana, crua","SolidoNaoContavel","37.0","0.6","0.1","NA","1.7","0.3","14.0","19.0","0.3","7.0","NA","Traco","11.0"
-"78","Verduras, hortalicas e derivados","Alface, crespa, crua","SolidoNaoContavel","45.0","1.3","0.2","NA","1.7","0.7","38.0","26.0","0.4","3.0","117.0","1.09","15.6"
-"79","Verduras, hortalicas e derivados","Alface, lisa, crua","SolidoNaoContavel","58.0","1.7","0.1","NA","2.4","0.8","28.0","26.0","0.6","4.0","184.0","0.75","21.4"
-"80","Verduras, hortalicas e derivados","Alface, roxa, crua","SolidoNaoContavel","53.0","0.9","0.2","NA","2.5","0.7","34.0","51.0","2.5","7.0","156.0","Traco","13.5"
-"81","Verduras, hortalicas e derivados","Alfavaca, crua","SolidoNaoContavel","122.0","2.7","0.5","NA","5.2","1.4","258.0","50.0","1.3","5.0","NA","Traco","Traco"
-"82","Verduras, hortalicas e derivados","Alho, cru","SolidoNaoContavel","473.0","7.0","0.2","NA","23.9","1.3","14.0","149.0","0.8","5.0","NA","Traco","NA"
-"83","Verduras, hortalicas e derivados","Alho-poro, cru","SolidoNaoContavel","132.0","1.4","0.1","NA","6.9","0.6","34.0","36.0","0.6","2.0","8.0","0.34","14.1"
-"84","Verduras, hortalicas e derivados","Almeirao, cru","SolidoNaoContavel","75.0","1.8","0.2","NA","3.3","1.0","19.0","40.0","0.7","2.0","283.0","0.63","1.7"
-"85","Verduras, hortalicas e derivados","Almeirao, refogado","SolidoNaoContavel","272.0","1.7","4.8","NA","5.7","1.2","63.0","31.0","1.6","15.0","NA","4.03","1.5"
-"86","Verduras, hortalicas e derivados","Batata, baroa, cozida","SolidoNaoContavel","335.0","0.9","0.2","NA","18.9","0.8","12.0","29.0","0.4","2.0","NA","1.98","17.1"
-"87","Verduras, hortalicas e derivados","Batata, baroa, crua","SolidoNaoContavel","423.0","1.0","0.2","NA","24.0","1.1","17.0","45.0","0.3","Traco","12.0","Traco","7.6"
-"88","Verduras, hortalicas e derivados","Batata, doce, cozida","SolidoNaoContavel","321.0","0.6","0.1","NA","18.4","0.4","17.0","15.0","0.2","3.0","NA","2.57","23.8"
-"89","Verduras, hortalicas e derivados","Batata, doce, crua","SolidoNaoContavel","495.0","1.3","0.1","NA","28.2","0.9","21.0","36.0","0.4","9.0","NA","Traco","16.5"
-"90","Verduras, hortalicas e derivados","Batata, frita, tipo chips,industrializada","SolidoNaoContavel","2271.0","5.6","36.6","NA","51.2","3.9","12.0","96.0","0.7","607.0","NA","2.61","Traco"
-"91","Verduras, hortalicas e derivados","Batata, inglesa, cozida","SolidoNaoContavel","216.0","1.2","Traco","NA","11.9","0.5","4.0","24.0","0.2","2.0","NA","Traco","3.8"
-"92","Verduras, hortalicas e derivados","Batata, inglesa, crua","SolidoNaoContavel","269.0","1.8","Traco","NA","14.7","0.6","4.0","39.0","0.4","Traco","NA","Traco","31.1"
-"93","Verduras, hortalicas e derivados","Batata, inglesa, frita","SolidoNaoContavel","1118.0","5.0","13.1","NA","35.6","2.2","6.0","70.0","0.4","2.0","NA","2.51","16.3"
-"94","Verduras, hortalicas e derivados","Batata, inglesa, saute","SolidoNaoContavel","284.0","1.3","0.9","NA","14.1","0.6","4.0","32.0","0.3","8.0","NA","1.38","Traco"
-"95","Verduras, hortalicas e derivados","Berinjela, cozida","SolidoNaoContavel","79.0","0.7","0.1","NA","4.5","0.3","11.0","15.0","0.2","1.0","NA","Traco","Traco"
-"96","Verduras, hortalicas e derivados","Berinjela, crua","SolidoNaoContavel","82.0","1.2","0.1","NA","4.4","0.4","9.0","20.0","0.2","Traco","12.0","Traco","3.0"
-"97","Verduras, hortalicas e derivados","Beterraba, cozida","SolidoNaoContavel","135.0","1.3","0.1","NA","7.2","0.8","15.0","30.0","0.2","23.0","NA","Traco","1.2"
-"98","Verduras, hortalicas e derivados","Beterraba, crua","SolidoNaoContavel","204.0","1.9","0.1","NA","11.1","0.9","18.0","19.0","0.3","10.0","NA","Traco","3.1"
-"99","Verduras, hortalicas e derivados","Biscoito, polvilho doce","SolidoNaoContavel","1831.0","1.3","12.2","9.0","80.5","0.5","30.0","23.0","1.8","98.0","NA","Traco","Traco"
-"100","Verduras, hortalicas e derivados","Brocolis, cozido","SolidoNaoContavel","103.0","2.1","0.5","NA","4.4","0.4","51.0","33.0","0.5","2.0","NA","Traco","42.0"
-"101","Verduras, hortalicas e derivados","Brocolis, cru","SolidoNaoContavel","107.0","3.6","0.3","NA","4.0","0.8","86.0","78.0","0.6","3.0","140.0","1.39","34.3"
-"102","Verduras, hortalicas e derivados","Cara, cozido","SolidoNaoContavel","325.0","1.5","0.1","NA","18.9","0.6","5.0","28.0","0.3","1.0","NA","Traco","Traco"
-"103","Verduras, hortalicas e derivados","Cara, cru","SolidoNaoContavel","400.0","2.3","0.1","NA","23.0","0.9","4.0","35.0","0.2","Traco","NA","Traco","8.8"
-"104","Verduras, hortalicas e derivados","Caruru, cru","SolidoNaoContavel","142.0","3.2","0.6","NA","6.0","2.6","455.0","77.0","4.5","14.0","953.0","Traco","5.4"
-"105","Verduras, hortalicas e derivados","Catalonha, crua","SolidoNaoContavel","100.0","1.9","0.3","NA","4.8","1.3","57.0","32.0","3.1","9.0","NA","1.54","7.3"
-"106","Verduras, hortalicas e derivados","Catalonha, refogada","SolidoNaoContavel","265.0","2.0","4.8","NA","4.8","1.0","63.0","35.0","1.2","25.0","425.0","0.6","Traco"
-"107","Verduras, hortalicas e derivados","Cebola, crua","SolidoNaoContavel","165.0","1.7","0.1","NA","8.9","0.4","14.0","38.0","0.2","1.0","NA","Traco","4.7"
-"108","Verduras, hortalicas e derivados","Cebolinha, crua","SolidoNaoContavel","82.0","1.9","0.4","NA","3.4","0.5","80.0","27.0","0.6","2.0","67.0","Traco","31.8"
-"109","Verduras, hortalicas e derivados","Cenoura, cozida","SolidoNaoContavel","125.0","0.8","0.2","NA","6.7","0.6","26.0","27.0","0.1","8.0","306.0","2.68","Traco"
-"110","Verduras, hortalicas e derivados","Cenoura, crua","SolidoNaoContavel","143.0","1.3","0.2","NA","7.7","0.9","23.0","28.0","0.2","3.0","663.0","Traco","5.1"
-"111","Verduras, hortalicas e derivados","Chicoria, crua","SolidoNaoContavel","58.0","1.1","0.1","NA","2.9","0.8","45.0","13.0","0.5","14.0","NA","0.68","6.5"
-"112","Verduras, hortalicas e derivados","Chuchu, cozido","SolidoNaoContavel","78.0","0.4","Traco","NA","4.8","0.2","8.0","13.0","0.1","2.0","NA","Traco","5.6"
-"113","Verduras, hortalicas e derivados","Chuchu, cru","SolidoNaoContavel","71.0","0.7","0.1","NA","4.1","0.3","12.0","18.0","0.2","Traco","NA","Traco","10.6"
-"114","Verduras, hortalicas e derivados","Coentro, folhas desidratadas","SolidoNaoContavel","1293.0","20.9","10.4","NA","48.0","10.2","784.0","388.0","81.4","18.0","NA","Traco","40.8"
-"115","Verduras, hortalicas e derivados","Couve, manteiga, crua","SolidoNaoContavel","113.0","2.9","0.5","NA","4.3","1.3","131.0","49.0","0.5","6.0","248.0","2.29","96.7"
-"116","Verduras, hortalicas e derivados","Couve, manteiga, refogada","SolidoNaoContavel","378.0","1.7","6.6","NA","8.7","1.5","177.0","33.0","0.5","11.0","192.0","Traco","76.9"
-"117","Verduras, hortalicas e derivados","Couve-flor, crua","SolidoNaoContavel","94.0","1.9","0.2","NA","4.5","0.6","18.0","57.0","0.5","3.0","1.0","Traco","36.1"
-"118","Verduras, hortalicas e derivados","Couve-flor, cozida","SolidoNaoContavel","80.0","1.2","0.3","NA","3.9","0.3","16.0","25.0","0.1","2.0","NA","Traco","23.7"
-"119","Verduras, hortalicas e derivados","Espinafre, Nova Zelandia, cru","SolidoNaoContavel","67.0","2.0","0.2","NA","2.6","1.2","98.0","25.0","0.4","17.0","242.0","Traco","2.4"
-"120","Verduras, hortalicas e derivados","Espinafre, Nova Zelandia, refogado","SolidoNaoContavel","281.0","2.7","5.4","NA","4.2","1.0","112.0","34.0","0.6","47.0","312.0","Traco","5.3"
-"121","Verduras, hortalicas e derivados","Farinha, de mandioca, crua","SolidoNaoContavel","1510.0","1.6","0.3","NA","87.9","0.9","65.0","42.0","1.1","1.0","NA","Traco","Traco"
-"122","Verduras, hortalicas e derivados","Farinha, de mandioca, torrada","SolidoNaoContavel","1528.0","1.2","0.3","NA","89.2","1.0","76.0","39.0","1.2","10.0","NA","Traco","Traco"
-"123","Verduras, hortalicas e derivados","Farinha, de puba","SolidoNaoContavel","1507.0","1.6","0.5","NA","87.3","0.8","41.0","33.0","1.4","4.0","NA","Traco","Traco"
-"124","Verduras, hortalicas e derivados","Fecula, de mandioca","SolidoNaoContavel","1384.0","0.5","0.3","NA","81.1","0.3","12.0","60.0","0.1","2.0","NA","Traco","Traco"
-"125","Verduras, hortalicas e derivados","Feijao, broto, cru","SolidoNaoContavel","162.0","4.2","0.1","NA","7.8","0.5","14.0","75.0","0.8","2.0","NA","Traco","12.0"
-"126","Verduras, hortalicas e derivados","Inhame, cru","SolidoNaoContavel","405.0","2.1","0.2","NA","23.2","1.2","12.0","65.0","0.4","Traco","NA","Traco","5.6"
-"127","Verduras, hortalicas e derivados","Jilo, cru","SolidoNaoContavel","114.0","1.4","0.2","NA","6.2","0.6","20.0","29.0","0.3","Traco","6.0","Traco","6.8"
-"128","Verduras, hortalicas e derivados","Jurubeba, crua","SolidoNaoContavel","526.0","4.4","3.9","NA","23.1","2.0","151.0","155.0","0.9","1.0","NA","Traco","13.8"
-"129","Verduras, hortalicas e derivados","Mandioca, cozida","SolidoNaoContavel","524.0","0.6","0.3","NA","30.1","0.4","19.0","22.0","0.1","1.0","NA","Traco","11.1"
-"130","Verduras, hortalicas e derivados","Mandioca, crua","SolidoNaoContavel","634.0","1.1","0.3","NA","36.2","0.6","15.0","29.0","0.3","2.0","NA","Traco","16.5"
-"131","Verduras, hortalicas e derivados","Mandioca, farofa, temperada","SolidoNaoContavel","1697.0","2.1","9.1","NA","80.3","2.1","66.0","45.0","1.4","575.0","NA","Traco","Traco"
-"132","Verduras, hortalicas e derivados","Mandioca, frita","SolidoNaoContavel","1255.0","1.4","11.2","NA","50.3","0.6","23.0","57.0","0.3","9.0","NA","Traco","Traco"
-"133","Verduras, hortalicas e derivados","Manjericao, cru","SolidoNaoContavel","88.0","2.0","0.4","NA","3.6","1.0","211.0","40.0","1.0","4.0","517.0","0.9","2.3"
-"134","Verduras, hortalicas e derivados","Maxixe, cru","SolidoNaoContavel","58.0","1.4","0.1","NA","2.7","0.7","21.0","25.0","0.4","11.0","3.0","Traco","9.6"
-"135","Verduras, hortalicas e derivados","Mostarda, folha, crua","SolidoNaoContavel","76.0","2.1","0.2","NA","3.2","1.1","68.0","58.0","1.1","3.0","NA","Traco","38.6"
-"136","Verduras, hortalicas e derivados","Nhoque, batata, cozido","SolidoNaoContavel","756.0","5.9","1.9","15.0","36.8","0.5","11.0","68.0","1.6","7.0","NA","Traco","Traco"
-"137","Verduras, hortalicas e derivados","Nabo, cru","SolidoNaoContavel","76.0","1.2","0.1","NA","4.1","0.8","42.0","17.0","0.2","2.0","NA","Traco","9.6"
-"138","Verduras, hortalicas e derivados","Palmito, jucara, em conserva","SolidoNaoContavel","97.0","1.8","0.4","NA","4.3","2.1","58.0","40.0","0.3","514.0","NA","Traco","2.0"
-"139","Verduras, hortalicas e derivados","Palmito, pupunha, em conserva","SolidoNaoContavel","123.0","2.5","0.5","NA","5.5","2.1","32.0","55.0","0.2","563.0","NA","Traco","8.7"
-"140","Verduras, hortalicas e derivados","Pao, de queijo, assado","SolidoNaoContavel","1519.0","5.1","24.6","68.0","34.2","2.3","102.0","94.0","0.3","773.0","NA","Traco","NA"
-"141","Verduras, hortalicas e derivados","Pao, de queijo, cru","SolidoNaoContavel","1232.0","3.6","14.0","63.0","38.5","2.0","88.0","79.0","0.3","405.0","NA","Traco","NA"
-"142","Verduras, hortalicas e derivados","Pepino, cru","SolidoNaoContavel","40.0","0.9","Traco","NA","2.0","0.3","10.0","12.0","0.1","Traco","2.0","Traco","5.0"
-"143","Verduras, hortalicas e derivados","Pimentao, amarelo, cru","SolidoNaoContavel","117.0","1.2","0.4","NA","6.0","0.5","10.0","22.0","0.4","Traco","20.0","Traco","201.4"
-"144","Verduras, hortalicas e derivados","Pimentao, verde, cru","SolidoNaoContavel","89.0","1.1","0.2","NA","4.9","0.4","9.0","17.0","0.4","Traco","23.0","Traco","100.2"
-"145","Verduras, hortalicas e derivados","Pimentao, vermelho, cru","SolidoNaoContavel","97.0","1.0","0.1","NA","5.5","0.4","6.0","20.0","0.3","Traco","43.0","Traco","158.2"
-"146","Verduras, hortalicas e derivados","Polvilho, doce","SolidoNaoContavel","1470.0","0.4","Traco","NA","86.8","0.2","27.0","8.0","0.5","2.0","NA","Traco","Traco"
-"147","Verduras, hortalicas e derivados","Quiabo, cru","SolidoNaoContavel","125.0","1.9","0.3","NA","6.4","0.8","112.0","56.0","0.4","1.0","25.0","Traco","5.6"
-"148","Verduras, hortalicas e derivados","Rabanete, cru","SolidoNaoContavel","57.0","1.4","0.1","NA","2.7","0.7","21.0","25.0","0.4","11.0","NA","Traco","9.6"
-"149","Verduras, hortalicas e derivados","Repolho, branco, cru","SolidoNaoContavel","72.0","0.9","0.1","NA","3.9","0.4","35.0","14.0","0.2","4.0","3.0","Traco","18.7"
-"150","Verduras, hortalicas e derivados","Repolho, roxo, cru","SolidoNaoContavel","129.0","1.9","0.1","NA","7.2","0.7","44.0","58.0","0.5","2.0","NA","Traco","43.2"
-"151","Verduras, hortalicas e derivados","Repolho, roxo, refogado","SolidoNaoContavel","175.0","1.8","1.2","NA","7.6","0.7","43.0","59.0","0.5","3.0","NA","0.63","40.5"
-"152","Verduras, hortalicas e derivados","Rucula, crua","SolidoNaoContavel","55.0","1.8","0.1","NA","2.2","1.1","117.0","25.0","0.9","9.0","266.0","0.35","46.3"
-"153","Verduras, hortalicas e derivados","Salsa, crua","SolidoNaoContavel","140.0","3.3","0.6","NA","5.7","1.8","179.0","49.0","3.2","2.0","872.0","0.72","51.7"
-"154","Verduras, hortalicas e derivados","Seleta de legumes, enlatada","SolidoNaoContavel","237.0","3.4","0.4","NA","12.7","1.4","16.0","49.0","1.1","398.0","122.0","3.72","Traco"
-"155","Verduras, hortalicas e derivados","Serralha, crua","SolidoNaoContavel","127.0","2.7","0.7","NA","4.9","1.4","126.0","48.0","1.3","19.0","567.0","Traco","1.5"
-"156","Verduras, hortalicas e derivados","Taioba, crua","SolidoNaoContavel","143.0","2.9","0.9","NA","5.4","1.5","141.0","53.0","1.9","1.0","580.0","Traco","17.9"
-"157","Verduras, hortalicas e derivados","Tomate, com semente, cru","SolidoNaoContavel","64.0","1.1","0.2","NA","3.1","0.5","7.0","20.0","0.2","1.0","27.0","Traco","21.2"
-"158","Verduras, hortalicas e derivados","Tomate, extrato","SolidoNaoContavel","255.0","2.4","0.2","NA","15.0","2.8","29.0","47.0","2.1","498.0","83.0","2.42","18.0"
-"159","Verduras, hortalicas e derivados","Tomate, molho industrializado","SolidoNaoContavel","161.0","1.4","0.9","NA","7.7","1.9","12.0","27.0","1.6","418.0","38.0","Traco","2.7"
-"160","Verduras, hortalicas e derivados","Tomate, pure","SolidoNaoContavel","117.0","1.4","Traco","NA","6.9","1.0","13.0","30.0","1.3","104.0","45.0","1.18","5.4"
-"161","Verduras, hortalicas e derivados","Tomate, salada","SolidoNaoContavel","86.0","0.8","Traco","NA","5.1","0.4","7.0","23.0","0.3","5.0","NA","Traco","12.8"
-"162","Verduras, hortalicas e derivados","Vagem, crua","SolidoNaoContavel","104.0","1.8","0.2","NA","5.3","0.5","41.0","28.0","0.4","Traco","16.0","Traco","1.2"
-"163","Frutas e derivados","Abacaxi cru","SolidoContavel","48.0","0.9","0.1","NA","12.3","1.0","22.0","18.0","0.3","Traco","131.0","0.17","34.6"
-"164","Frutas e derivados","Abacaxi polpa congelada","SolidoContavel","31.0","0.5","0.1","NA","7.8","0.3","14.0","10.0","0.4","1.0","107.0","0.05","1.2"
-"165","Frutas e derivados","Abiu cru","SolidoContavel","62.0","0.8","0.7","NA","14.9","1.7","6.0","9.0","0.2","Traco","128.0","Traco","10.3"
-"166","Frutas e derivados","Acai polpa com xarope de guarana e glucose","SolidoContavel","110.0","0.7","3.7","NA","21.5","1.7","22.0","13.0","0.3","15.0","75.0","Traco","10.3"
-"167","Frutas e derivados","Acai polpa congelada","SolidoContavel","58.0","0.8","3.9","NA","6.2","2.6","35.0","17.0","0.4","5.0","124.0","Traco","Traco"
-"168","Frutas e derivados","Acerola crua","SolidoContavel","33.0","0.9","0.2","NA","8.0","1.5","13.0","13.0","0.2","Traco","165.0","Traco","941.4"
-"169","Frutas e derivados","Acerola polpa congelada","SolidoContavel","22.0","0.6","Traco","NA","5.5","0.7","8.0","9.0","0.2","1.0","112.0","Traco","623.2"
-"170","Frutas e derivados","Ameixa calda enlatada","SolidoContavel","183.0","0.4","Traco","NA","46.9","0.5","13.0","10.0","2.2","3.0","221.0","Traco","4.3"
-"171","Frutas e derivados","Ameixa crua","SolidoContavel","53.0","0.8","Traco","NA","13.9","2.4","6.0","5.0","0.1","Traco","134.0","0.07","7.6"
-"172","Frutas e derivados","Ameixa em calda enlatada drenada","SolidoContavel","177.0","1.0","0.3","NA","47.7","4.5","39.0","14.0","2.7","3.0","263.0","Traco","5.2"
-"173","Frutas e derivados","Atemoia crua","SolidoContavel","97.0","1.0","0.3","NA","25.3","2.1","23.0","25.0","0.2","1.0","300.0","0.09","10.1"
-"174","Frutas e derivados","Banana da terra crua","SolidoContavel","128.0","1.4","0.2","NA","33.7","1.5","4.0","24.0","0.3","Traco","328.0","0.03","15.7"
-"175","Frutas e derivados","Banana doce em barra","SolidoContavel","280.0","2.2","0.1","NA","75.7","3.8","12.0","49.0","0.6","10.0","518.0","0.03","Traco"
-"176","Frutas e derivados","Banana figo crua","SolidoContavel","105.0","1.1","0.1","NA","27.8","2.8","6.0","30.0","0.2","Traco","387.0","0.09","17.5"
-"177","Frutas e derivados","Banana maca crua","SolidoContavel","87.0","1.8","0.1","NA","22.3","2.6","3.0","24.0","0.2","Traco","264.0","Traco","10.5"
-"178","Frutas e derivados","Banana nanica crua","SolidoContavel","92.0","1.4","0.1","NA","23.8","1.9","3.0","28.0","0.3","Traco","376.0","Traco","5.9"
-"179","Frutas e derivados","Banana ouro crua","SolidoContavel","112.0","1.5","0.2","NA","29.3","2.0","3.0","28.0","0.3","Traco","355.0","Traco","7.6"
-"180","Frutas e derivados","Banana pacova crua","SolidoContavel","78.0","1.2","0.1","NA","20.3","2.0","5.0","30.0","0.4","1.0","267.0","0.05","Traco"
-"181","Frutas e derivados","Banana prata crua","SolidoContavel","98.0","1.3","0.1","NA","26.0","2.0","8.0","26.0","0.4","Traco","358.0","Traco","21.6"
-"182","Frutas e derivados","Cacau cru","SolidoContavel","74.0","1.0","0.1","NA","19.4","2.2","12.0","25.0","0.3","1.0","72.0","0.25","13.6"
-"183","Frutas e derivados","Caja-Manga cru","SolidoContavel","46.0","1.3","Traco","NA","11.4","2.6","13.0","11.0","0.2","1.0","119.0","0.11","26.7"
-"184","Frutas e derivados","Caja polpa congelada","SolidoContavel","26.0","0.6","0.2","NA","6.4","1.4","9.0","7.0","0.3","7.0","148.0","0.04","Traco"
-"185","Frutas e derivados","Caju cru","SolidoContavel","43.0","1.0","0.3","NA","10.3","1.7","1.0","10.0","0.2","3.0","124.0","Traco","219.3"
-"186","Frutas e derivados","Caju polpa congelada","SolidoContavel","37.0","0.5","0.2","NA","9.4","0.8","1.0","7.0","0.1","4.0","88.0","Traco","119.7"
-"187","Frutas e derivados","Caju suco concentrado envasado","SolidoContavel","45.0","0.4","0.2","NA","10.7","0.6","1.0","8.0","0.1","45.0","107.0","Traco","138.7"
-"188","Frutas e derivados","Caqui chocolate cru","SolidoContavel","71.0","0.4","0.1","NA","19.3","6.5","18.0","9.0","0.1","2.0","164.0","Traco","29.6"
-"189","Frutas e derivados","Carambola crua","SolidoContavel","46.0","0.9","0.2","NA","11.5","2.0","5.0","7.0","0.2","4.0","133.0","0.12","60.9"
-"190","Frutas e derivados","Ciriguela crua","SolidoContavel","76.0","1.4","0.4","NA","18.9","3.9","27.0","18.0","0.4","2.0","248.0","0.14","27.0"
-"191","Frutas e derivados","Cupuacu cru","SolidoContavel","49.0","1.2","1.0","NA","10.4","3.1","13.0","18.0","0.5","3.0","331.0","0.37","24.5"
-"192","Frutas e derivados","Cupuacu polpa congelada","SolidoContavel","49.0","0.8","0.6","NA","11.4","1.6","5.0","14.0","0.3","1.0","291.0","0.07","10.5"
-"193","Frutas e derivados","Figo cru","SolidoContavel","41.0","1.0","0.2","NA","10.2","1.8","27.0","11.0","0.2","Traco","174.0","0.05","0.8"
-"194","Frutas e derivados","Figo enlatado em calda","SolidoContavel","184.0","0.6","0.2","NA","50.3","2.0","33.0","7.0","0.5","7.0","39.0","Traco","5.2"
-"195","Frutas e derivados","Fruta-pao crua","SolidoContavel","67.0","1.1","0.2","NA","17.2","5.5","34.0","24.0","0.2","1.0","188.0","0.03","9.9"
-"196","Frutas e derivados","Goiaba branca com casca crua","SolidoContavel","52.0","0.9","0.5","NA","12.4","6.3","5.0","7.0","0.2","Traco","220.0","Traco","99.2"
-"197","Frutas e derivados","Goiaba doce em pasta","SolidoContavel","269.0","0.6","0.0","NA","74.1","3.7","10.0","6.0","0.4","4.0","165.0","0.07","23.1"
-"198","Frutas e derivados","Goiaba doce cascao","SolidoContavel","286.0","0.4","0.1","NA","78.7","4.4","15.0","10.0","0.4","11.0","251.0","Traco","34.3"
-"199","Frutas e derivados","Goiaba vermelha com casca crua","SolidoContavel","54.0","1.1","0.4","NA","13.0","6.2","4.0","7.0","0.2","Traco","198.0","Traco","80.6"
-"200","Frutas e derivados","Graviola crua","SolidoContavel","62.0","0.8","0.2","NA","15.8","1.9","40.0","23.0","0.2","4.0","250.0","0.17","19.1"
-"201","Frutas e derivados","Graviola polpa congelada","SolidoContavel","38.0","0.6","0.1","NA","9.8","1.2","6.0","10.0","0.1","3.0","170.0","Traco","10.5"
-"202","Frutas e derivados","Jabuticaba crua","SolidoContavel","58.0","0.6","0.1","NA","15.3","2.3","8.0","18.0","0.1","Traco","130.0","0.06","16.2"
-"203","Frutas e derivados","Jaca crua","SolidoContavel","88.0","1.4","0.3","NA","22.5","2.4","11.0","40.0","0.4","2.0","234.0","0.1","14.8"
-"204","Frutas e derivados","Jambo cru","SolidoContavel","27.0","0.9","0.1","NA","6.5","5.1","14.0","14.0","0.1","22.0","135.0","0.08","3.8"
-"205","Frutas e derivados","Jamelao cru","SolidoContavel","41.0","0.5","0.1","NA","10.6","1.8","3.0","2.0","0.0","1.0","394.0","0.17","27.1"
-"206","Frutas e derivados","Kiwi cru","SolidoContavel","51.0","1.3","0.6","NA","11.5","2.7","24.0","11.0","0.3","Traco","269.0","Traco","70.8"
-"207","Frutas e derivados","Laranja baia crua","SolidoContavel","45.0","1.0","0.1","NA","11.5","1.1","35.0","9.0","0.1","Traco","174.0","0.06","56.9"
-"208","Frutas e derivados","Laranja baia suco","SolidoContavel","37.0","0.7","Traco","NA","8.7","Traco","6.0","8.0","0.1","Traco","173.0","0.03","94.5"
-"209","Frutas e derivados","Laranja da terra crua","SolidoContavel","51.0","1.1","0.2","NA","12.9","4.0","51.0","14.0","0.1","1.0","173.0","0.07","34.7"
-"210","Frutas e derivados","Laranja da terra suco","SolidoContavel","41.0","0.7","0.1","NA","9.6","1.0","13.0","10.0","0.1","Traco","145.0","0.04","44.3"
-"211","Frutas e derivados","Laranja lima crua","SolidoContavel","46.0","1.1","0.1","NA","11.5","1.8","31.0","10.0","0.1","1.0","130.0","0.09","43.5"
-"212","Frutas e derivados","Laranja lima suco","SolidoContavel","39.0","0.7","0.1","NA","9.2","0.4","8.0","11.0","Traco","Traco","129.0","0.1","41.3"
-"213","Frutas e derivados","Laranja pera crua","SolidoContavel","37.0","1.0","0.1","NA","8.9","0.8","22.0","9.0","0.1","Traco","163.0","0.07","53.7"
-"214","Frutas e derivados","Laranja pera suco","SolidoContavel","33.0","0.7","0.1","NA","7.6","Traco","7.0","8.0","Traco","Traco","149.0","Traco","73.3"
-"215","Frutas e derivados","Laranja valencia crua","SolidoContavel","46.0","0.8","0.2","NA","11.7","1.7","34.0","14.0","0.1","1.0","158.0","0.07","47.8"
-"216","Frutas e derivados","Laranja valencia suco","SolidoContavel","36.0","0.5","0.1","NA","8.6","0.4","9.0","10.0","Traco","Traco","143.0","NA","NA"
-"217","Frutas e derivados","Limao cravo suco","SolidoContavel","14.0","0.3","Traco","NA","5.2","Traco","10.0","9.0","0.1","Traco","120.0","Traco","32.8"
-"218","Frutas e derivados","Limao galego suco","SolidoContavel","22.0","0.6","0.1","NA","7.3","Traco","5.0","6.0","0.1","Traco","113.0","Traco","34.5"
-"219","Frutas e derivados","Limao tahiti cru","SolidoContavel","32.0","0.9","0.1","NA","11.1","1.2","51.0","10.0","0.2","1.0","128.0","0.3","38.2"
-"220","Frutas e derivados","Maca Argentina com casca crua","SolidoContavel","63.0","0.2","0.2","NA","16.6","2.0","3.0","5.0","0.1","1.0","117.0","0.05","1.5"
-"221","Frutas e derivados","Maca Fuji com casca crua","SolidoContavel","56.0","0.3","Traco","NA","15.2","1.3","2.0","2.0","0.1","Traco","75.0","Traco","2.4"
-"222","Frutas e derivados","Macauba crua","SolidoContavel","404.0","2.1","40.7","NA","13.9","13.4","67.0","66.0","0.8","1.0","306.0","0.11","13.4"
-"223","Frutas e derivados","Mamao doce em calda drenado","SolidoContavel","196.0","0.2","0.1","NA","54.0","1.3","20.0","6.0","0.1","3.0","68.0","0.03","3.9"
-"224","Frutas e derivados","Mamao Formosa cru","SolidoContavel","45.0","0.8","0.1","NA","11.6","1.8","25.0","17.0","0.2","3.0","222.0","0.03","78.5"
-"225","Frutas e derivados","Mamao Papaia cru","SolidoContavel","40.0","0.5","0.1","NA","10.4","1.0","22.0","22.0","0.2","2.0","126.0","0.03","82.2"
-"226","Frutas e derivados","Mamao verde doce em calda drenado","SolidoContavel","209.0","0.3","0.1","NA","57.6","1.2","12.0","5.0","0.2","5.0","9.0","Traco","Traco"
-"227","Frutas e derivados","Manga Haden crua","SolidoContavel","64.0","0.4","0.3","NA","16.7","1.6","12.0","8.0","0.1","1.0","148.0","0.02","17.4"
-"228","Frutas e derivados","Manga Palmer crua","SolidoContavel","72.0","0.4","0.2","NA","19.4","1.6","12.0","9.0","0.1","2.0","157.0","0.09","65.5"
-"229","Frutas e derivados","Manga polpa congelada","SolidoContavel","48.0","0.4","0.2","NA","12.5","1.1","7.0","9.0","0.1","7.0","131.0","Traco","24.9"
-"230","Frutas e derivados","Manga Tommy Atkins crua","SolidoContavel","51.0","0.9","0.2","NA","12.8","2.1","8.0","7.0","0.1","Traco","138.0","Traco","7.9"
-"231","Frutas e derivados","Maracuja cru","SolidoContavel","68.0","2.0","2.1","NA","12.3","1.1","5.0","28.0","0.6","2.0","338.0","Traco","19.8"
-"232","Frutas e derivados","Maracuja polpa congelada","SolidoContavel","39.0","0.8","0.2","NA","9.6","0.5","5.0","10.0","0.3","8.0","228.0","Traco","7.3"
-"233","Frutas e derivados","Maracuja suco concentrado envasado","SolidoContavel","42.0","0.8","0.2","NA","9.6","0.4","4.0","4.0","0.3","22.0","201.0","Traco","13.7"
-"234","Frutas e derivados","Melancia crua","SolidoContavel","33.0","0.9","Traco","NA","8.1","0.1","8.0","10.0","0.2","Traco","104.0","Traco","6.1"
-"235","Frutas e derivados","Melao cru","SolidoContavel","29.0","0.7","Traco","NA","7.5","0.3","3.0","6.0","0.2","11.0","216.0","Traco","8.7"
-"236","Frutas e derivados","Mexerica Murcote crua","SolidoContavel","58.0","0.9","0.1","NA","14.9","3.1","33.0","12.0","0.1","1.0","159.0","0.08","21.8"
-"237","Frutas e derivados","Mexerica Rio crua","SolidoContavel","37.0","0.7","0.1","NA","9.3","2.7","17.0","8.0","0.1","2.0","125.0","0.03","112.0"
-"238","Frutas e derivados","Morango cru","SolidoContavel","30.0","0.9","0.3","NA","6.8","1.7","11.0","10.0","0.3","Traco","184.0","Traco","63.6"
-"239","Frutas e derivados","Nespera crua","SolidoContavel","43.0","0.3","Traco","NA","11.5","3.0","20.0","10.0","0.1","Traco","113.0","Traco","3.2"
-"240","Frutas e derivados","Pequi cru","SolidoContavel","205.0","2.3","18.0","NA","13.0","19.0","32.0","30.0","0.3","Traco","298.0","0.17","8.3"
-"241","Frutas e derivados","Pera Park crua","SolidoContavel","61.0","0.2","0.2","NA","16.1","3.0","9.0","6.0","0.3","1.0","102.0","0.06","2.4"
-"242","Frutas e derivados","Pera Williams crua","SolidoContavel","53.0","0.6","0.1","NA","14.0","3.0","8.0","6.0","0.1","Traco","116.0","Traco","2.8"
-"243","Frutas e derivados","Pessego Aurora cru","SolidoContavel","36.0","0.8","Traco","NA","9.3","1.4","3.0","4.0","0.2","Traco","124.0","0.05","3.3"
-"244","Frutas e derivados","Pessego enlatado em calda","SolidoContavel","63.0","0.7","Traco","NA","16.9","1.0","4.0","4.0","0.6","3.0","95.0","Traco","Traco"
-"245","Frutas e derivados","Pinha crua","SolidoContavel","88.0","1.5","0.3","NA","22.4","3.4","21.0","31.0","0.2","1.0","283.0","0.12","35.9"
-"246","Frutas e derivados","Pitanga crua","SolidoContavel","41.0","0.9","0.2","NA","10.2","3.2","18.0","12.0","0.4","2.0","113.0","0.03","24.9"
-"247","Frutas e derivados","Pitanga polpa congelada","SolidoContavel","19.0","0.3","0.1","NA","4.8","0.7","8.0","6.0","0.4","5.0","87.0","Traco","Traco"
-"248","Frutas e derivados","Roma crua","SolidoContavel","56.0","0.4","Traco","NA","15.1","0.4","5.0","13.0","0.3","1.0","485.0","0.12","8.1"
-"249","Frutas e derivados","Tamarindo cru","SolidoContavel","276.0","3.2","0.5","NA","72.5","6.4","37.0","59.0","0.6","0.0","723.0","0.31","7.2"
-"250","Frutas e derivados","Tangerina Ponca crua","SolidoContavel","38.0","0.8","0.1","NA","9.6","0.9","13.0","8.0","0.1","Traco","131.0","0.06","48.8"
-"251","Frutas e derivados","Tangerina Ponca suco","SolidoContavel","36.0","0.5","Traco","NA","8.8","Traco","4.0","6.0","Traco","Traco","119.0","0.06","41.8"
-"252","Frutas e derivados","Tucuma cru","SolidoContavel","262.0","2.1","19.1","NA","26.5","12.7","46.0","121.0","0.6","4.0","401.0","0.04","18.0"
-"253","Frutas e derivados","Umbu cru","SolidoContavel","37.0","0.8","Traco","NA","9.4","2.0","12.0","11.0","0.1","Traco","152.0","0.05","24.1"
-"254","Frutas e derivados","Umbu polpa congelada","SolidoContavel","34.0","0.5","0.1","NA","8.8","1.3","11.0","8.0","0.2","6.0","154.0","Traco","4.0"
-"255","Frutas e derivados","Uva Italia crua","SolidoContavel","53.0","0.7","0.2","NA","13.6","0.9","7.0","5.0","0.1","Traco","162.0","Traco","3.3"
-"256","Frutas e derivados","Uva Rubi crua","SolidoContavel","49.0","0.6","0.2","NA","12.7","0.9","8.0","6.0","0.2","8.0","159.0","0.02","1.9"
-"257","Frutas e derivados","Uva suco concentrado envasado","SolidoContavel","58.0","Traco","Traco","NA","14.7","0.2","9.0","7.0","0.1","10.0","54.0","0.07","21.0"
-"258","Gorduras e oleos","Azeite de dende","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"259","Gorduras e oleos","Azeite de oliva extra virgem","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"260","Gorduras e oleos","Manteiga com sal","SolidoNaoContavel","726.0","0.4","82.4","201.0","0.1","NA","9.0","1.0","0.2","579.0","15.0","Traco","Traco"
-"261","Gorduras e oleos","Manteiga sem sal","SolidoNaoContavel","758.0","0.4","86.0","214.0","0.0","NA","4.0","1.0","Traco","4.0","5.0","Traco","Traco"
-"262","Gorduras e oleos","Margarina com oleo hidrogenado com sal (65% de lipidios)","SolidoNaoContavel","596.0","Traco","67.4","NA","0.0","NA","6.0","1.0","0.1","894.0","21.0","Traco","Traco"
-"263","Gorduras e oleos","Margarina com oleo hidrogenado sem sal (80% de lipidios)","SolidoNaoContavel","723.0","Traco","81.7","NA","0.0","NA","3.0","1.0","0.1","78.0","2.0","Traco","Traco"
-"264","Gorduras e oleos","Margarina com oleo interesterificado com sal (65%de lipidios)","SolidoNaoContavel","594.0","Traco","67.2","NA","0.0","NA","5.0","1.0","Traco","561.0","15.0","Traco","Traco"
-"265","Gorduras e oleos","Margarina com oleo interesterificado sem sal (65% de lipidios)","SolidoNaoContavel","593.0","Traco","67.1","NA","0.0","NA","5.0","1.0","0.1","33.0","5.0","Traco","Traco"
-"266","Gorduras e oleos","oleo de babacu","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"267","Gorduras e oleos","oleo de canola","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"268","Gorduras e oleos","oleo de girassol","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"269","Gorduras e oleos","oleo de milho","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"270","Gorduras e oleos","oleo de pequi","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"271","Gorduras e oleos","oleo de soja","Liquido","884.0","NA","100.0","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"272","Pescados e frutos do mar","Abadejo file congelado assado","SolidoContavel","112.0","23.5","1.2","103.0","0.0","NA","23.0","20.0","0.5","334.0","156.0","Traco","NA"
-"273","Pescados e frutos do mar","Abadejo file congeladocozido","SolidoContavel","91.0","19.3","0.9","87.0","0.0","NA","17.0","16.0","0.3","189.0","146.0","Traco","NA"
-"274","Pescados e frutos do mar","Abadejo file congelado cru","SolidoContavel","59.0","13.1","0.4","31.0","0.0","NA","10.0","14.0","0.1","79.0","148.0","0.04","NA"
-"275","Pescados e frutos do mar","Abadejo file congelado grelhado","SolidoContavel","130.0","27.6","1.3","136.0","0.0","NA","20.0","22.0","0.3","305.0","279.0","0.03","NA"
-"276","Pescados e frutos do mar","Atum conserva em oleo","SolidoContavel","166.0","26.2","6.0","53.0","0.0","NA","7.0","29.0","1.2","362.0","280.0","0.15","NA"
-"277","Pescados e frutos do mar","Atum fresco cru","SolidoContavel","118.0","25.7","0.9","48.0","0.0","NA","7.0","32.0","1.3","30.0","308.0","Traco","NA"
-"278","Pescados e frutos do mar","Bacalhau salgado cru","SolidoContavel","136.0","29.0","1.3","139.0","0.0","NA","157.0","49.0","0.9","13585.0","434.0","Traco","NA"
-"279","Pescados e frutos do mar","Bacalhau salgado refogado","SolidoContavel","140.0","24.0","3.6","112.0","1.2","NA","59.0","15.0","0.2","1256.0","50.0","0.03","Traco"
-"280","Pescados e frutos do mar","Cacao posta com farinha de trigo frita","SolidoContavel","208.0","25.0","10.0","75.0","3.1","0.5","30.0","26.0","1.0","160.0","420.0","Traco","NA"
-"281","Pescados e frutos do mar","Cacao posta cozida","SolidoContavel","116.0","25.6","0.7","83.0","0.0","NA","10.0","21.0","0.3","115.0","249.0","Traco","NA"
-"282","Pescados e frutos do mar","Cacao posta crua","SolidoContavel","83.0","17.9","0.8","36.0","0.0","NA","9.0","19.0","0.2","176.0","299.0","0.04","NA"
-"283","Pescados e frutos do mar","Camarao Rio Grande grande cozido","SolidoContavel","90.0","19.0","1.0","241.0","0.0","NA","90.0","19.0","1.3","367.0","102.0","Traco","NA"
-"284","Pescados e frutos do mar","Camarao Rio Grande grande cru","SolidoContavel","47.0","10.0","0.5","124.0","0.0","NA","51.0","27.0","0.7","201.0","72.0","Traco","NA"
-"285","Pescados e frutos do mar","Camarao Sete Barbas sem cabeca com casca frito","SolidoContavel","231.0","18.4","15.6","283.0","2.9","NA","960.0","74.0","2.4","99.0","107.0","0.05","NA"
-"286","Pescados e frutos do mar","Caranguejo cozido","SolidoContavel","83.0","18.5","0.4","85.0","0.0","NA","357.0","52.0","2.9","360.0","186.0","0.04","Traco"
-"287","Pescados e frutos do mar","Corimba cru","SolidoContavel","128.0","17.4","6.0","40.0","0.0","NA","40.0","23.0","0.5","47.0","317.0","Traco","NA"
-"288","Pescados e frutos do mar","Corimbata assado","SolidoContavel","261.0","19.9","19.6","80.0","0.0","NA","22.0","24.0","1.0","40.0","326.0","0.13","NA"
-"289","Pescados e frutos do mar","Corimbata cozido","SolidoContavel","239.0","20.1","16.9","75.0","0.0","NA","65.0","23.0","0.6","37.0","254.0","Traco","NA"
-"290","Pescados e frutos do mar","Corvina de agua doce crua","SolidoContavel","101.0","18.9","2.2","73.0","0.0","NA","39.0","25.0","0.3","45.0","293.0","Traco","NA"
-"291","Pescados e frutos do mar","Corvina do mar crua","SolidoContavel","94.0","18.6","1.6","67.0","0.0","NA","NA","24.0","0.4","68.0","339.0","0.12","NA"
-"292","Pescados e frutos do mar","Corvina grande assada","SolidoContavel","147.0","26.8","3.6","117.0","0.0","NA","60.0","24.0","0.5","85.0","291.0","0.11","NA"
-"293","Pescados e frutos do mar","Corvina grande cozida","SolidoContavel","100.0","23.4","2.6","123.0","0.0","NA","69.0","22.0","0.6","68.0","194.0","Traco","NA"
-"294","Pescados e frutos do mar","Dourada de agua doce fresca","SolidoContavel","131.0","18.8","5.6","52.0","0.0","NA","12.0","26.0","0.2","40.0","393.0","Traco","NA"
-"295","Pescados e frutos do mar","Lambari congelado cru","SolidoContavel","131.0","16.8","6.5","159.0","0.0","NA","1181.0","45.0","0.9","48.0","244.0","0.05","NA"
-"296","Pescados e frutos do mar","Lambari congelado frito","SolidoContavel","327.0","28.4","22.8","246.0","0.0","NA","1881.0","66.0","0.8","65.0","331.0","0.25","NA"
-"297","Pescados e frutos do mar","Lambari fresco cru","SolidoContavel","152.0","15.7","9.4","144.0","0.0","NA","590.0","32.0","0.6","41.0","207.0","Traco","NA"
-"298","Pescados e frutos do mar","Manjuba com farinha de trigo frita","SolidoContavel","344.0","23.5","22.6","282.0","10.2","0.4","763.0","47.0","3.0","37.0","319.0","0.05","NA"
-"299","Pescados e frutos do mar","Manjuba frita","SolidoContavel","349.0","30.1","24.5","270.0","0.0","NA","575.0","32.0","0.9","41.0","318.0","0.03","NA"
-"300","Pescados e frutos do mar","Merluza file assado","SolidoContavel","122.0","26.6","0.9","91.0","0.0","NA","36.0","20.0","0.4","120.0","364.0","0.05","NA"
-"301","Pescados e frutos do mar","Merluza file cru","SolidoContavel","89.0","16.6","2.0","57.0","0.0","NA","20.0","27.0","0.2","80.0","340.0","Traco","NA"
-"302","Pescados e frutos do mar","Merluza file frito","SolidoContavel","192.0","26.9","8.5","109.0","0.0","NA","36.0","38.0","0.4","90.0","447.0","0.05","NA"
-"303","Pescados e frutos do mar","Pescada branca crua","SolidoContavel","111.0","16.3","4.6","51.0","0.0","NA","16.0","19.0","0.2","76.0","261.0","Traco","NA"
-"304","Pescados e frutos do mar","Pescada branca frita","SolidoContavel","223.0","27.4","11.8","165.0","0.0","NA","378.0","30.0","0.5","107.0","355.0","0.08","NA"
-"305","Pescados e frutos do mar","Pescada file com farinha de trigo frito","SolidoContavel","283.0","21.4","19.1","73.0","5.0","Traco","26.0","28.0","0.9","91.0","216.0","Traco","NA"
-"306","Pescados e frutos do mar","Pescada file cru","SolidoContavel","107.0","16.7","4.0","65.0","0.0","NA","14.0","23.0","0.2","77.0","253.0","Traco","NA"
-"307","Pescados e frutos do mar","Pescada file frito","SolidoContavel","154.0","28.6","3.6","81.0","0.0","NA","10.0","21.0","0.3","115.0","249.0","0.14","NA"
-"308","Pescados e frutos do mar","Pescada file molho escabeche","SolidoContavel","142.0","11.8","8.0","43.0","5.0","0.8","20.0","18.0","1.5","51.0","208.0","Traco","6.9"
-"309","Pescados e frutos do mar","Pescadinha crua","SolidoContavel","76.0","15.5","1.1","84.0","0.0","NA","332.0","34.0","0.5","120.0","304.0","0.08","NA"
-"310","Pescados e frutos do mar","Pintado assado","SolidoContavel","192.0","36.5","4.0","126.0","0.0","NA","114.0","42.0","0.8","81.0","527.0","0.03","NA"
-"311","Pescados e frutos do mar","Pintado cru","SolidoContavel","91.0","18.6","1.3","50.0","0.0","NA","12.0","24.0","0.2","43.0","294.0","Traco","NA"
-"312","Pescados e frutos do mar","Pintado grelhado","SolidoContavel","152.0","30.8","2.3","99.0","0.0","NA","69.0","27.0","0.5","53.0","360.0","0.03","NA"
-"313","Pescados e frutos do mar","Porquinho cru","SolidoContavel","93.0","20.5","0.6","49.0","0.0","NA","26.0","24.0","0.4","67.0","313.0","Traco","NA"
-"314","Pescados e frutos do mar","Salmao file com pele fresco  grelhado","SolidoContavel","229.0","23.9","14.0","85.0","0.0","NA","29.0","28.0","0.5","85.0","384.0","0.13","NA"
-"315","Pescados e frutos do mar","Salmao sem pele fresco cru","SolidoContavel","170.0","19.3","9.7","53.0","0.0","NA","9.0","27.0","0.2","64.0","376.0","0.2","NA"
-"316","Pescados e frutos do mar","Salmao sem pele fresco grelhado","SolidoContavel","243.0","26.1","14.5","73.0","0.0","NA","15.0","38.0","0.4","96.0","518.0","0.23","NA"
-"317","Pescados e frutos do mar","Sardinha assada","SolidoContavel","164.0","32.2","3.0","109.0","0.0","NA","438.0","51.0","1.3","74.0","574.0","0.06","NA"
-"318","Pescados e frutos do mar","Sardinha conserva em oleo","SolidoContavel","285.0","15.9","24.0","73.0","0.0","NA","550.0","35.0","3.5","666.0","367.0","0.42","NA"
-"319","Pescados e frutos do mar","Sardinha frita","SolidoContavel","257.0","33.4","12.7","103.0","0.0","NA","482.0","39.0","1.1","60.0","460.0","0.06","NA"
-"320","Pescados e frutos do mar","Sardinha inteira crua","SolidoContavel","114.0","21.1","2.7","61.0","0.0","NA","167.0","29.0","1.3","60.0","312.0","Traco","NA"
-"321","Pescados e frutos do mar","Tucunare file congelado cru","SolidoContavel","88.0","18.0","1.2","47.0","0.0","NA","19.0","26.0","0.3","57.0","288.0","Traco","NA"
-"322","Carnes e derivados","Apresuntado","SolidoContavel","129.0","13.5","6.7","38.0","2.9","NA","23.0","15.0","0.9","943.0","270.0","0.62","Traco"
-"323","Carnes e derivados","Caldo de carne tablete","Liquido","241.0","7.8","16.6","Traco","15.1","0.6","129.0","22.0","Traco","22180.0","218.0","0.7","NA"
-"324","Carnes e derivados","Caldo de galinha tablete","Liquido","251.0","6.3","20.4","2.0","10.6","11.8","16.0","13.0","0.7","22300.0","68.0","0.05","NA"
-"325","Carnes e derivados","Carne bovina acem moido cozido","SolidoContavel","212.0","26.7","10.9","103.0","0.0","NA","4.0","17.0","2.7","52.0","256.0","Traco","NA"
-"326","Carnes e derivados","Carne bovina acem moido cru","SolidoContavel","137.0","19.4","5.9","58.0","0.0","NA","3.0","14.0","1.8","49.0","237.0","0.15","NA"
-"327","Carnes e derivados","Carne bovina acem sem gordura cozido","SolidoContavel","215.0","27.3","10.9","107.0","0.0","NA","7.0","14.0","2.4","56.0","254.0","Traco","NA"
-"328","Carnes e derivados","Carne bovina acem sem gordura cru","SolidoContavel","144.0","20.8","6.1","53.0","0.0","NA","5.0","13.0","1.5","50.0","234.0","0.12","NA"
-"329","Carnes e derivados","Carne bovina almondegas cruas","SolidoContavel","189.0","12.3","11.2","34.0","9.8","NA","22.0","24.0","1.6","621.0","328.0","0.11","NA"
-"330","Carnes e derivados","Carne bovina almondegas fritas","SolidoContavel","272.0","18.2","15.8","36.0","14.3","NA","27.0","48.0","1.9","1030.0","536.0","0.13","NA"
-"331","Carnes e derivados","Carne bovina bucho cozido","SolidoContavel","133.0","21.6","4.5","245.0","0.0","NA","13.0","7.0","0.6","38.0","70.0","Traco","NA"
-"332","Carnes e derivados","Carne bovina bucho cru","SolidoContavel","137.0","20.5","5.5","145.0","0.0","NA","9.0","6.0","0.5","45.0","85.0","Traco","NA"
-"333","Carnes e derivados","Carne bovina capa de contra-file com gordura crua","SolidoContavel","217.0","19.2","15.0","63.0","0.0","NA","6.0","17.0","1.5","58.0","267.0","0.09","NA"
-"334","Carnes e derivados","Carne bovina capa de contra-file com gordura grelhada","SolidoContavel","312.0","30.7","20.0","120.0","0.0","NA","7.0","18.0","2.6","81.0","323.0","Traco","NA"
-"335","Carnes e derivados","Carne bovina capa de contra-file sem gordura crua","SolidoContavel","131.0","21.5","4.3","58.0","0.0","NA","6.0","20.0","2.0","79.0","325.0","Traco","NA"
-"336","Carnes e derivados","Carne bovina capa de contra-file sem gordura grelhada","SolidoContavel","239.0","35.1","10.0","80.0","0.0","NA","9.0","26.0","2.8","83.0","385.0","0.03","NA"
-"337","Carnes e derivados","Carne bovina charque cozido","SolidoContavel","263.0","36.4","11.9","113.0","0.0","NA","15.0","13.0","3.5","1443.0","90.0","0.05","NA"
-"338","Carnes e derivados","Carne bovina charque cru","SolidoContavel","249.0","22.7","16.8","81.0","0.0","NA","15.0","13.0","1.5","5875.0","236.0","0.12","NA"
-"339","Carnes e derivados","Carne bovina contra-file a milanesa","SolidoContavel","352.0","20.6","24.0","99.0","12.2","0.4","15.0","27.0","2.9","77.0","271.0","0.07","NA"
-"340","Carnes e derivados","Carne bovina contra-file de costela cru","SolidoContavel","202.0","19.8","13.1","52.0","0.0","NA","3.0","14.0","1.6","39.0","245.0","0.14","NA"
-"341","Carnes e derivados","Carne bovina contra-file de costela grelhado","SolidoContavel","275.0","29.9","16.3","98.0","0.0","NA","4.0","24.0","2.8","51.0","383.0","Traco","NA"
-"342","Carnes e derivados","Carne bovina contra-file com gordura cru","SolidoContavel","206.0","21.2","12.8","73.0","0.0","NA","4.0","18.0","1.3","44.0","285.0","0.11","NA"
-"343","Carnes e derivados","Carne bovina contra-file com gordura grelhado","SolidoContavel","278.0","32.4","15.5","144.0","0.0","NA","4.0","19.0","2.4","57.0","352.0","Traco","NA"
-"344","Carnes e derivados","Carne bovina contra-file sem gordura cru","SolidoContavel","157.0","24.0","6.0","59.0","0.0","NA","4.0","21.0","1.7","53.0","335.0","Traco","NA"
-"345","Carnes e derivados","Carne bovina contra-file sem gordura grelhado","SolidoContavel","194.0","35.9","4.5","102.0","0.0","NA","5.0","21.0","2.4","58.0","386.0","Traco","NA"
-"346","Carnes e derivados","Carne bovina costela assada","SolidoContavel","373.0","28.8","27.7","95.0","0.0","NA","28.0","20.0","2.2","92.0","270.0","Traco","NA"
-"347","Carnes e derivados","Carne bovina costela crua","SolidoContavel","358.0","16.7","31.8","44.0","0.0","NA","NA","12.0","1.2","70.0","151.0","0.12","NA"
-"348","Carnes e derivados","Carne bovina coxao duro sem gordura cozido","SolidoContavel","217.0","31.9","8.9","71.0","0.0","NA","4.0","14.0","1.7","41.0","252.0","Traco","NA"
-"349","Carnes e derivados","Carne bovina coxao duro sem gordura cru","SolidoContavel","148.0","21.5","6.2","60.0","0.0","NA","3.0","21.0","1.9","49.0","358.0","0.12","NA"
-"350","Carnes e derivados","Carne bovina coxao mole sem gordura cozido","SolidoContavel","219.0","32.4","8.9","84.0","0.0","NA","4.0","13.0","2.6","44.0","239.0","Traco","NA"
-"351","Carnes e derivados","Carne bovina coxao mole sem gordura cru","SolidoContavel","169.0","21.2","8.7","84.0","0.0","NA","3.0","21.0","1.9","61.0","335.0","0.12","NA"
-"352","Carnes e derivados","Carne bovina cupim assado","SolidoContavel","330.0","28.6","23.0","91.0","0.0","NA","8.0","18.0","2.7","72.0","321.0","Traco","NA"
-"353","Carnes e derivados","Carne bovina cupim cru","SolidoContavel","221.0","19.5","15.3","51.0","0.0","NA","4.0","13.0","1.1","47.0","151.0","0.11","NA"
-"354","Carnes e derivados","Carne bovina figado cru","SolidoContavel","141.0","20.7","5.4","393.0","1.1","NA","4.0","12.0","5.6","76.0","265.0","0.14","NA"
-"355","Carnes e derivados","Carne bovina figado grelhado","SolidoContavel","225.0","29.9","9.0","601.0","4.2","NA","6.0","10.0","5.8","82.0","309.0","0.21","NA"
-"356","Carnes e derivados","Carne bovina file mingnon sem gordura cru","SolidoContavel","143.0","21.6","5.6","55.0","0.0","NA","3.0","21.0","1.9","49.0","322.0","0.12","NA"
-"357","Carnes e derivados","Carne bovina file mingnon sem gordura grelhado","SolidoContavel","220.0","32.8","8.8","103.0","0.0","NA","4.0","28.0","2.9","58.0","326.0","0.03","NA"
-"358","Carnes e derivados","Carne bovina flanco sem gordura cozido","SolidoContavel","196.0","29.4","7.8","62.0","0.0","NA","4.0","14.0","2.8","42.0","249.0","Traco","NA"
-"359","Carnes e derivados","Carne bovina flanco sem gordura cru","SolidoContavel","141.0","20.0","6.2","50.0","0.0","NA","3.0","18.0","1.6","54.0","324.0","0.11","NA"
-"360","Carnes e derivados","Carne bovina fraldinha com gordura cozida","SolidoContavel","338.0","24.2","26.0","65.0","0.0","NA","3.0","14.0","2.0","39.0","207.0","Traco","NA"
-"361","Carnes e derivados","Carne bovina fraldinha com gordura crua","SolidoContavel","221.0","17.6","16.1","54.0","0.0","NA","3.0","16.0","1.5","51.0","274.0","0.08","NA"
-"362","Carnes e derivados","Carne bovina lagarto cozido","SolidoContavel","222.0","32.9","9.1","56.0","0.0","NA","4.0","13.0","1.9","48.0","254.0","Traco","NA"
-"363","Carnes e derivados","Carne bovina lagarto cru","SolidoContavel","135.0","20.5","5.2","56.0","0.0","NA","3.0","20.0","1.3","54.0","362.0","0.1","NA"
-"364","Carnes e derivados","Carne bovina lingua cozida","SolidoContavel","315.0","21.4","24.8","105.0","0.0","NA","6.0","12.0","2.1","59.0","175.0","Traco","NA"
-"365","Carnes e derivados","Carne bovina lingua crua","SolidoContavel","215.0","17.1","15.8","118.0","0.0","NA","5.0","15.0","1.7","73.0","251.0","0.05","NA"
-"366","Carnes e derivados","Carne bovina maminha crua","SolidoContavel","153.0","20.9","7.0","51.0","0.0","NA","3.0","16.0","1.1","37.0","274.0","0.12","NA"
-"367","Carnes e derivados","Carne bovina maminha grelhada","SolidoContavel","153.0","30.7","2.4","88.0","0.0","NA","4.0","21.0","2.4","58.0","386.0","Traco","NA"
-"368","Carnes e derivados","Carne bovina miolo de alcatra sem gordura cru","SolidoContavel","163.0","21.6","7.8","60.0","0.0","NA","3.0","20.0","2.0","43.0","299.0","0.12","NA"
-"369","Carnes e derivados","Carne bovina miolo de alcatra sem gordura grelhado","SolidoContavel","241.0","31.9","11.6","92.0","0.0","NA","5.0","26.0","3.2","52.0","385.0","0.03","NA"
-"370","Carnes e derivados","Carne bovina musculo sem gordura cozido","SolidoContavel","194.0","31.2","6.7","56.0","0.0","NA","5.0","13.0","2.4","62.0","253.0","Traco","NA"
-"371","Carnes e derivados","Carne bovina musculo sem gordura cru","SolidoContavel","142.0","21.6","5.5","51.0","0.0","NA","4.0","17.0","1.9","66.0","296.0","0.09","NA"
-"372","Carnes e derivados","Carne bovina paleta com gordura crua","SolidoContavel","159.0","21.4","7.5","58.0","0.0","NA","4.0","14.0","1.8","65.0","250.0","Traco","NA"
-"373","Carnes e derivados","Carne bovina paleta sem gordura cozida","SolidoContavel","194.0","29.7","7.4","56.0","0.0","NA","6.0","18.0","2.2","58.0","250.0","0.03","NA"
-"374","Carnes e derivados","Carne bovina paleta sem gordura crua","SolidoContavel","141.0","21.0","5.7","42.0","0.0","NA","4.0","18.0","1.9","66.0","319.0","0.13","NA"
-"375","Carnes e derivados","Carne bovina patinho sem gordura cru","SolidoContavel","133.0","21.7","4.5","56.0","0.0","NA","3.0","20.0","1.8","49.0","318.0","0.11","NA"
-"376","Carnes e derivados","Carne bovina patinho sem gordura grelhado","SolidoContavel","219.0","35.9","7.3","126.0","0.0","NA","5.0","27.0","3.0","60.0","421.0","0.04","NA"
-"377","Carnes e derivados","Carne bovina peito sem gordura cozido","SolidoContavel","338.0","22.2","27.0","100.0","0.0","NA","4.0","14.0","1.6","56.0","204.0","Traco","NA"
-"378","Carnes e derivados","Carne bovina peito sem gordura cru","SolidoContavel","259.0","17.6","20.4","59.0","0.0","NA","4.0","15.0","1.3","64.0","241.0","0.11","NA"
-"379","Carnes e derivados","Carne bovina picanha com gordura crua","SolidoContavel","213.0","18.8","14.7","60.0","0.0","NA","2.0","14.0","1.7","38.0","232.0","0.13","NA"
-"380","Carnes e derivados","Carne bovina picanha com gordura grelhada","SolidoContavel","289.0","26.4","19.5","92.0","0.0","NA","4.0","24.0","3.2","60.0","355.0","0.03","NA"
-"381","Carnes e derivados","Carne bovina picanha sem gordura crua","SolidoContavel","134.0","21.3","4.7","75.0","0.0","NA","3.0","20.0","2.1","61.0","322.0","Traco","NA"
-"382","Carnes e derivados","Carne bovina picanha sem gordura grelhada","SolidoContavel","238.0","31.9","11.3","100.0","0.0","NA","4.0","25.0","3.6","61.0","377.0","Traco","NA"
-"383","Carnes e derivados","Carne bovina seca cozida","SolidoContavel","313.0","26.9","21.9","100.0","0.0","NA","13.0","12.0","1.9","1943.0","86.0","Traco","NA"
-"384","Carnes e derivados","Carne bovina seca crua","SolidoContavel","313.0","19.7","25.4","92.0","0.0","NA","14.0","12.0","1.3","4440.0","190.0","Traco","NA"
-"385","Carnes e derivados","Coxinha de frango frita","SolidoContavel","283.0","9.6","11.8","15.0","34.5","5.0","18.0","17.0","1.3","532.0","166.0","0.09","Traco"
-"386","Carnes e derivados","Croquete de carne cru","SolidoContavel","246.0","12.0","15.6","30.0","13.9","NA","15.0","24.0","2.5","711.0","221.0","0.11","Traco"
-"387","Carnes e derivados","Croquete de carne frito","SolidoContavel","347.0","16.9","22.7","38.0","18.1","NA","18.0","30.0","2.3","916.0","313.0","0.14","Traco"
-"388","Carnes e derivados","Empada de frango pre-cozida assada","SolidoContavel","358.0","6.9","15.6","23.0","47.5","2.2","16.0","18.0","1.2","525.0","138.0","0.12","NA"
-"389","Carnes e derivados","Empada de frango pre-cozida","SolidoContavel","377.0","7.3","22.9","23.0","35.5","2.2","14.0","17.0","0.7","771.0","156.0","0.11","NA"
-"390","Carnes e derivados","Frango asa com pele crua","SolidoContavel","213.0","18.1","15.1","113.0","0.0","NA","11.0","23.0","0.6","96.0","211.0","0.11","NA"
-"391","Carnes e derivados","Frango caipira inteiro com pele cozido","SolidoContavel","243.0","23.9","15.6","110.0","0.0","NA","17.0","18.0","1.7","56.0","210.0","0.03","NA"
-"392","Carnes e derivados","Frango caipira inteiro sem pele cozido","SolidoContavel","196.0","29.6","7.7","106.0","0.0","NA","66.0","23.0","2.1","53.0","224.0","0.03","NA"
-"393","Carnes e derivados","Frango coracao cru","SolidoContavel","222.0","12.6","18.6","159.0","0.0","NA","6.0","20.0","4.1","95.0","220.0","0.23","NA"
-"394","Carnes e derivados","Frango coracao grelhado","SolidoContavel","207.0","22.4","12.1","280.0","0.6","NA","8.0","20.0","6.5","128.0","243.0","0.2","NA"
-"395","Carnes e derivados","Frango coxa com pele assada","SolidoContavel","215.0","28.5","10.4","145.0","0.1","NA","8.0","14.0","1.2","95.0","318.0","0.05","NA"
-"396","Carnes e derivados","Frango coxa com pele crua","SolidoContavel","161.0","17.1","9.8","97.0","0.0","NA","8.0","26.0","0.7","95.0","275.0","0.16","NA"
-"397","Carnes e derivados","Frango coxa sem pele cozida","SolidoContavel","167.0","26.9","5.8","133.0","0.0","NA","12.0","11.0","0.8","64.0","191.0","0.07","NA"
-"398","Carnes e derivados","Frango coxa sem pele crua","SolidoContavel","120.0","17.8","4.9","91.0","0.0","NA","8.0","27.0","0.8","98.0","291.0","0.17","NA"
-"399","Carnes e derivados","Frango figado cru","SolidoContavel","106.0","17.6","3.5","341.0","0.0","NA","6.0","28.0","9.5","82.0","281.0","0.62","NA"
-"400","Carnes e derivados","Frango file a milanesa","SolidoContavel","221.0","28.5","7.8","84.0","7.5","1.1","9.0","35.0","1.1","122.0","408.0","0.05","NA"
-"401","Carnes e derivados","Frango inteiro com pele cru","SolidoContavel","226.0","16.4","17.3","85.0","0.0","NA","6.0","24.0","0.6","63.0","217.0","0.08","NA"
-"402","Carnes e derivados","Frango inteiro sem pele assado","SolidoContavel","187.0","28.0","7.5","111.0","0.0","NA","9.0","14.0","0.6","70.0","283.0","0.09","NA"
-"403","Carnes e derivados","Frango inteiro sem pele cozido","SolidoContavel","170.0","25.0","7.1","99.0","0.0","NA","8.0","12.0","0.5","51.0","217.0","0.1","NA"
-"404","Carnes e derivados","Frango inteiro sem pele cru","SolidoContavel","129.0","20.6","4.6","78.0","0.0","NA","7.0","27.0","0.5","73.0","238.0","0.12","NA"
-"405","Carnes e derivados","Frango peito com pele assado","SolidoContavel","212.0","33.4","7.6","109.0","0.0","NA","8.0","18.0","0.5","56.0","380.0","0.12","NA"
-"406","Carnes e derivados","Frango peito com pele cru","SolidoContavel","149.0","20.8","6.7","80.0","0.0","NA","8.0","28.0","0.4","62.0","252.0","0.09","NA"
-"407","Carnes e derivados","Frango peito sem pele cozido","SolidoContavel","163.0","31.5","3.2","89.0","0.0","NA","6.0","14.0","0.3","36.0","231.0","0.1","NA"
-"408","Carnes e derivados","Frango peito sem pele cru","SolidoContavel","119.0","21.5","3.0","59.0","0.0","NA","7.0","31.0","0.4","56.0","267.0","0.1","NA"
-"409","Carnes e derivados","Frango peito sem pele grelhado","SolidoContavel","159.0","32.0","2.5","89.0","0.0","NA","5.0","18.0","0.3","50.0","387.0","0.11","NA"
-"410","Carnes e derivados","Frango sobrecoxa com pele assada","SolidoContavel","260.0","28.7","15.2","158.0","0.0","NA","11.0","15.0","1.2","96.0","323.0","0.1","NA"
-"411","Carnes e derivados","Frango sobrecoxa com pele crua","SolidoContavel","255.0","15.5","20.9","88.0","0.0","NA","7.0","22.0","0.7","68.0","190.0","0.09","NA"
-"412","Carnes e derivados","Frango sobrecoxa sem pele assada","SolidoContavel","233.0","29.2","12.0","145.0","0.0","NA","12.0","17.0","1.2","106.0","382.0","0.1","NA"
-"413","Carnes e derivados","Frango sobrecoxa sem pele crua","SolidoContavel","162.0","17.6","9.6","84.0","0.0","NA","6.0","26.0","0.9","80.0","241.0","0.12","NA"
-"414","Carnes e derivados","Hamburguer bovino cru","SolidoContavel","215.0","13.2","16.2","70.0","4.2","NA","34.0","25.0","1.9","869.0","383.0","0.06","NA"
-"415","Carnes e derivados","Hamburguer bovino frito","SolidoContavel","258.0","20.0","17.0","49.0","6.3","NA","62.0","60.0","3.0","1252.0","660.0","0.13","NA"
-"416","Carnes e derivados","Hamburguer bovino grelhado","SolidoContavel","210.0","13.2","12.4","59.0","11.3","NA","56.0","48.0","2.6","1090.0","538.0","0.18","NA"
-"417","Carnes e derivados","Linguica frango crua","SolidoContavel","218.0","14.2","17.4","64.0","0.0","NA","11.0","19.0","0.5","1126.0","280.0","0.11","NA"
-"418","Carnes e derivados","Linguica frango frita","SolidoContavel","245.0","18.3","18.5","76.0","0.0","NA","15.0","29.0","0.8","1374.0","364.0","0.11","NA"
-"419","Carnes e derivados","Linguica frango grelhada","SolidoContavel","244.0","18.2","18.4","80.0","0.0","NA","14.0","21.0","0.7","1351.0","356.0","0.12","NA"
-"420","Carnes e derivados","Linguica porco crua","SolidoContavel","227.0","16.1","17.6","53.0","0.0","NA","6.0","14.0","0.4","1176.0","316.0","0.49","NA"
-"421","Carnes e derivados","Linguica porco frita","SolidoContavel","280.0","20.5","21.3","75.0","0.0","NA","8.0","18.0","0.9","1432.0","409.0","0.41","NA"
-"422","Carnes e derivados","Linguica porco grelhada","SolidoContavel","296.0","23.2","21.9","82.0","0.0","NA","8.0","19.0","1.0","1456.0","427.0","0.4","NA"
-"423","Carnes e derivados","Mortadela","SolidoContavel","269.0","12.0","21.6","83.0","5.8","NA","67.0","19.0","1.5","1212.0","247.0","0.14","NA"
-"424","Carnes e derivados","Peru congelado assado","SolidoContavel","163.0","26.2","5.7","91.0","0.0","NA","14.0","12.0","0.6","628.0","175.0","0.06","NA"
-"425","Carnes e derivados","Peru congelado cru","SolidoContavel","94.0","18.1","1.8","68.0","0.0","NA","10.0","19.0","0.9","711.0","281.0","0.06","NA"
-"426","Carnes e derivados","Porco bisteca crua","SolidoContavel","164.0","21.5","8.0","56.0","0.0","NA","6.0","24.0","0.5","54.0","335.0","0.9","NA"
-"427","Carnes e derivados","Porco bisteca frita","SolidoContavel","311.0","33.7","18.5","126.0","0.0","NA","69.0","29.0","0.8","63.0","404.0","0.34","NA"
-"428","Carnes e derivados","Porco bisteca grelhada","SolidoContavel","280.0","28.9","17.4","82.0","0.0","NA","34.0","25.0","0.9","51.0","366.0","0.77","NA"
-"429","Carnes e derivados","Porco costela assada","SolidoContavel","402.0","30.2","30.3","113.0","0.0","NA","17.0","14.0","1.0","63.0","246.0","0.71","NA"
-"430","Carnes e derivados","Porco costela crua","SolidoContavel","256.0","18.0","19.8","69.0","0.0","NA","15.0","18.0","0.9","88.0","248.0","0.62","NA"
-"431","Carnes e derivados","Porco lombo assado","SolidoContavel","210.0","35.7","6.4","103.0","0.0","NA","20.0","18.0","0.5","39.0","311.0","0.75","NA"
-"432","Carnes e derivados","Porco lombo cru","SolidoContavel","176.0","22.6","8.8","55.0","0.0","NA","4.0","24.0","0.5","53.0","334.0","0.95","NA"
-"433","Carnes e derivados","Porco orelha salgada crua","SolidoContavel","258.0","18.5","19.9","83.0","0.0","NA","5.0","2.0","1.4","616.0","228.0","0.07","NA"
-"434","Carnes e derivados","Porco pernil assado","SolidoContavel","262.0","32.1","13.9","110.0","0.0","NA","18.0","27.0","1.3","62.0","395.0","0.77","NA"
-"435","Carnes e derivados","Porco pernil cru","SolidoContavel","186.0","20.1","11.1","59.0","0.0","NA","13.0","23.0","0.9","102.0","256.0","1.06","NA"
-"436","Carnes e derivados","Porco rabo salgado cru","SolidoContavel","377.0","15.6","34.5","89.0","0.0","NA","22.0","4.0","0.6","1158.0","24.0","0.2","NA"
-"437","Carnes e derivados","Presunto com capa de gordura","SolidoContavel","128.0","14.4","6.8","40.0","1.4","NA","12.0","17.0","0.7","1021.0","295.0","0.62","NA"
-"438","Carnes e derivados","Presunto sem capa de gordura","SolidoContavel","94.0","14.3","2.7","36.0","2.1","NA","23.0","18.0","0.8","1039.0","307.0","0.5","NA"
-"439","Carnes e derivados","Quibe assado","SolidoContavel","136.0","14.6","2.7","34.0","12.9","1.9","16.0","36.0","2.2","40.0","288.0","0.04","Traco"
-"440","Carnes e derivados","Quibe cru","SolidoContavel","109.0","12.4","1.7","27.0","10.8","1.6","12.0","26.0","1.7","39.0","242.0","0.09","Traco"
-"441","Carnes e derivados","Quibe frito","SolidoContavel","254.0","14.9","15.8","38.0","12.3","NA","22.0","39.0","2.0","836.0","322.0","0.12","Traco"
-"442","Carnes e derivados","Salame","SolidoContavel","398.0","25.8","30.6","85.0","2.9","NA","87.0","30.0","1.3","1574.0","548.0","0.88","NA"
-"443","Carnes e derivados","Toucinho cru","SolidoContavel","593.0","11.5","60.3","73.0","0.0","NA","2.0","4.0","0.4","50.0","58.0","Traco","NA"
-"444","Carnes e derivados","Toucinho frito","SolidoContavel","697.0","27.3","64.3","89.0","0.0","NA","9.0","9.0","0.9","125.0","171.0","Traco","NA"
-"445","Leite e derivados","Bebida lactea pessego","Liquido","55.0","2.1","1.9","5.0","7.6","0.3","89.0","9.0","Traco","46.0","62.0","0.03","2.1"
-"446","Leite e derivados","Creme de Leite","Liquido","221.0","1.5","22.5","66.0","4.5","NA","83.0","8.0","0.3","52.0","119.0","Traco","Traco"
-"447","Leite e derivados","Iogurte natural","Liquido","51.0","4.1","3.0","14.0","1.9","NA","143.0","11.0","Traco","52.0","71.0","0.04","0.9"
-"448","Leite e derivados","Iogurte natural desnatado","Liquido","41.0","3.8","0.3","3.0","5.8","NA","157.0","12.0","Traco","60.0","182.0","Traco","0.3"
-"449","Leite e derivados","Iogurte sabor abacaxi","Liquido","NA","NA","NA","6.0","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"450","Leite e derivados","Iogurte sabor morango","Liquido","70.0","2.7","2.3","7.0","9.7","0.2","101.0","8.0","Traco","38.0","52.0","0.03","Traco"
-"451","Leite e derivados","Iogurte sabor pessego","Liquido","68.0","2.5","2.3","8.0","9.4","0.7","95.0","8.0","0.1","37.0","52.0","0.02","Traco"
-"452","Leite e derivados","Leite condensado","Liquido","313.0","7.7","6.7","28.0","57.0","NA","246.0","22.0","0.1","94.0","329.0","0.06","2.1"
-"453","Leite e derivados","Leite de cabra","Liquido","66.0","3.1","3.8","14.0","5.2","NA","112.0","10.0","0.1","74.0","140.0","Traco","Traco"
-"454","Leite e derivados","Leite de vaca achocolatado","Liquido","83.0","2.1","2.2","6.0","14.2","0.6","70.0","13.0","0.5","72.0","155.0","0.07","3.3"
-"455","Leite e derivados","Leite de vaca desnatado po","Liquido","362.0","34.7","0.9","25.0","53.0","NA","1363.0","109.0","0.9","432.0","1556.0","0.32","NA"
-"456","Leite e derivados","Leite de vaca desnatado UHT","Liquido","NA","NA","NA","4.0","NA","NA","134.0","10.0","Traco","51.0","140.0","0.04","Traco"
-"457","Leite e derivados","Leite de vaca integral","Liquido","NA","NA","NA","10.0","NA","NA","123.0","10.0","Traco","64.0","133.0","0.04","Traco"
-"458","Leite e derivados","Leite de vaca integral po","Liquido","497.0","25.4","26.9","85.0","39.2","NA","890.0","77.0","0.5","323.0","1132.0","0.24","NA"
-"459","Leite e derivados","Leite fermentado","Liquido","70.0","1.9","0.1","2.0","15.7","NA","72.0","6.0","Traco","33.0","94.0","0.08","0.5"
-"460","Leite e derivados","Queijo minas frescal","SolidoContavel","264.0","17.4","20.2","62.0","3.2","NA","579.0","7.0","0.9","31.0","105.0","Traco","Traco"
-"461","Leite e derivados","Queijo minas meia cura","SolidoContavel","321.0","21.2","24.6","76.0","3.6","NA","696.0","27.0","0.2","501.0","120.0","0.03","NA"
-"462","Leite e derivados","Queijo mozarela","SolidoContavel","330.0","22.6","25.2","80.0","3.0","NA","875.0","24.0","0.3","581.0","62.0","Traco","NA"
-"463","Leite e derivados","Queijo parmesao","SolidoContavel","453.0","35.6","33.5","106.0","1.7","NA","992.0","33.0","0.5","1844.0","96.0","Traco","Traco"
-"464","Leite e derivados","Queijo pasteurizado","SolidoContavel","303.0","9.4","27.4","82.0","5.7","NA","323.0","16.0","0.3","780.0","194.0","Traco","Traco"
-"465","Leite e derivados","Queijo petit suisse morango","SolidoContavel","121.0","5.8","2.8","12.0","18.5","NA","731.0","27.0","0.1","412.0","121.0","0.22","Traco"
-"466","Leite e derivados","Queijo prato","SolidoContavel","360.0","22.7","29.1","91.0","1.9","NA","940.0","28.0","0.3","580.0","73.0","Traco","NA"
-"467","Leite e derivados","Queijo requeijao cremoso","SolidoContavel","257.0","9.6","23.4","74.0","2.4","NA","259.0","12.0","0.1","558.0","93.0","Traco","Traco"
-"468","Leite e derivados","Queijo ricota","SolidoContavel","140.0","12.6","8.1","49.0","3.8","NA","253.0","12.0","0.1","283.0","112.0","Traco","Traco"
-"469","Bebidas (alcoolicas e nao alcoolicas)","Bebida isotonica sabores variados","Liquido","26.0","0.0","0.0","NA","6.4","NA","1.0","Traco","0.7","44.0","13.0","NA","NA"
-"470","Bebidas (alcoolicas e nao alcoolicas)","Cafe infusao 10%","Liquido","9.0","0.7","0.1","NA","1.5","NA","3.0","10.0","Traco","1.0","156.0","NA","NA"
-"471","Bebidas (alcoolicas e nao alcoolicas)","Cana aguardente 1","Liquido","216.0","NA","NA","NA","NA","NA","Traco","Traco","Traco","3.0","Traco","Traco","NA"
-"472","Bebidas (alcoolicas e nao alcoolicas)","Cana caldo de","Liquido","65.0","Traco","Traco","NA","18.2","0.1","9.0","12.0","0.8","Traco","18.0","Traco","2.8"
-"473","Bebidas (alcoolicas e nao alcoolicas)","Cerveja pilsen 2","Liquido","41.0","0.6","Traco","NA","3.3","NA","5.0","7.0","Traco","4.0","29.0","Traco","Traco"
-"474","Bebidas (alcoolicas e nao alcoolicas)","Cha erva-doce infusao 5%","Liquido","1.0","0.0","0.0","NA","0.4","NA","2.0","1.0","Traco","1.0","10.0","1.23","NA"
-"475","Bebidas (alcoolicas e nao alcoolicas)","Cha mate infusao 5%","Liquido","3.0","0.0","0.1","NA","0.6","NA","1.0","2.0","Traco","Traco","5.0","0.89","NA"
-"476","Bebidas (alcoolicas e nao alcoolicas)","Cha preto infusao 5%","Liquido","2.0","0.0","0.0","NA","0.6","NA","0.0","1.0","Traco","Traco","13.0","3.11","NA"
-"477","Bebidas (alcoolicas e nao alcoolicas)","Coco agua de","Liquido","22.0","0.0","0.0","NA","5.3","0.1","19.0","5.0","Traco","2.0","162.0","0.01","2.4"
-"478","Bebidas (alcoolicas e nao alcoolicas)","Refrigerante tipo agua tonica","Liquido","31.0","0.0","0.0","NA","8.0","NA","1.0","Traco","Traco","8.0","2.0","NA","NA"
-"479","Bebidas (alcoolicas e nao alcoolicas)","Refrigerante tipo cola","Liquido","34.0","0.0","0.0","NA","8.7","NA","1.0","Traco","Traco","7.0","1.0","NA","NA"
-"480","Bebidas (alcoolicas e nao alcoolicas)","Refrigerante tipo guarana","Liquido","39.0","0.0","0.0","NA","10.0","NA","1.0","Traco","Traco","9.0","1.0","NA","NA"
-"481","Bebidas (alcoolicas e nao alcoolicas)","Refrigerante tipo laranja","Liquido","46.0","0.0","0.0","NA","11.8","NA","2.0","1.0","Traco","9.0","16.0","NA","NA"
-"482","Bebidas (alcoolicas e nao alcoolicas)","Refrigerante tipo limao","Liquido","40.0","0.0","0.0","NA","10.3","NA","2.0","1.0","Traco","9.0","4.0","NA","NA"
-"483","Ovos e derivados","Omelete de queijo","SolidoContavel","268.0","15.6","22.0","384.0","0.4","NA","166.0","14.0","1.4","216.0","127.0","0.03","Traco"
-"484","Ovos e derivados","Ovo de codorna inteiro cru","SolidoContavel","177.0","13.7","12.7","568.0","0.8","NA","79.0","11.0","3.3","129.0","79.0","0.11","NA"
-"485","Ovos e derivados","Ovo de galinha clara cozida/10minutos","SolidoContavel","59.0","13.4","0.1","NA","0.0","NA","6.0","11.0","0.1","181.0","146.0","Traco","NA"
-"486","Ovos e derivados","Ovo de galinha gema cozida/10minutos","SolidoContavel","353.0","15.9","30.8","1272.0","1.6","NA","114.0","9.0","2.9","45.0","87.0","0.18","NA"
-"487","Ovos e derivados","Ovo de galinha inteiro cozido/10minutos","SolidoContavel","146.0","13.3","9.5","397.0","0.6","NA","49.0","11.0","1.5","146.0","139.0","0.08","NA"
-"488","Ovos e derivados","Ovo de galinha inteiro cru","SolidoContavel","143.0","13.0","8.9","356.0","1.6","NA","42.0","13.0","1.6","168.0","150.0","0.07","NA"
-"489","Ovos e derivados","Ovo de galinha inteiro frito","SolidoContavel","240.0","15.6","18.6","516.0","1.2","NA","73.0","16.0","2.1","166.0","184.0","0.06","Traco"
-"490","Produtos acucarados","Achocolatado po","SolidoNaoContavel","401.0","4.2","2.2","Traco","91.2","3.9","44.0","77.0","5.4","65.0","496.0","1.38","Traco"
-"491","Produtos acucarados","Acucar cristal","SolidoNaoContavel","387.0","0.3","Traco","NA","99.6","NA","8.0","1.0","0.2","Traco","3.0","NA","NA"
-"492","Produtos acucarados","Acucar mascavo","SolidoNaoContavel","369.0","0.8","0.1","NA","94.5","NA","127.0","80.0","8.3","25.0","522.0","Traco","Traco"
-"493","Produtos acucarados","Acucar refinado","SolidoNaoContavel","387.0","0.3","Traco","NA","99.5","NA","4.0","1.0","0.1","12.0","6.0","NA","NA"
-"494","Produtos acucarados","Chocolate ao leite","SolidoContavel","540.0","7.2","30.3","17.0","59.6","2.2","191.0","57.0","1.6","77.0","355.0","0.05","Traco"
-"495","Produtos acucarados","Chocolate ao leite com castanha do Para","SolidoContavel","559.0","7.4","34.2","16.0","55.4","2.5","171.0","80.0","1.5","64.0","431.0","0.04","1.4"
-"496","Produtos acucarados","Chocolate ao leite dietetico","SolidoContavel","557.0","6.9","33.8","13.0","56.3","2.8","188.0","67.0","3.3","85.0","458.0","0.31","2.0"
-"497","Produtos acucarados","Chocolate meio amargo","SolidoContavel","475.0","4.9","29.9","2.0","62.4","4.9","45.0","107.0","3.6","9.0","432.0","0.2","2.1"
-"498","Produtos acucarados","Cocada branca","SolidoContavel","449.0","1.1","13.6","NA","81.4","3.6","7.0","17.0","1.2","29.0","183.0","Traco","Traco"
-"499","Produtos acucarados","Doce de abobora cremoso","Liquido","199.0","0.9","0.2","NA","54.6","2.3","13.0","6.0","0.9","Traco","137.0","0.08","0.1"
-"500","Produtos acucarados","Doce de leite cremoso","Liquido","306.0","5.5","6.0","20.0","59.5","NA","195.0","16.0","0.1","120.0","259.0","0.05","Traco"
-"501","Produtos acucarados","Geleia mocoto natural","Liquido","106.0","2.1","0.1","Traco","24.2","NA","4.0","1.0","0.1","43.0","2.0","0.19","Traco"
-"502","Produtos acucarados","Glicose de milho","Liquido","292.0","0.0","0.0","NA","79.4","NA","6.0","2.0","0.1","59.0","5.0","NA","NA"
-"503","Produtos acucarados","Maria mole","SolidoContavel","301.0","3.8","0.2","NA","73.6","0.7","13.0","7.0","0.4","15.0","24.0","0.04","Traco"
-"504","Produtos acucarados","Maria mole coco queimado","SolidoContavel","307.0","3.9","0.1","NA","75.1","0.6","19.0","6.0","0.5","14.0","36.0","0.04","Traco"
-"505","Produtos acucarados","Marmelada","SolidoContavel","257.0","0.4","0.1","NA","70.8","4.1","11.0","6.0","0.7","11.0","83.0","Traco","Traco"
-"506","Produtos acucarados","Mel de abelha","Liquido","309.0","0.0","0.0","NA","84.0","NA","10.0","6.0","0.3","6.0","99.0","0.11","0.7"
-"507","Produtos acucarados","Melado","Liquido","297.0","0.0","0.0","NA","76.6","NA","102.0","115.0","5.4","4.0","395.0","Traco","Traco"
-"508","Produtos acucarados","Quindim","SolidoContavel","411.0","4.7","24.4","271.0","46.3","3.2","37.0","15.0","1.4","27.0","111.0","Traco","Traco"
-"509","Produtos acucarados","Rapadura","SolidoContavel","352.0","1.0","0.1","NA","90.8","NA","30.0","47.0","4.4","22.0","459.0","Traco","Traco"
-"510","Miscelaneas","Cafe po torrado","SolidoNaoContavel","419.0","14.7","11.9","NA","65.8","51.2","107.0","165.0","8.1","1.0","1609.0","Traco","Traco"
-"511","Miscelaneas","Capuccino po","SolidoNaoContavel","417.0","11.3","8.6","29.0","73.6","2.4","467.0","71.0","2.3","382.0","886.0","Traco","Traco"
-"512","Miscelaneas","Fermento em po quimico","SolidoNaoContavel","90.0","0.5","0.1","NA","43.9","NA","NA","NA","NA","10052.0","NA","NA","NA"
-"513","Miscelaneas","Fermento biologico levedura tablete","SolidoNaoContavel","90.0","17.0","1.5","NA","7.7","4.2","18.0","38.0","2.6","40.0","576.0","0.3","Traco"
-"514","Miscelaneas","Gelatina sabores variados po","SolidoNaoContavel","380.0","8.9","Traco","NA","89.2","NA","27.0","2.0","0.3","235.0","7.0","Traco","40.0"
-"515","Miscelaneas","Sal dietetico","SolidoNaoContavel","NA","NA","NA","NA","NA","NA","NA","NA","NA","23432.0","20468.0","NA","NA"
-"516","Miscelaneas","Sal grosso","SolidoNaoContavel","NA","NA","NA","NA","NA","NA","NA","NA","NA","39943.0","NA","NA","NA"
-"517","Miscelaneas","Shoyu","Liquido","61.0","3.3","0.3","NA","11.6","NA","15.0","24.0","0.5","5024.0","165.0","0.83","Traco"
-"518","Miscelaneas","Tempero a base de sal","SolidoNaoContavel","21.0","2.7","0.3","NA","2.1","0.6","NA","NA","NA","32560.0","NA","NA","NA"
-"519","Outros alimentos industrializados","Azeitona preta conserva","SolidoContavel","194.0","1.2","20.3","NA","5.5","4.6","59.0","5.0","5.5","1567.0","79.0","Traco","Traco"
-"520","Outros alimentos industrializados","Azeitona verde conserva","SolidoContavel","137.0","0.9","14.2","NA","4.1","3.8","46.0","4.0","0.2","1347.0","20.0","Traco","Traco"
-"521","Outros alimentos industrializados","Chantilly spray com gordura vegetal","Liquido","315.0","0.5","27.3","Traco","16.9","NA","2.0","1.0","Traco","110.0","5.0","0.07","NA"
-"522","Outros alimentos industrializados","Leite de coco","Liquido","166.0","1.0","18.4","NA","2.2","0.7","6.0","17.0","0.5","44.0","144.0","Traco","Traco"
-"523","Outros alimentos industrializados","Maionese tradicional com ovos","Liquido","302.0","0.6","30.5","42.0","7.9","NA","3.0","1.0","0.1","787.0","16.0","Traco","Traco"
-"524","Alimentos preparados","Acaraje","SolidoContavel","289.0","8.3","19.9","25.0","19.1","9.4","124.0","51.0","1.9","305.0","354.0","0.06","NA"
-"525","Alimentos preparados","Arroz carreteiro","SolidoContavel","154.0","10.8","7.1","36.0","11.6","1.5","13.0","9.0","1.0","1622.0","87.0","0.03","NA"
-"526","Alimentos preparados","Baiao de dois arroz e feijao-de-corda","SolidoContavel","136.0","6.2","3.2","4.0","20.4","5.1","33.0","19.0","0.6","93.0","157.0","0.04","Traco"
-"527","Alimentos preparados","Barreado","SolidoContavel","165.0","18.3","9.5","60.0","0.2","0.1","15.0","21.0","2.4","48.0","295.0","0.03","Traco"
-"528","Alimentos preparados","Bife a cavalo com contra file","SolidoContavel","291.0","23.7","21.1","257.0","0.0","NA","26.0","19.0","2.1","83.0","272.0","0.05","NA"
-"529","Alimentos preparados","Bolinho de arroz","SolidoContavel","274.0","8.0","8.3","70.0","41.7","2.7","24.0","13.0","2.1","59.0","96.0","0.08","Traco"
-"530","Alimentos preparados","Camarao a baiana","SolidoContavel","101.0","7.9","6.0","117.0","3.2","0.4","43.0","15.0","1.4","85.0","139.0","Traco","4.1"
-"531","Alimentos preparados","Charuto de repolho","SolidoContavel","78.0","6.8","1.1","21.0","10.1","1.5","23.0","13.0","0.9","12.0","184.0","0.03","4.8"
-"532","Alimentos preparados","Cuscuz de milho cozido com sal","SolidoContavel","113.0","2.2","0.7","NA","25.3","2.1","2.0","3.0","0.2","248.0","11.0","Traco","Traco"
-"533","Alimentos preparados","Cuscuz paulista","SolidoContavel","142.0","2.6","4.6","15.0","22.5","2.4","14.0","5.0","0.3","236.0","53.0","Traco","Traco"
-"534","Alimentos preparados","Cuxa molho","SolidoContavel","80.0","5.6","3.6","58.0","5.7","3.0","105.0","34.0","0.9","1344.0","124.0","0.04","10.3"
-"535","Alimentos preparados","Dobradinha","SolidoContavel","125.0","19.8","4.4","144.0","0.0","NA","11.0","8.0","1.0","29.0","58.0","Traco","NA"
-"536","Alimentos preparados","Estrogonofe de carne","SolidoContavel","173.0","15.0","10.8","66.0","3.0","NA","28.0","22.0","2.7","123.0","322.0","0.06","Traco"
-"537","Alimentos preparados","Estrogonofe de frango","SolidoContavel","157.0","17.6","8.0","80.0","2.6","NA","26.0","25.0","1.5","99.0","307.0","0.07","Traco"
-"538","Alimentos preparados","Feijao tropeiro mineiro","SolidoContavel","152.0","10.2","6.8","68.0","19.6","3.6","41.0","36.0","2.2","365.0","349.0","Traco","Traco"
-"539","Alimentos preparados","Feijoada","SolidoContavel","117.0","8.7","6.5","22.0","11.6","5.1","32.0","32.0","1.3","278.0","303.0","0.08","Traco"
-"540","Alimentos preparados","Frango com acafrao","SolidoContavel","113.0","9.7","6.2","50.0","4.1","0.2","13.0","16.0","0.8","29.0","256.0","0.03","5.3"
-"541","Alimentos preparados","Macarrao molho bolognesa","SolidoContavel","120.0","4.9","0.9","7.0","22.5","0.8","11.0","10.0","1.4","9.0","84.0","0.04","Traco"
-"542","Alimentos preparados","Manicoba","SolidoContavel","134.0","10.0","8.7","43.0","3.4","2.2","66.0","24.0","3.2","407.0","148.0","0.04","Traco"
-"543","Alimentos preparados","Quibebe","SolidoContavel","86.0","8.6","2.7","NA","6.6","1.7","8.0","10.0","0.8","247.0","153.0","Traco","Traco"
-"544","Alimentos preparados","Salada de legumes com maionese","SolidoContavel","96.0","1.1","7.0","7.0","8.9","2.2","12.0","9.0","0.2","228.0","141.0","0.04","Traco"
-"545","Alimentos preparados","Salada de legumes cozida no vapor","SolidoContavel","35.0","2.0","0.3","NA","7.1","2.5","33.0","19.0","0.4","3.0","244.0","0.05","29.4"
-"546","Alimentos preparados","Salpicao de frango","SolidoContavel","148.0","13.9","7.8","53.0","4.6","0.4","9.0","13.0","0.3","248.0","149.0","0.05","9.3"
-"547","Alimentos preparados","Sarapatel","SolidoContavel","123.0","18.5","4.4","315.0","1.1","NA","12.0","13.0","7.2","216.0","199.0","Traco","Traco"
-"548","Alimentos preparados","Tabule","SolidoContavel","57.0","2.0","1.2","NA","10.6","2.1","19.0","18.0","0.6","1.0","188.0","0.03","16.2"
-"549","Alimentos preparados","Tacaca","SolidoContavel","47.0","7.0","0.4","71.0","3.4","0.2","45.0","30.0","0.9","1349.0","240.0","0.05","Traco"
-"550","Alimentos preparados","Tapioca com manteiga","SolidoContavel","348.0","0.1","10.9","31.0","63.6","Traco","30.0","3.0","0.2","158.0","19.0","Traco","Traco"
-"551","Alimentos preparados","Tucupi com pimenta-de-cheiro","SolidoContavel","27.0","2.1","0.3","NA","4.7","0.2","28.0","42.0","1.1","5.0","391.0","Traco","46.4"
-"552","Alimentos preparados","Vaca atolada","SolidoContavel","145.0","5.1","9.3","19.0","10.1","2.3","63.0","16.0","0.7","26.0","220.0","Traco","Traco"
-"553","Alimentos preparados","Vatapa","SolidoContavel","255.0","6.0","23.2","44.0","9.7","1.7","47.0","39.0","1.4","880.0","209.0","Traco","Traco"
-"554","Alimentos preparados","Virado a paulista","SolidoContavel","307.0","10.2","25.6","66.0","14.1","2.2","41.0","22.0","1.1","346.0","237.0","0.14","Traco"
-"555","Alimentos preparados","Yakisoba","SolidoContavel","113.0","7.5","2.6","NA","18.3","1.1","14.0","13.0","0.6","794.0","159.0","0.16","Traco"
-"556","Leguminosas e derivados","Amendoim grao cru","SolidoContavel","544.0","27.2","43.9","NA","20.3","8.0","Traco","171.0","2.5","Traco","580.0","0.1","Traco"
-"557","Leguminosas e derivados","Amendoim torrado salgado","SolidoContavel","606.0","22.5","54.0","NA","18.7","7.8","39.0","159.0","1.3","376.0","496.0","0.08","Traco"
-"558","Leguminosas e derivados","Ervilha em vagem","SolidoNaoContavel","88.0","7.5","0.5","NA","14.2","9.7","24.0","42.0","1.4","Traco","311.0","0.27","12.4"
-"559","Leguminosas e derivados","Ervilha enlatada drenada","SolidoNaoContavel","74.0","4.6","0.4","NA","13.4","5.1","22.0","23.0","1.4","372.0","147.0","0.07","NA"
-"560","Leguminosas e derivados","Feijao carioca cozido","SolidoNaoContavel","76.0","4.8","0.5","NA","13.6","8.5","27.0","42.0","1.3","2.0","255.0","0.04","Traco"
-"561","Leguminosas e derivados","Feijao carioca cru","SolidoNaoContavel","329.0","20.0","1.3","NA","61.2","18.4","123.0","210.0","8.0","Traco","1352.0","0.17","NA"
-"562","Leguminosas e derivados","Feijao fradinho cozido","SolidoNaoContavel","78.0","5.1","0.6","NA","13.5","7.5","17.0","38.0","1.1","1.0","253.0","0.12","Traco"
-"563","Leguminosas e derivados","Feijao fradinho cru","SolidoNaoContavel","339.0","20.2","2.4","NA","61.2","23.6","78.0","178.0","5.1","10.0","1083.0","0.14","Traco"
-"564","Leguminosas e derivados","Feijao jalo cozido","SolidoNaoContavel","93.0","6.1","0.5","NA","16.5","13.9","29.0","44.0","1.9","1.0","348.0","0.13","Traco"
-"565","Leguminosas e derivados","Feijao jalo cru","SolidoNaoContavel","328.0","20.1","0.9","NA","61.5","30.3","98.0","170.0","7.0","25.0","1276.0","0.1","Traco"
-"566","Leguminosas e derivados","Feijao preto cozido","SolidoNaoContavel","77.0","4.5","0.5","NA","14.0","8.4","29.0","40.0","1.5","2.0","256.0","0.06","Traco"
-"567","Leguminosas e derivados","Feijao preto cru","SolidoNaoContavel","324.0","21.3","1.2","NA","58.8","21.8","111.0","188.0","6.5","Traco","1416.0","0.12","NA"
-"568","Leguminosas e derivados","Feijao rajado cozido","SolidoNaoContavel","85.0","5.5","0.4","NA","15.3","9.3","29.0","42.0","1.4","1.0","315.0","0.09","Traco"
-"569","Leguminosas e derivados","Feijao rajado cru","SolidoNaoContavel","326.0","17.3","1.2","NA","62.9","24.0","111.0","170.0","18.6","14.0","1135.0","0.07","Traco"
-"570","Leguminosas e derivados","Feijao rosinha cozido","SolidoNaoContavel","68.0","4.5","0.5","NA","11.8","4.8","19.0","43.0","1.2","2.0","241.0","Traco","Traco"
-"571","Leguminosas e derivados","Feijao rosinha cru","SolidoNaoContavel","337.0","20.9","1.3","NA","62.2","20.6","68.0","184.0","5.3","24.0","1109.0","0.16","Traco"
-"572","Leguminosas e derivados","Feijao roxo cozido","SolidoNaoContavel","77.0","5.7","0.5","NA","12.9","11.5","23.0","34.0","1.4","1.0","268.0","0.15","Traco"
-"573","Leguminosas e derivados","Feijao roxo cru","SolidoNaoContavel","331.0","22.2","1.2","NA","60.0","33.8","120.0","162.0","6.9","10.0","1221.0","0.26","Traco"
-"574","Leguminosas e derivados","Grao-de-bico cru","SolidoNaoContavel","355.0","21.2","5.4","NA","57.9","12.4","114.0","146.0","5.4","5.0","1116.0","0.52","Traco"
-"575","Leguminosas e derivados","Guandu cru","SolidoNaoContavel","344.0","19.0","2.1","NA","64.0","21.3","129.0","166.0","1.9","2.0","1215.0","1.06","1.5"
-"576","Leguminosas e derivados","Lentilha cozida","SolidoNaoContavel","93.0","6.3","0.5","NA","16.3","7.9","16.0","22.0","1.5","1.0","220.0","0.03","Traco"
-"577","Leguminosas e derivados","Lentilha crua","SolidoNaoContavel","339.0","23.2","0.8","NA","62.0","16.9","54.0","94.0","7.0","Traco","887.0","0.11","NA"
-"578","Leguminosas e derivados","Pacoca amendoim","SolidoContavel","487.0","16.0","26.1","NA","52.4","7.3","22.0","101.0","1.1","167.0","348.0","Traco","Traco"
-"579","Leguminosas e derivados","Pe-de-moleque amendoim","SolidoContavel","503.0","13.2","28.0","NA","54.7","3.4","27.0","108.0","1.3","16.0","355.0","0.04","Traco"
-"580","Leguminosas e derivados","Soja farinha","SolidoNaoContavel","404.0","36.0","14.6","NA","38.4","20.2","206.0","242.0","13.1","6.0","1922.0","0.2","Traco"
-"581","Leguminosas e derivados","Soja extrato soluvel natural fluido","Liquido","39.0","2.4","1.6","NA","4.3","0.4","17.0","15.0","0.4","57.0","121.0","Traco","Traco"
-"582","Leguminosas e derivados","Soja extrato soluvel po","SolidoNaoContavel","459.0","35.7","26.2","NA","28.5","7.3","359.0","216.0","7.0","83.0","1607.0","Traco","9.2"
-"583","Leguminosas e derivados","Soja queijo (tofu)","SolidoContavel","64.0","6.6","4.0","NA","2.1","0.8","81.0","38.0","1.4","1.0","182.0","0.04","Traco"
-"584","Leguminosas e derivados","Tremoco cru","SolidoNaoContavel","381.0","33.6","10.3","NA","43.8","32.3","177.0","121.0","2.8","3.0","708.0","0.24","25.0"
-"585","Leguminosas e derivados","Tremoco em conserva","SolidoNaoContavel","121.0","11.1","3.8","NA","12.4","14.4","16.0","4.0","0.3","1809.0","5.0","Traco","Traco"
-"586","Nozes e sementes","Amendoa torrada salgada","SolidoContavel","581.0","18.6","47.3","NA","29.5","11.6","237.0","222.0","3.1","279.0","640.0","0.29","Traco"
-"587","Nozes e sementes","Castanha-de-caju torrada salgada","SolidoContavel","570.0","18.5","46.3","NA","29.1","3.7","33.0","237.0","5.2","125.0","671.0","0.29","Traco"
-"588","Nozes e sementes","Castanha-do-Brasil crua","SolidoContavel","643.0","14.5","63.5","NA","15.1","7.9","146.0","365.0","2.3","1.0","651.0","0.3","Traco"
-"589","Nozes e sementes","Coco cru","SolidoNaoContavel","406.0","3.7","42.0","NA","10.4","5.4","6.0","51.0","1.8","15.0","354.0","Traco","2.5"
-"590","Nozes e sementes","Coco  verde cru","SolidoContavel","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA"
-"591","Nozes e sementes","Farinha de mesocarpo de babacu crua","SolidoNaoContavel","329.0","1.4","0.2","NA","79.2","17.9","61.0","39.0","18.3","12.0","362.0","Traco","Traco"
-"592","Nozes e sementes","Gergelim semente","SolidoNaoContavel","584.0","21.2","50.4","NA","21.6","11.9","825.0","361.0","5.4","3.0","546.0","0.94","Traco"
-"593","Nozes e sementes","Linhaca semente","SolidoNaoContavel","495.0","14.1","32.3","NA","43.3","33.5","211.0","347.0","4.7","9.0","869.0","0.12","Traco"
-"594","Nozes e sementes","Pinhao cozido","SolidoNaoContavel","174.0","3.0","0.7","NA","43.9","15.6","16.0","53.0","0.8","1.0","727.0","Traco","27.7"
-"595","Nozes e sementes","Pupunha cozida","SolidoNaoContavel","219.0","2.5","12.8","NA","29.6","4.3","28.0","25.0","0.5","1.0","303.0","Traco","2.2"
-"596","Nozes e sementes","Noz crua","SolidoContavel","620.0","14.0","59.4","NA","18.4","7.2","105.0","153.0","2.0","5.0","533.0","0.38","Traco"
+ID_Alimento,Categoria_Alimento,Nome_Alimento,SubClasse_Alimento,Energia,Proteina,Lipidios,Colesterol,Carboidrato,FibraAlimentar..g.,Calcio..mg.,Magnesio..mg.,Ferro..mg.,Sodio..mg.,Potassio..mg.,Tiamina..mg.,VitaminaC..mg.
+1,Cereais e derivados,Arroz integral cozido,SolidoNaoContavel,124.0,2.6,1.0,NA,25.8,2.7,5.0,59.0,0.3,1.0,75.0,0.08,NA
+2,Cereais e derivados,Arroz integral cru,SolidoNaoContavel,360.0,7.3,1.9,NA,77.5,4.8,8.0,110.0,0.9,2.0,173.0,0.26,NA
+3,Cereais e derivados,Arroz tipo 1 cozido,SolidoNaoContavel,128.0,2.5,0.2,NA,28.1,1.6,4.0,2.0,0.1,1.0,15.0,Traco,NA
+4,Cereais e derivados,Arroz tipo 1 cru,SolidoNaoContavel,358.0,7.2,0.3,NA,78.8,1.6,4.0,30.0,0.7,1.0,62.0,0.16,NA
+5,Cereais e derivados,Arroz tipo 2 cozido,SolidoNaoContavel,130.0,2.6,0.4,NA,28.2,1.1,3.0,6.0,0.1,2.0,20.0,Traco,NA
+6,Cereais e derivados,Arroz tipo 2 cru,SolidoNaoContavel,358.0,7.2,0.3,NA,78.9,1.7,5.0,29.0,0.6,1.0,57.0,0.16,NA
+7,Cereais e derivados,Aveia flocos crua,SolidoNaoContavel,394.0,13.9,8.5,NA,66.6,9.1,48.0,119.0,4.4,5.0,336.0,0.55,1.4
+8,Cereais e derivados,Biscoito doce maisena,SolidoContavel,443.0,8.1,12.0,NA,75.2,2.1,54.0,37.0,1.8,352.0,142.0,1.01,6.2
+9,Cereais e derivados,Biscoito doce recheado com chocolate,SolidoContavel,472.0,6.4,19.6,Traco,70.5,3.0,27.0,48.0,2.3,239.0,232.0,0.32,3.5
+10,Cereais e derivados,Biscoito doce recheado com morango,SolidoContavel,471.0,5.7,19.6,Traco,71.0,1.5,36.0,27.0,1.5,230.0,113.0,0.9,Traco
+11,Cereais e derivados,Biscoito doce wafer recheado de chocolate,SolidoContavel,502.0,5.6,24.7,Traco,67.5,1.8,23.0,48.0,2.4,137.0,240.0,0.37,Traco
+12,Cereais e derivados,Biscoito doce wafer recheado de morango,SolidoContavel,513.0,4.5,26.4,1.0,67.4,0.8,14.0,19.0,1.1,120.0,75.0,0.36,NA
+13,Cereais e derivados,Biscoito salgado cream cracker,SolidoContavel,432.0,10.1,14.4,NA,68.7,2.5,20.0,40.0,2.2,854.0,181.0,0.71,NA
+14,Cereais e derivados,Bolo mistura para,SolidoNaoContavel,419.0,6.2,6.1,Traco,84.7,1.7,59.0,28.0,1.2,463.0,75.0,0.18,Traco
+15,Cereais e derivados,Bolo pronto aipim,SolidoContavel,324.0,4.4,12.7,73.0,47.9,0.7,85.0,10.0,0.5,111.0,135.0,0.13,Traco
+16,Cereais e derivados,Bolo pronto chocolate,SolidoContavel,410.0,6.2,18.5,77.0,54.7,1.4,75.0,28.0,2.1,283.0,212.0,0.13,Traco
+17,Cereais e derivados,Bolo pronto coco,SolidoContavel,333.0,5.7,11.3,63.0,52.3,1.1,57.0,16.0,0.8,190.0,143.0,0.15,Traco
+18,Cereais e derivados,Bolo pronto milho,SolidoContavel,311.0,4.8,12.4,82.0,45.1,0.7,83.0,10.0,0.7,134.0,118.0,0.11,Traco
+19,Cereais e derivados,Canjica branca crua,SolidoNaoContavel,358.0,7.2,1.0,NA,78.1,5.5,2.0,12.0,0.3,1.0,93.0,Traco,Traco
+20,Cereais e derivados,Canjica com leite integral,SolidoNaoContavel,112.0,2.4,1.2,1.0,23.6,1.2,43.0,6.0,0.1,28.0,70.0,Traco,Traco
+21,Cereais e derivados,Cereais milho flocos com sal,SolidoNaoContavel,370.0,7.3,1.6,NA,80.8,5.3,2.0,20.0,0.5,272.0,69.0,0.12,Traco
+22,Cereais e derivados,Cereais milho flocos sem sal,SolidoNaoContavel,363.0,6.9,1.2,NA,80.4,1.8,2.0,17.0,1.7,31.0,29.0,0.05,Traco
+23,Cereais e derivados,Cereais mingau milho infantil,SolidoNaoContavel,394.0,6.4,1.1,NA,87.3,3.2,219.0,16.0,3.0,399.0,82.0,3.72,109.4
+24,Cereais e derivados,Cereais mistura para vitamina trigo cevada e aveia,SolidoNaoContavel,381.0,8.9,2.1,NA,81.6,5.0,584.0,72.0,12.6,1163.0,244.0,0.76,13.1
+25,Cereais e derivados,Cereal matinal milho,SolidoNaoContavel,365.0,7.2,1.0,NA,83.8,4.1,143.0,11.0,3.1,655.0,83.0,0.76,17.3
+26,Cereais e derivados,Cereal matinal milho acucar,SolidoNaoContavel,377.0,4.7,0.7,NA,88.8,2.1,56.0,8.0,3.9,405.0,52.0,0.73,14.6
+27,Cereais e derivados,Creme de arroz po,SolidoNaoContavel,386.0,7.0,1.2,NA,83.9,1.1,7.0,51.0,0.6,1.0,115.0,0.22,Traco
+28,Cereais e derivados,Creme de milho po,SolidoNaoContavel,333.0,4.8,1.6,NA,86.1,3.7,323.0,30.0,4.3,594.0,166.0,0.74,96.3
+29,Cereais e derivados,Curau milho verde,SolidoNaoContavel,78.0,2.4,1.6,5.0,13.9,0.5,53.0,16.0,0.4,21.0,162.0,0.04,Traco
+30,Cereais e derivados,Curau milho verde mistura para,SolidoNaoContavel,402.0,2.2,13.4,NA,79.8,2.5,31.0,9.0,0.9,223.0,55.0,0.13,Traco
+31,Cereais e derivados,Farinha de arroz enriquecida,SolidoNaoContavel,363.0,1.3,0.3,NA,85.5,0.6,1.0,4.0,31.4,17.0,13.0,3.23,173.6
+32,Cereais e derivados,Farinha de centeio integral,SolidoNaoContavel,336.0,12.5,1.8,NA,73.3,15.5,34.0,120.0,4.7,41.0,334.0,0.29,Traco
+33,Cereais e derivados,Farinha de milho amarela,SolidoNaoContavel,351.0,7.2,1.5,NA,79.1,5.5,1.0,31.0,2.3,45.0,58.0,0.25,Traco
+34,Cereais e derivados,Farinha de rosca,SolidoNaoContavel,371.0,11.4,1.5,NA,75.8,4.8,35.0,57.0,6.7,333.0,212.0,0.25,Traco
+35,Cereais e derivados,Farinha de trigo,SolidoNaoContavel,360.0,9.8,1.4,NA,75.1,2.3,18.0,31.0,1.0,1.0,151.0,0.31,Traco
+36,Cereais e derivados,Farinha lactea de cereais,SolidoNaoContavel,415.0,11.9,5.8,11.0,77.8,1.9,196.0,58.0,8.7,125.0,366.0,1.43,24.3
+37,Cereais e derivados,Lasanha massa fresca cozida,SolidoNaoContavel,164.0,5.8,1.2,NA,32.5,1.6,10.0,4.0,1.2,207.0,54.0,0.04,NA
+38,Cereais e derivados,Lasanha massa fresca crua,SolidoNaoContavel,220.0,7.0,1.3,NA,45.1,1.6,17.0,13.0,1.9,667.0,137.0,0.08,NA
+39,Cereais e derivados,Macarrao instantaneo,SolidoNaoContavel,436.0,8.8,17.2,NA,62.4,5.6,18.0,19.0,0.8,1516.0,148.0,1.18,Traco
+40,Cereais e derivados,Macarrao trigo cru,SolidoNaoContavel,371.0,10.0,1.3,NA,77.9,2.9,17.0,28.0,0.9,7.0,147.0,0.18,Traco
+41,Cereais e derivados,Macarrao trigo cru com ovos,SolidoNaoContavel,371.0,10.3,2.0,18.0,76.6,2.3,19.0,Traco,0.9,15.0,134.0,0.11,Traco
+42,Cereais e derivados,Milho amido cru,SolidoNaoContavel,361.0,0.6,Traco,NA,87.1,0.7,1.0,3.0,0.1,8.0,9.0,Traco,Traco
+43,Cereais e derivados,Milho fuba cru,SolidoNaoContavel,353.0,7.2,1.9,NA,78.9,4.7,3.0,41.0,0.9,Traco,168.0,0.25,Traco
+44,Cereais e derivados,Milho verde cru,SolidoNaoContavel,138.0,6.6,0.6,NA,28.6,3.9,2.0,33.0,0.4,1.0,185.0,0.3,Traco
+45,Cereais e derivados,Milho verde enlatado drenado,SolidoNaoContavel,98.0,3.2,2.4,NA,17.1,4.6,2.0,20.0,0.6,260.0,162.0,Traco,1.7
+46,Cereais e derivados,Mingau tradicional po,SolidoNaoContavel,373.0,0.6,0.4,NA,89.3,0.9,522.0,4.0,42.0,15.0,Traco,3.41,Traco
+47,Cereais e derivados,Pamonha barra para cozimento pre-cozida,SolidoNaoContavel,171.0,2.6,4.8,NA,30.7,2.4,4.0,15.0,0.4,132.0,125.0,Traco,Traco
+48,Cereais e derivados,Pao aveia forma,SolidoContavel,343.0,12.4,5.7,Traco,59.6,6.0,109.0,57.0,4.7,606.0,210.0,0.09,Traco
+49,Cereais e derivados,Pao de soja,SolidoContavel,309.0,11.3,3.6,NA,56.5,5.7,90.0,48.0,3.3,663.0,296.0,0.07,Traco
+50,Cereais e derivados,Pao gluten forma,SolidoContavel,253.0,12.0,2.7,NA,44.1,2.5,156.0,24.0,5.7,22.0,65.0,0.04,Traco
+51,Cereais e derivados,Pao milho forma,SolidoContavel,292.0,8.3,3.1,6.0,56.4,4.3,78.0,29.0,3.0,507.0,89.0,0.08,Traco
+52,Cereais e derivados,Pao trigo forma integral,SolidoContavel,253.0,9.4,3.7,NA,49.9,6.9,132.0,60.0,3.0,506.0,163.0,0.08,Traco
+53,Cereais e derivados,Pao trigo frances,SolidoContavel,300.0,8.0,3.1,NA,58.6,2.3,16.0,25.0,1.0,648.0,142.0,0.39,NA
+54,Cereais e derivados,Pao trigo sovado,SolidoContavel,311.0,8.4,2.8,17.0,61.5,2.4,52.0,22.0,2.3,431.0,91.0,0.08,Traco
+55,Cereais e derivados,Pastel de carne cru,SolidoContavel,289.0,10.7,8.8,18.0,42.0,1.0,17.0,18.0,2.0,1309.0,166.0,0.06,Traco
+56,Cereais e derivados,Pastel de carne frito,SolidoContavel,388.0,10.1,20.1,25.0,43.8,1.0,13.0,14.0,2.5,1040.0,156.0,0.06,NA
+57,Cereais e derivados,Pastel de queijo cru,SolidoContavel,308.0,9.9,9.6,14.0,45.9,1.1,155.0,16.0,1.0,985.0,103.0,0.07,Traco
+58,Cereais e derivados,Pastel de queijo frito,SolidoContavel,422.0,8.7,22.7,15.0,48.1,0.9,126.0,15.0,1.3,821.0,124.0,0.09,Traco
+59,Cereais e derivados,Pastel massa crua,SolidoContavel,310.0,6.9,5.5,NA,57.4,1.4,13.0,14.0,1.1,1344.0,167.0,0.15,NA
+60,Cereais e derivados,Pastel massa frita,SolidoContavel,570.0,6.0,40.9,NA,49.3,1.3,11.0,13.0,1.4,1175.0,143.0,0.16,NA
+61,Cereais e derivados,Pipoca com oleo de soja sem sal,SolidoNaoContavel,448.0,9.9,15.9,NA,70.3,14.3,3.0,91.0,1.2,4.0,256.0,0.03,Traco
+62,Cereais e derivados,Polenta pre-cozida,SolidoNaoContavel,103.0,2.3,0.3,NA,23.3,2.4,1.0,4.0,Traco,442.0,100.0,0.04,Traco
+63,Cereais e derivados,Torrada pao frances,SolidoContavel,377.0,10.5,3.3,NA,74.6,3.4,19.0,32.0,1.2,829.0,189.0,0.38,Traco
+64,"Verduras, hortalicas e derivados",Abobora cabotian cozida,SolidoNaoContavel,201.0,1.4,0.7,NA,10.8,0.7,8.0,33.0,0.3,1.0,NA,Traco,7.5
+65,"Verduras, hortalicas e derivados",Abobora cabotian crua,SolidoNaoContavel,161.0,1.7,0.5,NA,8.4,0.8,18.0,26.0,0.4,Traco,223.0,Traco,5.1
+66,"Verduras, hortalicas e derivados",Abobora menina brasileira crua,SolidoNaoContavel,57.0,0.6,Traco,NA,3.3,0.4,9.0,12.0,0.2,Traco,554.0,Traco,1.5
+67,"Verduras, hortalicas e derivados",Abobora moranga crua,SolidoNaoContavel,52.0,1.0,0.1,NA,2.7,0.4,3.0,8.0,Traco,Traco,139.0,Traco,9.6
+68,"Verduras, hortalicas e derivados",Abobora moranga refogada,SolidoNaoContavel,121.0,0.4,0.8,NA,6.0,0.4,19.0,12.0,0.1,3.0,48.0,Traco,6.7
+69,"Verduras, hortalicas e derivados",Abobora pescoco crua,SolidoNaoContavel,102.0,0.7,0.1,NA,6.1,0.6,9.0,32.0,0.3,1.0,NA,Traco,2.1
+70,"Verduras, hortalicas e derivados",Abobrinha italiana cozida,SolidoNaoContavel,63.0,1.1,0.2,NA,3.0,0.4,17.0,22.0,0.2,1.0,NA,Traco,2.1
+71,"Verduras, hortalicas e derivados",Abobrinha italiana crua,SolidoNaoContavel,81.0,1.1,0.1,NA,4.3,0.6,15.0,32.0,0.2,Traco,20.0,Traco,6.9
+72,"Verduras, hortalicas e derivados",Abobrinha italiana refogada,SolidoNaoContavel,102.0,1.1,0.8,NA,4.2,0.4,21.0,32.0,0.4,2.0,21.0,Traco,7.5
+73,"Verduras, hortalicas e derivados",Abobrinha paulista crua,SolidoNaoContavel,129.0,0.6,0.1,NA,7.9,0.5,19.0,33.0,0.2,1.0,NA,Traco,17.5
+74,"Verduras, hortalicas e derivados",Acelga crua,SolidoNaoContavel,88.0,1.4,0.1,NA,4.6,0.6,43.0,40.0,0.3,1.0,NA,Traco,22.6
+75,"Verduras, hortalicas e derivados",Agriao cru,SolidoNaoContavel,69.0,2.7,0.2,NA,2.3,0.9,133.0,51.0,3.1,7.0,229.0,1.19,60.1
+76,"Verduras, hortalicas e derivados",Aipo cru,SolidoNaoContavel,80.0,0.8,0.1,NA,4.3,1.1,65.0,28.0,0.7,10.0,458.0,Traco,5.9
+77,"Verduras, hortalicas e derivados",Alface americana crua,SolidoNaoContavel,37.0,0.6,0.1,NA,1.7,0.3,14.0,19.0,0.3,7.0,NA,Traco,11.0
+78,"Verduras, hortalicas e derivados",Alface crespa crua,SolidoNaoContavel,45.0,1.3,0.2,NA,1.7,0.7,38.0,26.0,0.4,3.0,117.0,1.09,15.6
+79,"Verduras, hortalicas e derivados",Alface lisa crua,SolidoNaoContavel,58.0,1.7,0.1,NA,2.4,0.8,28.0,26.0,0.6,4.0,184.0,0.75,21.4
+80,"Verduras, hortalicas e derivados",Alface roxa crua,SolidoNaoContavel,53.0,0.9,0.2,NA,2.5,0.7,34.0,51.0,2.5,7.0,156.0,Traco,13.5
+81,"Verduras, hortalicas e derivados",Alfavaca crua,SolidoNaoContavel,122.0,2.7,0.5,NA,5.2,1.4,258.0,50.0,1.3,5.0,NA,Traco,Traco
+82,"Verduras, hortalicas e derivados",Alho cru,SolidoNaoContavel,473.0,7.0,0.2,NA,23.9,1.3,14.0,149.0,0.8,5.0,NA,Traco,NA
+83,"Verduras, hortalicas e derivados",Alho-poro cru,SolidoNaoContavel,132.0,1.4,0.1,NA,6.9,0.6,34.0,36.0,0.6,2.0,8.0,0.34,14.1
+84,"Verduras, hortalicas e derivados",Almeirao cru,SolidoNaoContavel,75.0,1.8,0.2,NA,3.3,1.0,19.0,40.0,0.7,2.0,283.0,0.63,1.7
+85,"Verduras, hortalicas e derivados",Almeirao refogado,SolidoNaoContavel,272.0,1.7,4.8,NA,5.7,1.2,63.0,31.0,1.6,15.0,NA,4.03,1.5
+86,"Verduras, hortalicas e derivados",Batata baroa cozida,SolidoNaoContavel,335.0,0.9,0.2,NA,18.9,0.8,12.0,29.0,0.4,2.0,NA,1.98,17.1
+87,"Verduras, hortalicas e derivados",Batata baroa crua,SolidoNaoContavel,423.0,1.0,0.2,NA,24.0,1.1,17.0,45.0,0.3,Traco,12.0,Traco,7.6
+88,"Verduras, hortalicas e derivados",Batata doce cozida,SolidoNaoContavel,321.0,0.6,0.1,NA,18.4,0.4,17.0,15.0,0.2,3.0,NA,2.57,23.8
+89,"Verduras, hortalicas e derivados",Batata doce crua,SolidoNaoContavel,495.0,1.3,0.1,NA,28.2,0.9,21.0,36.0,0.4,9.0,NA,Traco,16.5
+90,"Verduras, hortalicas e derivados",Batata frita tipo chipsindustrializada,SolidoNaoContavel,2271.0,5.6,36.6,NA,51.2,3.9,12.0,96.0,0.7,607.0,NA,2.61,Traco
+91,"Verduras, hortalicas e derivados",Batata inglesa cozida,SolidoNaoContavel,216.0,1.2,Traco,NA,11.9,0.5,4.0,24.0,0.2,2.0,NA,Traco,3.8
+92,"Verduras, hortalicas e derivados",Batata inglesa crua,SolidoNaoContavel,269.0,1.8,Traco,NA,14.7,0.6,4.0,39.0,0.4,Traco,NA,Traco,31.1
+93,"Verduras, hortalicas e derivados",Batata inglesa frita,SolidoNaoContavel,1118.0,5.0,13.1,NA,35.6,2.2,6.0,70.0,0.4,2.0,NA,2.51,16.3
+94,"Verduras, hortalicas e derivados",Batata inglesa saute,SolidoNaoContavel,284.0,1.3,0.9,NA,14.1,0.6,4.0,32.0,0.3,8.0,NA,1.38,Traco
+95,"Verduras, hortalicas e derivados",Berinjela cozida,SolidoNaoContavel,79.0,0.7,0.1,NA,4.5,0.3,11.0,15.0,0.2,1.0,NA,Traco,Traco
+96,"Verduras, hortalicas e derivados",Berinjela crua,SolidoNaoContavel,82.0,1.2,0.1,NA,4.4,0.4,9.0,20.0,0.2,Traco,12.0,Traco,3.0
+97,"Verduras, hortalicas e derivados",Beterraba cozida,SolidoNaoContavel,135.0,1.3,0.1,NA,7.2,0.8,15.0,30.0,0.2,23.0,NA,Traco,1.2
+98,"Verduras, hortalicas e derivados",Beterraba crua,SolidoNaoContavel,204.0,1.9,0.1,NA,11.1,0.9,18.0,19.0,0.3,10.0,NA,Traco,3.1
+99,"Verduras, hortalicas e derivados",Biscoito polvilho doce,SolidoNaoContavel,1831.0,1.3,12.2,9.0,80.5,0.5,30.0,23.0,1.8,98.0,NA,Traco,Traco
+100,"Verduras, hortalicas e derivados",Brocolis cozido,SolidoNaoContavel,103.0,2.1,0.5,NA,4.4,0.4,51.0,33.0,0.5,2.0,NA,Traco,42.0
+101,"Verduras, hortalicas e derivados",Brocolis cru,SolidoNaoContavel,107.0,3.6,0.3,NA,4.0,0.8,86.0,78.0,0.6,3.0,140.0,1.39,34.3
+102,"Verduras, hortalicas e derivados",Cara cozido,SolidoNaoContavel,325.0,1.5,0.1,NA,18.9,0.6,5.0,28.0,0.3,1.0,NA,Traco,Traco
+103,"Verduras, hortalicas e derivados",Cara cru,SolidoNaoContavel,400.0,2.3,0.1,NA,23.0,0.9,4.0,35.0,0.2,Traco,NA,Traco,8.8
+104,"Verduras, hortalicas e derivados",Caruru cru,SolidoNaoContavel,142.0,3.2,0.6,NA,6.0,2.6,455.0,77.0,4.5,14.0,953.0,Traco,5.4
+105,"Verduras, hortalicas e derivados",Catalonha crua,SolidoNaoContavel,100.0,1.9,0.3,NA,4.8,1.3,57.0,32.0,3.1,9.0,NA,1.54,7.3
+106,"Verduras, hortalicas e derivados",Catalonha refogada,SolidoNaoContavel,265.0,2.0,4.8,NA,4.8,1.0,63.0,35.0,1.2,25.0,425.0,0.6,Traco
+107,"Verduras, hortalicas e derivados",Cebola crua,SolidoNaoContavel,165.0,1.7,0.1,NA,8.9,0.4,14.0,38.0,0.2,1.0,NA,Traco,4.7
+108,"Verduras, hortalicas e derivados",Cebolinha crua,SolidoNaoContavel,82.0,1.9,0.4,NA,3.4,0.5,80.0,27.0,0.6,2.0,67.0,Traco,31.8
+109,"Verduras, hortalicas e derivados",Cenoura cozida,SolidoNaoContavel,125.0,0.8,0.2,NA,6.7,0.6,26.0,27.0,0.1,8.0,306.0,2.68,Traco
+110,"Verduras, hortalicas e derivados",Cenoura crua,SolidoNaoContavel,143.0,1.3,0.2,NA,7.7,0.9,23.0,28.0,0.2,3.0,663.0,Traco,5.1
+111,"Verduras, hortalicas e derivados",Chicoria crua,SolidoNaoContavel,58.0,1.1,0.1,NA,2.9,0.8,45.0,13.0,0.5,14.0,NA,0.68,6.5
+112,"Verduras, hortalicas e derivados",Chuchu cozido,SolidoNaoContavel,78.0,0.4,Traco,NA,4.8,0.2,8.0,13.0,0.1,2.0,NA,Traco,5.6
+113,"Verduras, hortalicas e derivados",Chuchu cru,SolidoNaoContavel,71.0,0.7,0.1,NA,4.1,0.3,12.0,18.0,0.2,Traco,NA,Traco,10.6
+114,"Verduras, hortalicas e derivados",Coentro folhas desidratadas,SolidoNaoContavel,1293.0,20.9,10.4,NA,48.0,10.2,784.0,388.0,81.4,18.0,NA,Traco,40.8
+115,"Verduras, hortalicas e derivados",Couve manteiga crua,SolidoNaoContavel,113.0,2.9,0.5,NA,4.3,1.3,131.0,49.0,0.5,6.0,248.0,2.29,96.7
+116,"Verduras, hortalicas e derivados",Couve manteiga refogada,SolidoNaoContavel,378.0,1.7,6.6,NA,8.7,1.5,177.0,33.0,0.5,11.0,192.0,Traco,76.9
+117,"Verduras, hortalicas e derivados",Couve-flor crua,SolidoNaoContavel,94.0,1.9,0.2,NA,4.5,0.6,18.0,57.0,0.5,3.0,1.0,Traco,36.1
+118,"Verduras, hortalicas e derivados",Couve-flor cozida,SolidoNaoContavel,80.0,1.2,0.3,NA,3.9,0.3,16.0,25.0,0.1,2.0,NA,Traco,23.7
+119,"Verduras, hortalicas e derivados",Espinafre Nova Zelandia cru,SolidoNaoContavel,67.0,2.0,0.2,NA,2.6,1.2,98.0,25.0,0.4,17.0,242.0,Traco,2.4
+120,"Verduras, hortalicas e derivados",Espinafre Nova Zelandia refogado,SolidoNaoContavel,281.0,2.7,5.4,NA,4.2,1.0,112.0,34.0,0.6,47.0,312.0,Traco,5.3
+121,"Verduras, hortalicas e derivados",Farinha de mandioca crua,SolidoNaoContavel,1510.0,1.6,0.3,NA,87.9,0.9,65.0,42.0,1.1,1.0,NA,Traco,Traco
+122,"Verduras, hortalicas e derivados",Farinha de mandioca torrada,SolidoNaoContavel,1528.0,1.2,0.3,NA,89.2,1.0,76.0,39.0,1.2,10.0,NA,Traco,Traco
+123,"Verduras, hortalicas e derivados",Farinha de puba,SolidoNaoContavel,1507.0,1.6,0.5,NA,87.3,0.8,41.0,33.0,1.4,4.0,NA,Traco,Traco
+124,"Verduras, hortalicas e derivados",Fecula de mandioca,SolidoNaoContavel,1384.0,0.5,0.3,NA,81.1,0.3,12.0,60.0,0.1,2.0,NA,Traco,Traco
+125,"Verduras, hortalicas e derivados",Feijao broto cru,SolidoNaoContavel,162.0,4.2,0.1,NA,7.8,0.5,14.0,75.0,0.8,2.0,NA,Traco,12.0
+126,"Verduras, hortalicas e derivados",Inhame cru,SolidoNaoContavel,405.0,2.1,0.2,NA,23.2,1.2,12.0,65.0,0.4,Traco,NA,Traco,5.6
+127,"Verduras, hortalicas e derivados",Jilo cru,SolidoNaoContavel,114.0,1.4,0.2,NA,6.2,0.6,20.0,29.0,0.3,Traco,6.0,Traco,6.8
+128,"Verduras, hortalicas e derivados",Jurubeba crua,SolidoNaoContavel,526.0,4.4,3.9,NA,23.1,2.0,151.0,155.0,0.9,1.0,NA,Traco,13.8
+129,"Verduras, hortalicas e derivados",Mandioca cozida,SolidoNaoContavel,524.0,0.6,0.3,NA,30.1,0.4,19.0,22.0,0.1,1.0,NA,Traco,11.1
+130,"Verduras, hortalicas e derivados",Mandioca crua,SolidoNaoContavel,634.0,1.1,0.3,NA,36.2,0.6,15.0,29.0,0.3,2.0,NA,Traco,16.5
+131,"Verduras, hortalicas e derivados",Mandioca farofa temperada,SolidoNaoContavel,1697.0,2.1,9.1,NA,80.3,2.1,66.0,45.0,1.4,575.0,NA,Traco,Traco
+132,"Verduras, hortalicas e derivados",Mandioca frita,SolidoNaoContavel,1255.0,1.4,11.2,NA,50.3,0.6,23.0,57.0,0.3,9.0,NA,Traco,Traco
+133,"Verduras, hortalicas e derivados",Manjericao cru,SolidoNaoContavel,88.0,2.0,0.4,NA,3.6,1.0,211.0,40.0,1.0,4.0,517.0,0.9,2.3
+134,"Verduras, hortalicas e derivados",Maxixe cru,SolidoNaoContavel,58.0,1.4,0.1,NA,2.7,0.7,21.0,25.0,0.4,11.0,3.0,Traco,9.6
+135,"Verduras, hortalicas e derivados",Mostarda folha crua,SolidoNaoContavel,76.0,2.1,0.2,NA,3.2,1.1,68.0,58.0,1.1,3.0,NA,Traco,38.6
+136,"Verduras, hortalicas e derivados",Nhoque batata cozido,SolidoNaoContavel,756.0,5.9,1.9,15.0,36.8,0.5,11.0,68.0,1.6,7.0,NA,Traco,Traco
+137,"Verduras, hortalicas e derivados",Nabo cru,SolidoNaoContavel,76.0,1.2,0.1,NA,4.1,0.8,42.0,17.0,0.2,2.0,NA,Traco,9.6
+138,"Verduras, hortalicas e derivados",Palmito jucara em conserva,SolidoNaoContavel,97.0,1.8,0.4,NA,4.3,2.1,58.0,40.0,0.3,514.0,NA,Traco,2.0
+139,"Verduras, hortalicas e derivados",Palmito pupunha em conserva,SolidoNaoContavel,123.0,2.5,0.5,NA,5.5,2.1,32.0,55.0,0.2,563.0,NA,Traco,8.7
+140,"Verduras, hortalicas e derivados",Pao de queijo assado,SolidoNaoContavel,1519.0,5.1,24.6,68.0,34.2,2.3,102.0,94.0,0.3,773.0,NA,Traco,NA
+141,"Verduras, hortalicas e derivados",Pao de queijo cru,SolidoNaoContavel,1232.0,3.6,14.0,63.0,38.5,2.0,88.0,79.0,0.3,405.0,NA,Traco,NA
+142,"Verduras, hortalicas e derivados",Pepino cru,SolidoNaoContavel,40.0,0.9,Traco,NA,2.0,0.3,10.0,12.0,0.1,Traco,2.0,Traco,5.0
+143,"Verduras, hortalicas e derivados",Pimentao amarelo cru,SolidoNaoContavel,117.0,1.2,0.4,NA,6.0,0.5,10.0,22.0,0.4,Traco,20.0,Traco,201.4
+144,"Verduras, hortalicas e derivados",Pimentao verde cru,SolidoNaoContavel,89.0,1.1,0.2,NA,4.9,0.4,9.0,17.0,0.4,Traco,23.0,Traco,100.2
+145,"Verduras, hortalicas e derivados",Pimentao vermelho cru,SolidoNaoContavel,97.0,1.0,0.1,NA,5.5,0.4,6.0,20.0,0.3,Traco,43.0,Traco,158.2
+146,"Verduras, hortalicas e derivados",Polvilho doce,SolidoNaoContavel,1470.0,0.4,Traco,NA,86.8,0.2,27.0,8.0,0.5,2.0,NA,Traco,Traco
+147,"Verduras, hortalicas e derivados",Quiabo cru,SolidoNaoContavel,125.0,1.9,0.3,NA,6.4,0.8,112.0,56.0,0.4,1.0,25.0,Traco,5.6
+148,"Verduras, hortalicas e derivados",Rabanete cru,SolidoNaoContavel,57.0,1.4,0.1,NA,2.7,0.7,21.0,25.0,0.4,11.0,NA,Traco,9.6
+149,"Verduras, hortalicas e derivados",Repolho branco cru,SolidoNaoContavel,72.0,0.9,0.1,NA,3.9,0.4,35.0,14.0,0.2,4.0,3.0,Traco,18.7
+150,"Verduras, hortalicas e derivados",Repolho roxo cru,SolidoNaoContavel,129.0,1.9,0.1,NA,7.2,0.7,44.0,58.0,0.5,2.0,NA,Traco,43.2
+151,"Verduras, hortalicas e derivados",Repolho roxo refogado,SolidoNaoContavel,175.0,1.8,1.2,NA,7.6,0.7,43.0,59.0,0.5,3.0,NA,0.63,40.5
+152,"Verduras, hortalicas e derivados",Rucula crua,SolidoNaoContavel,55.0,1.8,0.1,NA,2.2,1.1,117.0,25.0,0.9,9.0,266.0,0.35,46.3
+153,"Verduras, hortalicas e derivados",Salsa crua,SolidoNaoContavel,140.0,3.3,0.6,NA,5.7,1.8,179.0,49.0,3.2,2.0,872.0,0.72,51.7
+154,"Verduras, hortalicas e derivados",Seleta de legumes enlatada,SolidoNaoContavel,237.0,3.4,0.4,NA,12.7,1.4,16.0,49.0,1.1,398.0,122.0,3.72,Traco
+155,"Verduras, hortalicas e derivados",Serralha crua,SolidoNaoContavel,127.0,2.7,0.7,NA,4.9,1.4,126.0,48.0,1.3,19.0,567.0,Traco,1.5
+156,"Verduras, hortalicas e derivados",Taioba crua,SolidoNaoContavel,143.0,2.9,0.9,NA,5.4,1.5,141.0,53.0,1.9,1.0,580.0,Traco,17.9
+157,"Verduras, hortalicas e derivados",Tomate com semente cru,SolidoNaoContavel,64.0,1.1,0.2,NA,3.1,0.5,7.0,20.0,0.2,1.0,27.0,Traco,21.2
+158,"Verduras, hortalicas e derivados",Tomate extrato,SolidoNaoContavel,255.0,2.4,0.2,NA,15.0,2.8,29.0,47.0,2.1,498.0,83.0,2.42,18.0
+159,"Verduras, hortalicas e derivados",Tomate molho industrializado,SolidoNaoContavel,161.0,1.4,0.9,NA,7.7,1.9,12.0,27.0,1.6,418.0,38.0,Traco,2.7
+160,"Verduras, hortalicas e derivados",Tomate pure,SolidoNaoContavel,117.0,1.4,Traco,NA,6.9,1.0,13.0,30.0,1.3,104.0,45.0,1.18,5.4
+161,"Verduras, hortalicas e derivados",Tomate salada,SolidoNaoContavel,86.0,0.8,Traco,NA,5.1,0.4,7.0,23.0,0.3,5.0,NA,Traco,12.8
+162,"Verduras, hortalicas e derivados",Vagem crua,SolidoNaoContavel,104.0,1.8,0.2,NA,5.3,0.5,41.0,28.0,0.4,Traco,16.0,Traco,1.2
+163,Frutas e derivados,Abacaxi cru,SolidoContavel,48.0,0.9,0.1,NA,12.3,1.0,22.0,18.0,0.3,Traco,131.0,0.17,34.6
+164,Frutas e derivados,Abacaxi polpa congelada,SolidoContavel,31.0,0.5,0.1,NA,7.8,0.3,14.0,10.0,0.4,1.0,107.0,0.05,1.2
+165,Frutas e derivados,Abiu cru,SolidoContavel,62.0,0.8,0.7,NA,14.9,1.7,6.0,9.0,0.2,Traco,128.0,Traco,10.3
+166,Frutas e derivados,Acai polpa com xarope de guarana e glucose,SolidoContavel,110.0,0.7,3.7,NA,21.5,1.7,22.0,13.0,0.3,15.0,75.0,Traco,10.3
+167,Frutas e derivados,Acai polpa congelada,SolidoContavel,58.0,0.8,3.9,NA,6.2,2.6,35.0,17.0,0.4,5.0,124.0,Traco,Traco
+168,Frutas e derivados,Acerola crua,SolidoContavel,33.0,0.9,0.2,NA,8.0,1.5,13.0,13.0,0.2,Traco,165.0,Traco,941.4
+169,Frutas e derivados,Acerola polpa congelada,SolidoContavel,22.0,0.6,Traco,NA,5.5,0.7,8.0,9.0,0.2,1.0,112.0,Traco,623.2
+170,Frutas e derivados,Ameixa calda enlatada,SolidoContavel,183.0,0.4,Traco,NA,46.9,0.5,13.0,10.0,2.2,3.0,221.0,Traco,4.3
+171,Frutas e derivados,Ameixa crua,SolidoContavel,53.0,0.8,Traco,NA,13.9,2.4,6.0,5.0,0.1,Traco,134.0,0.07,7.6
+172,Frutas e derivados,Ameixa em calda enlatada drenada,SolidoContavel,177.0,1.0,0.3,NA,47.7,4.5,39.0,14.0,2.7,3.0,263.0,Traco,5.2
+173,Frutas e derivados,Atemoia crua,SolidoContavel,97.0,1.0,0.3,NA,25.3,2.1,23.0,25.0,0.2,1.0,300.0,0.09,10.1
+174,Frutas e derivados,Banana da terra crua,SolidoContavel,128.0,1.4,0.2,NA,33.7,1.5,4.0,24.0,0.3,Traco,328.0,0.03,15.7
+175,Frutas e derivados,Banana doce em barra,SolidoContavel,280.0,2.2,0.1,NA,75.7,3.8,12.0,49.0,0.6,10.0,518.0,0.03,Traco
+176,Frutas e derivados,Banana figo crua,SolidoContavel,105.0,1.1,0.1,NA,27.8,2.8,6.0,30.0,0.2,Traco,387.0,0.09,17.5
+177,Frutas e derivados,Banana maca crua,SolidoContavel,87.0,1.8,0.1,NA,22.3,2.6,3.0,24.0,0.2,Traco,264.0,Traco,10.5
+178,Frutas e derivados,Banana nanica crua,SolidoContavel,92.0,1.4,0.1,NA,23.8,1.9,3.0,28.0,0.3,Traco,376.0,Traco,5.9
+179,Frutas e derivados,Banana ouro crua,SolidoContavel,112.0,1.5,0.2,NA,29.3,2.0,3.0,28.0,0.3,Traco,355.0,Traco,7.6
+180,Frutas e derivados,Banana pacova crua,SolidoContavel,78.0,1.2,0.1,NA,20.3,2.0,5.0,30.0,0.4,1.0,267.0,0.05,Traco
+181,Frutas e derivados,Banana prata crua,SolidoContavel,98.0,1.3,0.1,NA,26.0,2.0,8.0,26.0,0.4,Traco,358.0,Traco,21.6
+182,Frutas e derivados,Cacau cru,SolidoContavel,74.0,1.0,0.1,NA,19.4,2.2,12.0,25.0,0.3,1.0,72.0,0.25,13.6
+183,Frutas e derivados,Caja-Manga cru,SolidoContavel,46.0,1.3,Traco,NA,11.4,2.6,13.0,11.0,0.2,1.0,119.0,0.11,26.7
+184,Frutas e derivados,Caja polpa congelada,SolidoContavel,26.0,0.6,0.2,NA,6.4,1.4,9.0,7.0,0.3,7.0,148.0,0.04,Traco
+185,Frutas e derivados,Caju cru,SolidoContavel,43.0,1.0,0.3,NA,10.3,1.7,1.0,10.0,0.2,3.0,124.0,Traco,219.3
+186,Frutas e derivados,Caju polpa congelada,SolidoContavel,37.0,0.5,0.2,NA,9.4,0.8,1.0,7.0,0.1,4.0,88.0,Traco,119.7
+187,Frutas e derivados,Caju suco concentrado envasado,SolidoContavel,45.0,0.4,0.2,NA,10.7,0.6,1.0,8.0,0.1,45.0,107.0,Traco,138.7
+188,Frutas e derivados,Caqui chocolate cru,SolidoContavel,71.0,0.4,0.1,NA,19.3,6.5,18.0,9.0,0.1,2.0,164.0,Traco,29.6
+189,Frutas e derivados,Carambola crua,SolidoContavel,46.0,0.9,0.2,NA,11.5,2.0,5.0,7.0,0.2,4.0,133.0,0.12,60.9
+190,Frutas e derivados,Ciriguela crua,SolidoContavel,76.0,1.4,0.4,NA,18.9,3.9,27.0,18.0,0.4,2.0,248.0,0.14,27.0
+191,Frutas e derivados,Cupuacu cru,SolidoContavel,49.0,1.2,1.0,NA,10.4,3.1,13.0,18.0,0.5,3.0,331.0,0.37,24.5
+192,Frutas e derivados,Cupuacu polpa congelada,SolidoContavel,49.0,0.8,0.6,NA,11.4,1.6,5.0,14.0,0.3,1.0,291.0,0.07,10.5
+193,Frutas e derivados,Figo cru,SolidoContavel,41.0,1.0,0.2,NA,10.2,1.8,27.0,11.0,0.2,Traco,174.0,0.05,0.8
+194,Frutas e derivados,Figo enlatado em calda,SolidoContavel,184.0,0.6,0.2,NA,50.3,2.0,33.0,7.0,0.5,7.0,39.0,Traco,5.2
+195,Frutas e derivados,Fruta-pao crua,SolidoContavel,67.0,1.1,0.2,NA,17.2,5.5,34.0,24.0,0.2,1.0,188.0,0.03,9.9
+196,Frutas e derivados,Goiaba branca com casca crua,SolidoContavel,52.0,0.9,0.5,NA,12.4,6.3,5.0,7.0,0.2,Traco,220.0,Traco,99.2
+197,Frutas e derivados,Goiaba doce em pasta,SolidoContavel,269.0,0.6,0.0,NA,74.1,3.7,10.0,6.0,0.4,4.0,165.0,0.07,23.1
+198,Frutas e derivados,Goiaba doce cascao,SolidoContavel,286.0,0.4,0.1,NA,78.7,4.4,15.0,10.0,0.4,11.0,251.0,Traco,34.3
+199,Frutas e derivados,Goiaba vermelha com casca crua,SolidoContavel,54.0,1.1,0.4,NA,13.0,6.2,4.0,7.0,0.2,Traco,198.0,Traco,80.6
+200,Frutas e derivados,Graviola crua,SolidoContavel,62.0,0.8,0.2,NA,15.8,1.9,40.0,23.0,0.2,4.0,250.0,0.17,19.1
+201,Frutas e derivados,Graviola polpa congelada,SolidoContavel,38.0,0.6,0.1,NA,9.8,1.2,6.0,10.0,0.1,3.0,170.0,Traco,10.5
+202,Frutas e derivados,Jabuticaba crua,SolidoContavel,58.0,0.6,0.1,NA,15.3,2.3,8.0,18.0,0.1,Traco,130.0,0.06,16.2
+203,Frutas e derivados,Jaca crua,SolidoContavel,88.0,1.4,0.3,NA,22.5,2.4,11.0,40.0,0.4,2.0,234.0,0.1,14.8
+204,Frutas e derivados,Jambo cru,SolidoContavel,27.0,0.9,0.1,NA,6.5,5.1,14.0,14.0,0.1,22.0,135.0,0.08,3.8
+205,Frutas e derivados,Jamelao cru,SolidoContavel,41.0,0.5,0.1,NA,10.6,1.8,3.0,2.0,0.0,1.0,394.0,0.17,27.1
+206,Frutas e derivados,Kiwi cru,SolidoContavel,51.0,1.3,0.6,NA,11.5,2.7,24.0,11.0,0.3,Traco,269.0,Traco,70.8
+207,Frutas e derivados,Laranja baia crua,SolidoContavel,45.0,1.0,0.1,NA,11.5,1.1,35.0,9.0,0.1,Traco,174.0,0.06,56.9
+208,Frutas e derivados,Laranja baia suco,SolidoContavel,37.0,0.7,Traco,NA,8.7,Traco,6.0,8.0,0.1,Traco,173.0,0.03,94.5
+209,Frutas e derivados,Laranja da terra crua,SolidoContavel,51.0,1.1,0.2,NA,12.9,4.0,51.0,14.0,0.1,1.0,173.0,0.07,34.7
+210,Frutas e derivados,Laranja da terra suco,SolidoContavel,41.0,0.7,0.1,NA,9.6,1.0,13.0,10.0,0.1,Traco,145.0,0.04,44.3
+211,Frutas e derivados,Laranja lima crua,SolidoContavel,46.0,1.1,0.1,NA,11.5,1.8,31.0,10.0,0.1,1.0,130.0,0.09,43.5
+212,Frutas e derivados,Laranja lima suco,SolidoContavel,39.0,0.7,0.1,NA,9.2,0.4,8.0,11.0,Traco,Traco,129.0,0.1,41.3
+213,Frutas e derivados,Laranja pera crua,SolidoContavel,37.0,1.0,0.1,NA,8.9,0.8,22.0,9.0,0.1,Traco,163.0,0.07,53.7
+214,Frutas e derivados,Laranja pera suco,SolidoContavel,33.0,0.7,0.1,NA,7.6,Traco,7.0,8.0,Traco,Traco,149.0,Traco,73.3
+215,Frutas e derivados,Laranja valencia crua,SolidoContavel,46.0,0.8,0.2,NA,11.7,1.7,34.0,14.0,0.1,1.0,158.0,0.07,47.8
+216,Frutas e derivados,Laranja valencia suco,SolidoContavel,36.0,0.5,0.1,NA,8.6,0.4,9.0,10.0,Traco,Traco,143.0,NA,NA
+217,Frutas e derivados,Limao cravo suco,SolidoContavel,14.0,0.3,Traco,NA,5.2,Traco,10.0,9.0,0.1,Traco,120.0,Traco,32.8
+218,Frutas e derivados,Limao galego suco,SolidoContavel,22.0,0.6,0.1,NA,7.3,Traco,5.0,6.0,0.1,Traco,113.0,Traco,34.5
+219,Frutas e derivados,Limao tahiti cru,SolidoContavel,32.0,0.9,0.1,NA,11.1,1.2,51.0,10.0,0.2,1.0,128.0,0.3,38.2
+220,Frutas e derivados,Maca Argentina com casca crua,SolidoContavel,63.0,0.2,0.2,NA,16.6,2.0,3.0,5.0,0.1,1.0,117.0,0.05,1.5
+221,Frutas e derivados,Maca Fuji com casca crua,SolidoContavel,56.0,0.3,Traco,NA,15.2,1.3,2.0,2.0,0.1,Traco,75.0,Traco,2.4
+222,Frutas e derivados,Macauba crua,SolidoContavel,404.0,2.1,40.7,NA,13.9,13.4,67.0,66.0,0.8,1.0,306.0,0.11,13.4
+223,Frutas e derivados,Mamao doce em calda drenado,SolidoContavel,196.0,0.2,0.1,NA,54.0,1.3,20.0,6.0,0.1,3.0,68.0,0.03,3.9
+224,Frutas e derivados,Mamao Formosa cru,SolidoContavel,45.0,0.8,0.1,NA,11.6,1.8,25.0,17.0,0.2,3.0,222.0,0.03,78.5
+225,Frutas e derivados,Mamao Papaia cru,SolidoContavel,40.0,0.5,0.1,NA,10.4,1.0,22.0,22.0,0.2,2.0,126.0,0.03,82.2
+226,Frutas e derivados,Mamao verde doce em calda drenado,SolidoContavel,209.0,0.3,0.1,NA,57.6,1.2,12.0,5.0,0.2,5.0,9.0,Traco,Traco
+227,Frutas e derivados,Manga Haden crua,SolidoContavel,64.0,0.4,0.3,NA,16.7,1.6,12.0,8.0,0.1,1.0,148.0,0.02,17.4
+228,Frutas e derivados,Manga Palmer crua,SolidoContavel,72.0,0.4,0.2,NA,19.4,1.6,12.0,9.0,0.1,2.0,157.0,0.09,65.5
+229,Frutas e derivados,Manga polpa congelada,SolidoContavel,48.0,0.4,0.2,NA,12.5,1.1,7.0,9.0,0.1,7.0,131.0,Traco,24.9
+230,Frutas e derivados,Manga Tommy Atkins crua,SolidoContavel,51.0,0.9,0.2,NA,12.8,2.1,8.0,7.0,0.1,Traco,138.0,Traco,7.9
+231,Frutas e derivados,Maracuja cru,SolidoContavel,68.0,2.0,2.1,NA,12.3,1.1,5.0,28.0,0.6,2.0,338.0,Traco,19.8
+232,Frutas e derivados,Maracuja polpa congelada,SolidoContavel,39.0,0.8,0.2,NA,9.6,0.5,5.0,10.0,0.3,8.0,228.0,Traco,7.3
+233,Frutas e derivados,Maracuja suco concentrado envasado,SolidoContavel,42.0,0.8,0.2,NA,9.6,0.4,4.0,4.0,0.3,22.0,201.0,Traco,13.7
+234,Frutas e derivados,Melancia crua,SolidoContavel,33.0,0.9,Traco,NA,8.1,0.1,8.0,10.0,0.2,Traco,104.0,Traco,6.1
+235,Frutas e derivados,Melao cru,SolidoContavel,29.0,0.7,Traco,NA,7.5,0.3,3.0,6.0,0.2,11.0,216.0,Traco,8.7
+236,Frutas e derivados,Mexerica Murcote crua,SolidoContavel,58.0,0.9,0.1,NA,14.9,3.1,33.0,12.0,0.1,1.0,159.0,0.08,21.8
+237,Frutas e derivados,Mexerica Rio crua,SolidoContavel,37.0,0.7,0.1,NA,9.3,2.7,17.0,8.0,0.1,2.0,125.0,0.03,112.0
+238,Frutas e derivados,Morango cru,SolidoContavel,30.0,0.9,0.3,NA,6.8,1.7,11.0,10.0,0.3,Traco,184.0,Traco,63.6
+239,Frutas e derivados,Nespera crua,SolidoContavel,43.0,0.3,Traco,NA,11.5,3.0,20.0,10.0,0.1,Traco,113.0,Traco,3.2
+240,Frutas e derivados,Pequi cru,SolidoContavel,205.0,2.3,18.0,NA,13.0,19.0,32.0,30.0,0.3,Traco,298.0,0.17,8.3
+241,Frutas e derivados,Pera Park crua,SolidoContavel,61.0,0.2,0.2,NA,16.1,3.0,9.0,6.0,0.3,1.0,102.0,0.06,2.4
+242,Frutas e derivados,Pera Williams crua,SolidoContavel,53.0,0.6,0.1,NA,14.0,3.0,8.0,6.0,0.1,Traco,116.0,Traco,2.8
+243,Frutas e derivados,Pessego Aurora cru,SolidoContavel,36.0,0.8,Traco,NA,9.3,1.4,3.0,4.0,0.2,Traco,124.0,0.05,3.3
+244,Frutas e derivados,Pessego enlatado em calda,SolidoContavel,63.0,0.7,Traco,NA,16.9,1.0,4.0,4.0,0.6,3.0,95.0,Traco,Traco
+245,Frutas e derivados,Pinha crua,SolidoContavel,88.0,1.5,0.3,NA,22.4,3.4,21.0,31.0,0.2,1.0,283.0,0.12,35.9
+246,Frutas e derivados,Pitanga crua,SolidoContavel,41.0,0.9,0.2,NA,10.2,3.2,18.0,12.0,0.4,2.0,113.0,0.03,24.9
+247,Frutas e derivados,Pitanga polpa congelada,SolidoContavel,19.0,0.3,0.1,NA,4.8,0.7,8.0,6.0,0.4,5.0,87.0,Traco,Traco
+248,Frutas e derivados,Roma crua,SolidoContavel,56.0,0.4,Traco,NA,15.1,0.4,5.0,13.0,0.3,1.0,485.0,0.12,8.1
+249,Frutas e derivados,Tamarindo cru,SolidoContavel,276.0,3.2,0.5,NA,72.5,6.4,37.0,59.0,0.6,0.0,723.0,0.31,7.2
+250,Frutas e derivados,Tangerina Ponca crua,SolidoContavel,38.0,0.8,0.1,NA,9.6,0.9,13.0,8.0,0.1,Traco,131.0,0.06,48.8
+251,Frutas e derivados,Tangerina Ponca suco,SolidoContavel,36.0,0.5,Traco,NA,8.8,Traco,4.0,6.0,Traco,Traco,119.0,0.06,41.8
+252,Frutas e derivados,Tucuma cru,SolidoContavel,262.0,2.1,19.1,NA,26.5,12.7,46.0,121.0,0.6,4.0,401.0,0.04,18.0
+253,Frutas e derivados,Umbu cru,SolidoContavel,37.0,0.8,Traco,NA,9.4,2.0,12.0,11.0,0.1,Traco,152.0,0.05,24.1
+254,Frutas e derivados,Umbu polpa congelada,SolidoContavel,34.0,0.5,0.1,NA,8.8,1.3,11.0,8.0,0.2,6.0,154.0,Traco,4.0
+255,Frutas e derivados,Uva Italia crua,SolidoContavel,53.0,0.7,0.2,NA,13.6,0.9,7.0,5.0,0.1,Traco,162.0,Traco,3.3
+256,Frutas e derivados,Uva Rubi crua,SolidoContavel,49.0,0.6,0.2,NA,12.7,0.9,8.0,6.0,0.2,8.0,159.0,0.02,1.9
+257,Frutas e derivados,Uva suco concentrado envasado,SolidoContavel,58.0,Traco,Traco,NA,14.7,0.2,9.0,7.0,0.1,10.0,54.0,0.07,21.0
+258,Gorduras e oleos,Azeite de dende,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+259,Gorduras e oleos,Azeite de oliva extra virgem,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+260,Gorduras e oleos,Manteiga com sal,SolidoNaoContavel,726.0,0.4,82.4,201.0,0.1,NA,9.0,1.0,0.2,579.0,15.0,Traco,Traco
+261,Gorduras e oleos,Manteiga sem sal,SolidoNaoContavel,758.0,0.4,86.0,214.0,0.0,NA,4.0,1.0,Traco,4.0,5.0,Traco,Traco
+262,Gorduras e oleos,Margarina com oleo hidrogenado com sal (65% de lipidios),SolidoNaoContavel,596.0,Traco,67.4,NA,0.0,NA,6.0,1.0,0.1,894.0,21.0,Traco,Traco
+263,Gorduras e oleos,Margarina com oleo hidrogenado sem sal (80% de lipidios),SolidoNaoContavel,723.0,Traco,81.7,NA,0.0,NA,3.0,1.0,0.1,78.0,2.0,Traco,Traco
+264,Gorduras e oleos,Margarina com oleo interesterificado com sal (65%de lipidios),SolidoNaoContavel,594.0,Traco,67.2,NA,0.0,NA,5.0,1.0,Traco,561.0,15.0,Traco,Traco
+265,Gorduras e oleos,Margarina com oleo interesterificado sem sal (65% de lipidios),SolidoNaoContavel,593.0,Traco,67.1,NA,0.0,NA,5.0,1.0,0.1,33.0,5.0,Traco,Traco
+266,Gorduras e oleos,oleo de babacu,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+267,Gorduras e oleos,oleo de canola,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+268,Gorduras e oleos,oleo de girassol,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+269,Gorduras e oleos,oleo de milho,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+270,Gorduras e oleos,oleo de pequi,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+271,Gorduras e oleos,oleo de soja,Liquido,884.0,NA,100.0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+272,Pescados e frutos do mar,Abadejo file congelado assado,SolidoContavel,112.0,23.5,1.2,103.0,0.0,NA,23.0,20.0,0.5,334.0,156.0,Traco,NA
+273,Pescados e frutos do mar,Abadejo file congeladocozido,SolidoContavel,91.0,19.3,0.9,87.0,0.0,NA,17.0,16.0,0.3,189.0,146.0,Traco,NA
+274,Pescados e frutos do mar,Abadejo file congelado cru,SolidoContavel,59.0,13.1,0.4,31.0,0.0,NA,10.0,14.0,0.1,79.0,148.0,0.04,NA
+275,Pescados e frutos do mar,Abadejo file congelado grelhado,SolidoContavel,130.0,27.6,1.3,136.0,0.0,NA,20.0,22.0,0.3,305.0,279.0,0.03,NA
+276,Pescados e frutos do mar,Atum conserva em oleo,SolidoContavel,166.0,26.2,6.0,53.0,0.0,NA,7.0,29.0,1.2,362.0,280.0,0.15,NA
+277,Pescados e frutos do mar,Atum fresco cru,SolidoContavel,118.0,25.7,0.9,48.0,0.0,NA,7.0,32.0,1.3,30.0,308.0,Traco,NA
+278,Pescados e frutos do mar,Bacalhau salgado cru,SolidoContavel,136.0,29.0,1.3,139.0,0.0,NA,157.0,49.0,0.9,13585.0,434.0,Traco,NA
+279,Pescados e frutos do mar,Bacalhau salgado refogado,SolidoContavel,140.0,24.0,3.6,112.0,1.2,NA,59.0,15.0,0.2,1256.0,50.0,0.03,Traco
+280,Pescados e frutos do mar,Cacao posta com farinha de trigo frita,SolidoContavel,208.0,25.0,10.0,75.0,3.1,0.5,30.0,26.0,1.0,160.0,420.0,Traco,NA
+281,Pescados e frutos do mar,Cacao posta cozida,SolidoContavel,116.0,25.6,0.7,83.0,0.0,NA,10.0,21.0,0.3,115.0,249.0,Traco,NA
+282,Pescados e frutos do mar,Cacao posta crua,SolidoContavel,83.0,17.9,0.8,36.0,0.0,NA,9.0,19.0,0.2,176.0,299.0,0.04,NA
+283,Pescados e frutos do mar,Camarao Rio Grande grande cozido,SolidoContavel,90.0,19.0,1.0,241.0,0.0,NA,90.0,19.0,1.3,367.0,102.0,Traco,NA
+284,Pescados e frutos do mar,Camarao Rio Grande grande cru,SolidoContavel,47.0,10.0,0.5,124.0,0.0,NA,51.0,27.0,0.7,201.0,72.0,Traco,NA
+285,Pescados e frutos do mar,Camarao Sete Barbas sem cabeca com casca frito,SolidoContavel,231.0,18.4,15.6,283.0,2.9,NA,960.0,74.0,2.4,99.0,107.0,0.05,NA
+286,Pescados e frutos do mar,Caranguejo cozido,SolidoContavel,83.0,18.5,0.4,85.0,0.0,NA,357.0,52.0,2.9,360.0,186.0,0.04,Traco
+287,Pescados e frutos do mar,Corimba cru,SolidoContavel,128.0,17.4,6.0,40.0,0.0,NA,40.0,23.0,0.5,47.0,317.0,Traco,NA
+288,Pescados e frutos do mar,Corimbata assado,SolidoContavel,261.0,19.9,19.6,80.0,0.0,NA,22.0,24.0,1.0,40.0,326.0,0.13,NA
+289,Pescados e frutos do mar,Corimbata cozido,SolidoContavel,239.0,20.1,16.9,75.0,0.0,NA,65.0,23.0,0.6,37.0,254.0,Traco,NA
+290,Pescados e frutos do mar,Corvina de agua doce crua,SolidoContavel,101.0,18.9,2.2,73.0,0.0,NA,39.0,25.0,0.3,45.0,293.0,Traco,NA
+291,Pescados e frutos do mar,Corvina do mar crua,SolidoContavel,94.0,18.6,1.6,67.0,0.0,NA,NA,24.0,0.4,68.0,339.0,0.12,NA
+292,Pescados e frutos do mar,Corvina grande assada,SolidoContavel,147.0,26.8,3.6,117.0,0.0,NA,60.0,24.0,0.5,85.0,291.0,0.11,NA
+293,Pescados e frutos do mar,Corvina grande cozida,SolidoContavel,100.0,23.4,2.6,123.0,0.0,NA,69.0,22.0,0.6,68.0,194.0,Traco,NA
+294,Pescados e frutos do mar,Dourada de agua doce fresca,SolidoContavel,131.0,18.8,5.6,52.0,0.0,NA,12.0,26.0,0.2,40.0,393.0,Traco,NA
+295,Pescados e frutos do mar,Lambari congelado cru,SolidoContavel,131.0,16.8,6.5,159.0,0.0,NA,1181.0,45.0,0.9,48.0,244.0,0.05,NA
+296,Pescados e frutos do mar,Lambari congelado frito,SolidoContavel,327.0,28.4,22.8,246.0,0.0,NA,1881.0,66.0,0.8,65.0,331.0,0.25,NA
+297,Pescados e frutos do mar,Lambari fresco cru,SolidoContavel,152.0,15.7,9.4,144.0,0.0,NA,590.0,32.0,0.6,41.0,207.0,Traco,NA
+298,Pescados e frutos do mar,Manjuba com farinha de trigo frita,SolidoContavel,344.0,23.5,22.6,282.0,10.2,0.4,763.0,47.0,3.0,37.0,319.0,0.05,NA
+299,Pescados e frutos do mar,Manjuba frita,SolidoContavel,349.0,30.1,24.5,270.0,0.0,NA,575.0,32.0,0.9,41.0,318.0,0.03,NA
+300,Pescados e frutos do mar,Merluza file assado,SolidoContavel,122.0,26.6,0.9,91.0,0.0,NA,36.0,20.0,0.4,120.0,364.0,0.05,NA
+301,Pescados e frutos do mar,Merluza file cru,SolidoContavel,89.0,16.6,2.0,57.0,0.0,NA,20.0,27.0,0.2,80.0,340.0,Traco,NA
+302,Pescados e frutos do mar,Merluza file frito,SolidoContavel,192.0,26.9,8.5,109.0,0.0,NA,36.0,38.0,0.4,90.0,447.0,0.05,NA
+303,Pescados e frutos do mar,Pescada branca crua,SolidoContavel,111.0,16.3,4.6,51.0,0.0,NA,16.0,19.0,0.2,76.0,261.0,Traco,NA
+304,Pescados e frutos do mar,Pescada branca frita,SolidoContavel,223.0,27.4,11.8,165.0,0.0,NA,378.0,30.0,0.5,107.0,355.0,0.08,NA
+305,Pescados e frutos do mar,Pescada file com farinha de trigo frito,SolidoContavel,283.0,21.4,19.1,73.0,5.0,Traco,26.0,28.0,0.9,91.0,216.0,Traco,NA
+306,Pescados e frutos do mar,Pescada file cru,SolidoContavel,107.0,16.7,4.0,65.0,0.0,NA,14.0,23.0,0.2,77.0,253.0,Traco,NA
+307,Pescados e frutos do mar,Pescada file frito,SolidoContavel,154.0,28.6,3.6,81.0,0.0,NA,10.0,21.0,0.3,115.0,249.0,0.14,NA
+308,Pescados e frutos do mar,Pescada file molho escabeche,SolidoContavel,142.0,11.8,8.0,43.0,5.0,0.8,20.0,18.0,1.5,51.0,208.0,Traco,6.9
+309,Pescados e frutos do mar,Pescadinha crua,SolidoContavel,76.0,15.5,1.1,84.0,0.0,NA,332.0,34.0,0.5,120.0,304.0,0.08,NA
+310,Pescados e frutos do mar,Pintado assado,SolidoContavel,192.0,36.5,4.0,126.0,0.0,NA,114.0,42.0,0.8,81.0,527.0,0.03,NA
+311,Pescados e frutos do mar,Pintado cru,SolidoContavel,91.0,18.6,1.3,50.0,0.0,NA,12.0,24.0,0.2,43.0,294.0,Traco,NA
+312,Pescados e frutos do mar,Pintado grelhado,SolidoContavel,152.0,30.8,2.3,99.0,0.0,NA,69.0,27.0,0.5,53.0,360.0,0.03,NA
+313,Pescados e frutos do mar,Porquinho cru,SolidoContavel,93.0,20.5,0.6,49.0,0.0,NA,26.0,24.0,0.4,67.0,313.0,Traco,NA
+314,Pescados e frutos do mar,Salmao file com pele fresco  grelhado,SolidoContavel,229.0,23.9,14.0,85.0,0.0,NA,29.0,28.0,0.5,85.0,384.0,0.13,NA
+315,Pescados e frutos do mar,Salmao sem pele fresco cru,SolidoContavel,170.0,19.3,9.7,53.0,0.0,NA,9.0,27.0,0.2,64.0,376.0,0.2,NA
+316,Pescados e frutos do mar,Salmao sem pele fresco grelhado,SolidoContavel,243.0,26.1,14.5,73.0,0.0,NA,15.0,38.0,0.4,96.0,518.0,0.23,NA
+317,Pescados e frutos do mar,Sardinha assada,SolidoContavel,164.0,32.2,3.0,109.0,0.0,NA,438.0,51.0,1.3,74.0,574.0,0.06,NA
+318,Pescados e frutos do mar,Sardinha conserva em oleo,SolidoContavel,285.0,15.9,24.0,73.0,0.0,NA,550.0,35.0,3.5,666.0,367.0,0.42,NA
+319,Pescados e frutos do mar,Sardinha frita,SolidoContavel,257.0,33.4,12.7,103.0,0.0,NA,482.0,39.0,1.1,60.0,460.0,0.06,NA
+320,Pescados e frutos do mar,Sardinha inteira crua,SolidoContavel,114.0,21.1,2.7,61.0,0.0,NA,167.0,29.0,1.3,60.0,312.0,Traco,NA
+321,Pescados e frutos do mar,Tucunare file congelado cru,SolidoContavel,88.0,18.0,1.2,47.0,0.0,NA,19.0,26.0,0.3,57.0,288.0,Traco,NA
+322,Carnes e derivados,Apresuntado,SolidoContavel,129.0,13.5,6.7,38.0,2.9,NA,23.0,15.0,0.9,943.0,270.0,0.62,Traco
+323,Carnes e derivados,Caldo de carne tablete,Liquido,241.0,7.8,16.6,Traco,15.1,0.6,129.0,22.0,Traco,22180.0,218.0,0.7,NA
+324,Carnes e derivados,Caldo de galinha tablete,Liquido,251.0,6.3,20.4,2.0,10.6,11.8,16.0,13.0,0.7,22300.0,68.0,0.05,NA
+325,Carnes e derivados,Carne bovina acem moido cozido,SolidoContavel,212.0,26.7,10.9,103.0,0.0,NA,4.0,17.0,2.7,52.0,256.0,Traco,NA
+326,Carnes e derivados,Carne bovina acem moido cru,SolidoContavel,137.0,19.4,5.9,58.0,0.0,NA,3.0,14.0,1.8,49.0,237.0,0.15,NA
+327,Carnes e derivados,Carne bovina acem sem gordura cozido,SolidoContavel,215.0,27.3,10.9,107.0,0.0,NA,7.0,14.0,2.4,56.0,254.0,Traco,NA
+328,Carnes e derivados,Carne bovina acem sem gordura cru,SolidoContavel,144.0,20.8,6.1,53.0,0.0,NA,5.0,13.0,1.5,50.0,234.0,0.12,NA
+329,Carnes e derivados,Carne bovina almondegas cruas,SolidoContavel,189.0,12.3,11.2,34.0,9.8,NA,22.0,24.0,1.6,621.0,328.0,0.11,NA
+330,Carnes e derivados,Carne bovina almondegas fritas,SolidoContavel,272.0,18.2,15.8,36.0,14.3,NA,27.0,48.0,1.9,1030.0,536.0,0.13,NA
+331,Carnes e derivados,Carne bovina bucho cozido,SolidoContavel,133.0,21.6,4.5,245.0,0.0,NA,13.0,7.0,0.6,38.0,70.0,Traco,NA
+332,Carnes e derivados,Carne bovina bucho cru,SolidoContavel,137.0,20.5,5.5,145.0,0.0,NA,9.0,6.0,0.5,45.0,85.0,Traco,NA
+333,Carnes e derivados,Carne bovina capa de contra-file com gordura crua,SolidoContavel,217.0,19.2,15.0,63.0,0.0,NA,6.0,17.0,1.5,58.0,267.0,0.09,NA
+334,Carnes e derivados,Carne bovina capa de contra-file com gordura grelhada,SolidoContavel,312.0,30.7,20.0,120.0,0.0,NA,7.0,18.0,2.6,81.0,323.0,Traco,NA
+335,Carnes e derivados,Carne bovina capa de contra-file sem gordura crua,SolidoContavel,131.0,21.5,4.3,58.0,0.0,NA,6.0,20.0,2.0,79.0,325.0,Traco,NA
+336,Carnes e derivados,Carne bovina capa de contra-file sem gordura grelhada,SolidoContavel,239.0,35.1,10.0,80.0,0.0,NA,9.0,26.0,2.8,83.0,385.0,0.03,NA
+337,Carnes e derivados,Carne bovina charque cozido,SolidoContavel,263.0,36.4,11.9,113.0,0.0,NA,15.0,13.0,3.5,1443.0,90.0,0.05,NA
+338,Carnes e derivados,Carne bovina charque cru,SolidoContavel,249.0,22.7,16.8,81.0,0.0,NA,15.0,13.0,1.5,5875.0,236.0,0.12,NA
+339,Carnes e derivados,Carne bovina contra-file a milanesa,SolidoContavel,352.0,20.6,24.0,99.0,12.2,0.4,15.0,27.0,2.9,77.0,271.0,0.07,NA
+340,Carnes e derivados,Carne bovina contra-file de costela cru,SolidoContavel,202.0,19.8,13.1,52.0,0.0,NA,3.0,14.0,1.6,39.0,245.0,0.14,NA
+341,Carnes e derivados,Carne bovina contra-file de costela grelhado,SolidoContavel,275.0,29.9,16.3,98.0,0.0,NA,4.0,24.0,2.8,51.0,383.0,Traco,NA
+342,Carnes e derivados,Carne bovina contra-file com gordura cru,SolidoContavel,206.0,21.2,12.8,73.0,0.0,NA,4.0,18.0,1.3,44.0,285.0,0.11,NA
+343,Carnes e derivados,Carne bovina contra-file com gordura grelhado,SolidoContavel,278.0,32.4,15.5,144.0,0.0,NA,4.0,19.0,2.4,57.0,352.0,Traco,NA
+344,Carnes e derivados,Carne bovina contra-file sem gordura cru,SolidoContavel,157.0,24.0,6.0,59.0,0.0,NA,4.0,21.0,1.7,53.0,335.0,Traco,NA
+345,Carnes e derivados,Carne bovina contra-file sem gordura grelhado,SolidoContavel,194.0,35.9,4.5,102.0,0.0,NA,5.0,21.0,2.4,58.0,386.0,Traco,NA
+346,Carnes e derivados,Carne bovina costela assada,SolidoContavel,373.0,28.8,27.7,95.0,0.0,NA,28.0,20.0,2.2,92.0,270.0,Traco,NA
+347,Carnes e derivados,Carne bovina costela crua,SolidoContavel,358.0,16.7,31.8,44.0,0.0,NA,NA,12.0,1.2,70.0,151.0,0.12,NA
+348,Carnes e derivados,Carne bovina coxao duro sem gordura cozido,SolidoContavel,217.0,31.9,8.9,71.0,0.0,NA,4.0,14.0,1.7,41.0,252.0,Traco,NA
+349,Carnes e derivados,Carne bovina coxao duro sem gordura cru,SolidoContavel,148.0,21.5,6.2,60.0,0.0,NA,3.0,21.0,1.9,49.0,358.0,0.12,NA
+350,Carnes e derivados,Carne bovina coxao mole sem gordura cozido,SolidoContavel,219.0,32.4,8.9,84.0,0.0,NA,4.0,13.0,2.6,44.0,239.0,Traco,NA
+351,Carnes e derivados,Carne bovina coxao mole sem gordura cru,SolidoContavel,169.0,21.2,8.7,84.0,0.0,NA,3.0,21.0,1.9,61.0,335.0,0.12,NA
+352,Carnes e derivados,Carne bovina cupim assado,SolidoContavel,330.0,28.6,23.0,91.0,0.0,NA,8.0,18.0,2.7,72.0,321.0,Traco,NA
+353,Carnes e derivados,Carne bovina cupim cru,SolidoContavel,221.0,19.5,15.3,51.0,0.0,NA,4.0,13.0,1.1,47.0,151.0,0.11,NA
+354,Carnes e derivados,Carne bovina figado cru,SolidoContavel,141.0,20.7,5.4,393.0,1.1,NA,4.0,12.0,5.6,76.0,265.0,0.14,NA
+355,Carnes e derivados,Carne bovina figado grelhado,SolidoContavel,225.0,29.9,9.0,601.0,4.2,NA,6.0,10.0,5.8,82.0,309.0,0.21,NA
+356,Carnes e derivados,Carne bovina file mingnon sem gordura cru,SolidoContavel,143.0,21.6,5.6,55.0,0.0,NA,3.0,21.0,1.9,49.0,322.0,0.12,NA
+357,Carnes e derivados,Carne bovina file mingnon sem gordura grelhado,SolidoContavel,220.0,32.8,8.8,103.0,0.0,NA,4.0,28.0,2.9,58.0,326.0,0.03,NA
+358,Carnes e derivados,Carne bovina flanco sem gordura cozido,SolidoContavel,196.0,29.4,7.8,62.0,0.0,NA,4.0,14.0,2.8,42.0,249.0,Traco,NA
+359,Carnes e derivados,Carne bovina flanco sem gordura cru,SolidoContavel,141.0,20.0,6.2,50.0,0.0,NA,3.0,18.0,1.6,54.0,324.0,0.11,NA
+360,Carnes e derivados,Carne bovina fraldinha com gordura cozida,SolidoContavel,338.0,24.2,26.0,65.0,0.0,NA,3.0,14.0,2.0,39.0,207.0,Traco,NA
+361,Carnes e derivados,Carne bovina fraldinha com gordura crua,SolidoContavel,221.0,17.6,16.1,54.0,0.0,NA,3.0,16.0,1.5,51.0,274.0,0.08,NA
+362,Carnes e derivados,Carne bovina lagarto cozido,SolidoContavel,222.0,32.9,9.1,56.0,0.0,NA,4.0,13.0,1.9,48.0,254.0,Traco,NA
+363,Carnes e derivados,Carne bovina lagarto cru,SolidoContavel,135.0,20.5,5.2,56.0,0.0,NA,3.0,20.0,1.3,54.0,362.0,0.1,NA
+364,Carnes e derivados,Carne bovina lingua cozida,SolidoContavel,315.0,21.4,24.8,105.0,0.0,NA,6.0,12.0,2.1,59.0,175.0,Traco,NA
+365,Carnes e derivados,Carne bovina lingua crua,SolidoContavel,215.0,17.1,15.8,118.0,0.0,NA,5.0,15.0,1.7,73.0,251.0,0.05,NA
+366,Carnes e derivados,Carne bovina maminha crua,SolidoContavel,153.0,20.9,7.0,51.0,0.0,NA,3.0,16.0,1.1,37.0,274.0,0.12,NA
+367,Carnes e derivados,Carne bovina maminha grelhada,SolidoContavel,153.0,30.7,2.4,88.0,0.0,NA,4.0,21.0,2.4,58.0,386.0,Traco,NA
+368,Carnes e derivados,Carne bovina miolo de alcatra sem gordura cru,SolidoContavel,163.0,21.6,7.8,60.0,0.0,NA,3.0,20.0,2.0,43.0,299.0,0.12,NA
+369,Carnes e derivados,Carne bovina miolo de alcatra sem gordura grelhado,SolidoContavel,241.0,31.9,11.6,92.0,0.0,NA,5.0,26.0,3.2,52.0,385.0,0.03,NA
+370,Carnes e derivados,Carne bovina musculo sem gordura cozido,SolidoContavel,194.0,31.2,6.7,56.0,0.0,NA,5.0,13.0,2.4,62.0,253.0,Traco,NA
+371,Carnes e derivados,Carne bovina musculo sem gordura cru,SolidoContavel,142.0,21.6,5.5,51.0,0.0,NA,4.0,17.0,1.9,66.0,296.0,0.09,NA
+372,Carnes e derivados,Carne bovina paleta com gordura crua,SolidoContavel,159.0,21.4,7.5,58.0,0.0,NA,4.0,14.0,1.8,65.0,250.0,Traco,NA
+373,Carnes e derivados,Carne bovina paleta sem gordura cozida,SolidoContavel,194.0,29.7,7.4,56.0,0.0,NA,6.0,18.0,2.2,58.0,250.0,0.03,NA
+374,Carnes e derivados,Carne bovina paleta sem gordura crua,SolidoContavel,141.0,21.0,5.7,42.0,0.0,NA,4.0,18.0,1.9,66.0,319.0,0.13,NA
+375,Carnes e derivados,Carne bovina patinho sem gordura cru,SolidoContavel,133.0,21.7,4.5,56.0,0.0,NA,3.0,20.0,1.8,49.0,318.0,0.11,NA
+376,Carnes e derivados,Carne bovina patinho sem gordura grelhado,SolidoContavel,219.0,35.9,7.3,126.0,0.0,NA,5.0,27.0,3.0,60.0,421.0,0.04,NA
+377,Carnes e derivados,Carne bovina peito sem gordura cozido,SolidoContavel,338.0,22.2,27.0,100.0,0.0,NA,4.0,14.0,1.6,56.0,204.0,Traco,NA
+378,Carnes e derivados,Carne bovina peito sem gordura cru,SolidoContavel,259.0,17.6,20.4,59.0,0.0,NA,4.0,15.0,1.3,64.0,241.0,0.11,NA
+379,Carnes e derivados,Carne bovina picanha com gordura crua,SolidoContavel,213.0,18.8,14.7,60.0,0.0,NA,2.0,14.0,1.7,38.0,232.0,0.13,NA
+380,Carnes e derivados,Carne bovina picanha com gordura grelhada,SolidoContavel,289.0,26.4,19.5,92.0,0.0,NA,4.0,24.0,3.2,60.0,355.0,0.03,NA
+381,Carnes e derivados,Carne bovina picanha sem gordura crua,SolidoContavel,134.0,21.3,4.7,75.0,0.0,NA,3.0,20.0,2.1,61.0,322.0,Traco,NA
+382,Carnes e derivados,Carne bovina picanha sem gordura grelhada,SolidoContavel,238.0,31.9,11.3,100.0,0.0,NA,4.0,25.0,3.6,61.0,377.0,Traco,NA
+383,Carnes e derivados,Carne bovina seca cozida,SolidoContavel,313.0,26.9,21.9,100.0,0.0,NA,13.0,12.0,1.9,1943.0,86.0,Traco,NA
+384,Carnes e derivados,Carne bovina seca crua,SolidoContavel,313.0,19.7,25.4,92.0,0.0,NA,14.0,12.0,1.3,4440.0,190.0,Traco,NA
+385,Carnes e derivados,Coxinha de frango frita,SolidoContavel,283.0,9.6,11.8,15.0,34.5,5.0,18.0,17.0,1.3,532.0,166.0,0.09,Traco
+386,Carnes e derivados,Croquete de carne cru,SolidoContavel,246.0,12.0,15.6,30.0,13.9,NA,15.0,24.0,2.5,711.0,221.0,0.11,Traco
+387,Carnes e derivados,Croquete de carne frito,SolidoContavel,347.0,16.9,22.7,38.0,18.1,NA,18.0,30.0,2.3,916.0,313.0,0.14,Traco
+388,Carnes e derivados,Empada de frango pre-cozida assada,SolidoContavel,358.0,6.9,15.6,23.0,47.5,2.2,16.0,18.0,1.2,525.0,138.0,0.12,NA
+389,Carnes e derivados,Empada de frango pre-cozida,SolidoContavel,377.0,7.3,22.9,23.0,35.5,2.2,14.0,17.0,0.7,771.0,156.0,0.11,NA
+390,Carnes e derivados,Frango asa com pele crua,SolidoContavel,213.0,18.1,15.1,113.0,0.0,NA,11.0,23.0,0.6,96.0,211.0,0.11,NA
+391,Carnes e derivados,Frango caipira inteiro com pele cozido,SolidoContavel,243.0,23.9,15.6,110.0,0.0,NA,17.0,18.0,1.7,56.0,210.0,0.03,NA
+392,Carnes e derivados,Frango caipira inteiro sem pele cozido,SolidoContavel,196.0,29.6,7.7,106.0,0.0,NA,66.0,23.0,2.1,53.0,224.0,0.03,NA
+393,Carnes e derivados,Frango coracao cru,SolidoContavel,222.0,12.6,18.6,159.0,0.0,NA,6.0,20.0,4.1,95.0,220.0,0.23,NA
+394,Carnes e derivados,Frango coracao grelhado,SolidoContavel,207.0,22.4,12.1,280.0,0.6,NA,8.0,20.0,6.5,128.0,243.0,0.2,NA
+395,Carnes e derivados,Frango coxa com pele assada,SolidoContavel,215.0,28.5,10.4,145.0,0.1,NA,8.0,14.0,1.2,95.0,318.0,0.05,NA
+396,Carnes e derivados,Frango coxa com pele crua,SolidoContavel,161.0,17.1,9.8,97.0,0.0,NA,8.0,26.0,0.7,95.0,275.0,0.16,NA
+397,Carnes e derivados,Frango coxa sem pele cozida,SolidoContavel,167.0,26.9,5.8,133.0,0.0,NA,12.0,11.0,0.8,64.0,191.0,0.07,NA
+398,Carnes e derivados,Frango coxa sem pele crua,SolidoContavel,120.0,17.8,4.9,91.0,0.0,NA,8.0,27.0,0.8,98.0,291.0,0.17,NA
+399,Carnes e derivados,Frango figado cru,SolidoContavel,106.0,17.6,3.5,341.0,0.0,NA,6.0,28.0,9.5,82.0,281.0,0.62,NA
+400,Carnes e derivados,Frango file a milanesa,SolidoContavel,221.0,28.5,7.8,84.0,7.5,1.1,9.0,35.0,1.1,122.0,408.0,0.05,NA
+401,Carnes e derivados,Frango inteiro com pele cru,SolidoContavel,226.0,16.4,17.3,85.0,0.0,NA,6.0,24.0,0.6,63.0,217.0,0.08,NA
+402,Carnes e derivados,Frango inteiro sem pele assado,SolidoContavel,187.0,28.0,7.5,111.0,0.0,NA,9.0,14.0,0.6,70.0,283.0,0.09,NA
+403,Carnes e derivados,Frango inteiro sem pele cozido,SolidoContavel,170.0,25.0,7.1,99.0,0.0,NA,8.0,12.0,0.5,51.0,217.0,0.1,NA
+404,Carnes e derivados,Frango inteiro sem pele cru,SolidoContavel,129.0,20.6,4.6,78.0,0.0,NA,7.0,27.0,0.5,73.0,238.0,0.12,NA
+405,Carnes e derivados,Frango peito com pele assado,SolidoContavel,212.0,33.4,7.6,109.0,0.0,NA,8.0,18.0,0.5,56.0,380.0,0.12,NA
+406,Carnes e derivados,Frango peito com pele cru,SolidoContavel,149.0,20.8,6.7,80.0,0.0,NA,8.0,28.0,0.4,62.0,252.0,0.09,NA
+407,Carnes e derivados,Frango peito sem pele cozido,SolidoContavel,163.0,31.5,3.2,89.0,0.0,NA,6.0,14.0,0.3,36.0,231.0,0.1,NA
+408,Carnes e derivados,Frango peito sem pele cru,SolidoContavel,119.0,21.5,3.0,59.0,0.0,NA,7.0,31.0,0.4,56.0,267.0,0.1,NA
+409,Carnes e derivados,Frango peito sem pele grelhado,SolidoContavel,159.0,32.0,2.5,89.0,0.0,NA,5.0,18.0,0.3,50.0,387.0,0.11,NA
+410,Carnes e derivados,Frango sobrecoxa com pele assada,SolidoContavel,260.0,28.7,15.2,158.0,0.0,NA,11.0,15.0,1.2,96.0,323.0,0.1,NA
+411,Carnes e derivados,Frango sobrecoxa com pele crua,SolidoContavel,255.0,15.5,20.9,88.0,0.0,NA,7.0,22.0,0.7,68.0,190.0,0.09,NA
+412,Carnes e derivados,Frango sobrecoxa sem pele assada,SolidoContavel,233.0,29.2,12.0,145.0,0.0,NA,12.0,17.0,1.2,106.0,382.0,0.1,NA
+413,Carnes e derivados,Frango sobrecoxa sem pele crua,SolidoContavel,162.0,17.6,9.6,84.0,0.0,NA,6.0,26.0,0.9,80.0,241.0,0.12,NA
+414,Carnes e derivados,Hamburguer bovino cru,SolidoContavel,215.0,13.2,16.2,70.0,4.2,NA,34.0,25.0,1.9,869.0,383.0,0.06,NA
+415,Carnes e derivados,Hamburguer bovino frito,SolidoContavel,258.0,20.0,17.0,49.0,6.3,NA,62.0,60.0,3.0,1252.0,660.0,0.13,NA
+416,Carnes e derivados,Hamburguer bovino grelhado,SolidoContavel,210.0,13.2,12.4,59.0,11.3,NA,56.0,48.0,2.6,1090.0,538.0,0.18,NA
+417,Carnes e derivados,Linguica frango crua,SolidoContavel,218.0,14.2,17.4,64.0,0.0,NA,11.0,19.0,0.5,1126.0,280.0,0.11,NA
+418,Carnes e derivados,Linguica frango frita,SolidoContavel,245.0,18.3,18.5,76.0,0.0,NA,15.0,29.0,0.8,1374.0,364.0,0.11,NA
+419,Carnes e derivados,Linguica frango grelhada,SolidoContavel,244.0,18.2,18.4,80.0,0.0,NA,14.0,21.0,0.7,1351.0,356.0,0.12,NA
+420,Carnes e derivados,Linguica porco crua,SolidoContavel,227.0,16.1,17.6,53.0,0.0,NA,6.0,14.0,0.4,1176.0,316.0,0.49,NA
+421,Carnes e derivados,Linguica porco frita,SolidoContavel,280.0,20.5,21.3,75.0,0.0,NA,8.0,18.0,0.9,1432.0,409.0,0.41,NA
+422,Carnes e derivados,Linguica porco grelhada,SolidoContavel,296.0,23.2,21.9,82.0,0.0,NA,8.0,19.0,1.0,1456.0,427.0,0.4,NA
+423,Carnes e derivados,Mortadela,SolidoContavel,269.0,12.0,21.6,83.0,5.8,NA,67.0,19.0,1.5,1212.0,247.0,0.14,NA
+424,Carnes e derivados,Peru congelado assado,SolidoContavel,163.0,26.2,5.7,91.0,0.0,NA,14.0,12.0,0.6,628.0,175.0,0.06,NA
+425,Carnes e derivados,Peru congelado cru,SolidoContavel,94.0,18.1,1.8,68.0,0.0,NA,10.0,19.0,0.9,711.0,281.0,0.06,NA
+426,Carnes e derivados,Porco bisteca crua,SolidoContavel,164.0,21.5,8.0,56.0,0.0,NA,6.0,24.0,0.5,54.0,335.0,0.9,NA
+427,Carnes e derivados,Porco bisteca frita,SolidoContavel,311.0,33.7,18.5,126.0,0.0,NA,69.0,29.0,0.8,63.0,404.0,0.34,NA
+428,Carnes e derivados,Porco bisteca grelhada,SolidoContavel,280.0,28.9,17.4,82.0,0.0,NA,34.0,25.0,0.9,51.0,366.0,0.77,NA
+429,Carnes e derivados,Porco costela assada,SolidoContavel,402.0,30.2,30.3,113.0,0.0,NA,17.0,14.0,1.0,63.0,246.0,0.71,NA
+430,Carnes e derivados,Porco costela crua,SolidoContavel,256.0,18.0,19.8,69.0,0.0,NA,15.0,18.0,0.9,88.0,248.0,0.62,NA
+431,Carnes e derivados,Porco lombo assado,SolidoContavel,210.0,35.7,6.4,103.0,0.0,NA,20.0,18.0,0.5,39.0,311.0,0.75,NA
+432,Carnes e derivados,Porco lombo cru,SolidoContavel,176.0,22.6,8.8,55.0,0.0,NA,4.0,24.0,0.5,53.0,334.0,0.95,NA
+433,Carnes e derivados,Porco orelha salgada crua,SolidoContavel,258.0,18.5,19.9,83.0,0.0,NA,5.0,2.0,1.4,616.0,228.0,0.07,NA
+434,Carnes e derivados,Porco pernil assado,SolidoContavel,262.0,32.1,13.9,110.0,0.0,NA,18.0,27.0,1.3,62.0,395.0,0.77,NA
+435,Carnes e derivados,Porco pernil cru,SolidoContavel,186.0,20.1,11.1,59.0,0.0,NA,13.0,23.0,0.9,102.0,256.0,1.06,NA
+436,Carnes e derivados,Porco rabo salgado cru,SolidoContavel,377.0,15.6,34.5,89.0,0.0,NA,22.0,4.0,0.6,1158.0,24.0,0.2,NA
+437,Carnes e derivados,Presunto com capa de gordura,SolidoContavel,128.0,14.4,6.8,40.0,1.4,NA,12.0,17.0,0.7,1021.0,295.0,0.62,NA
+438,Carnes e derivados,Presunto sem capa de gordura,SolidoContavel,94.0,14.3,2.7,36.0,2.1,NA,23.0,18.0,0.8,1039.0,307.0,0.5,NA
+439,Carnes e derivados,Quibe assado,SolidoContavel,136.0,14.6,2.7,34.0,12.9,1.9,16.0,36.0,2.2,40.0,288.0,0.04,Traco
+440,Carnes e derivados,Quibe cru,SolidoContavel,109.0,12.4,1.7,27.0,10.8,1.6,12.0,26.0,1.7,39.0,242.0,0.09,Traco
+441,Carnes e derivados,Quibe frito,SolidoContavel,254.0,14.9,15.8,38.0,12.3,NA,22.0,39.0,2.0,836.0,322.0,0.12,Traco
+442,Carnes e derivados,Salame,SolidoContavel,398.0,25.8,30.6,85.0,2.9,NA,87.0,30.0,1.3,1574.0,548.0,0.88,NA
+443,Carnes e derivados,Toucinho cru,SolidoContavel,593.0,11.5,60.3,73.0,0.0,NA,2.0,4.0,0.4,50.0,58.0,Traco,NA
+444,Carnes e derivados,Toucinho frito,SolidoContavel,697.0,27.3,64.3,89.0,0.0,NA,9.0,9.0,0.9,125.0,171.0,Traco,NA
+445,Leite e derivados,Bebida lactea pessego,Liquido,55.0,2.1,1.9,5.0,7.6,0.3,89.0,9.0,Traco,46.0,62.0,0.03,2.1
+446,Leite e derivados,Creme de Leite,Liquido,221.0,1.5,22.5,66.0,4.5,NA,83.0,8.0,0.3,52.0,119.0,Traco,Traco
+447,Leite e derivados,Iogurte natural,Liquido,51.0,4.1,3.0,14.0,1.9,NA,143.0,11.0,Traco,52.0,71.0,0.04,0.9
+448,Leite e derivados,Iogurte natural desnatado,Liquido,41.0,3.8,0.3,3.0,5.8,NA,157.0,12.0,Traco,60.0,182.0,Traco,0.3
+449,Leite e derivados,Iogurte sabor abacaxi,Liquido,NA,NA,NA,6.0,NA,NA,NA,NA,NA,NA,NA,NA,NA
+450,Leite e derivados,Iogurte sabor morango,Liquido,70.0,2.7,2.3,7.0,9.7,0.2,101.0,8.0,Traco,38.0,52.0,0.03,Traco
+451,Leite e derivados,Iogurte sabor pessego,Liquido,68.0,2.5,2.3,8.0,9.4,0.7,95.0,8.0,0.1,37.0,52.0,0.02,Traco
+452,Leite e derivados,Leite condensado,Liquido,313.0,7.7,6.7,28.0,57.0,NA,246.0,22.0,0.1,94.0,329.0,0.06,2.1
+453,Leite e derivados,Leite de cabra,Liquido,66.0,3.1,3.8,14.0,5.2,NA,112.0,10.0,0.1,74.0,140.0,Traco,Traco
+454,Leite e derivados,Leite de vaca achocolatado,Liquido,83.0,2.1,2.2,6.0,14.2,0.6,70.0,13.0,0.5,72.0,155.0,0.07,3.3
+455,Leite e derivados,Leite de vaca desnatado po,Liquido,362.0,34.7,0.9,25.0,53.0,NA,1363.0,109.0,0.9,432.0,1556.0,0.32,NA
+456,Leite e derivados,Leite de vaca desnatado UHT,Liquido,NA,NA,NA,4.0,NA,NA,134.0,10.0,Traco,51.0,140.0,0.04,Traco
+457,Leite e derivados,Leite de vaca integral,Liquido,NA,NA,NA,10.0,NA,NA,123.0,10.0,Traco,64.0,133.0,0.04,Traco
+458,Leite e derivados,Leite de vaca integral po,Liquido,497.0,25.4,26.9,85.0,39.2,NA,890.0,77.0,0.5,323.0,1132.0,0.24,NA
+459,Leite e derivados,Leite fermentado,Liquido,70.0,1.9,0.1,2.0,15.7,NA,72.0,6.0,Traco,33.0,94.0,0.08,0.5
+460,Leite e derivados,Queijo minas frescal,SolidoContavel,264.0,17.4,20.2,62.0,3.2,NA,579.0,7.0,0.9,31.0,105.0,Traco,Traco
+461,Leite e derivados,Queijo minas meia cura,SolidoContavel,321.0,21.2,24.6,76.0,3.6,NA,696.0,27.0,0.2,501.0,120.0,0.03,NA
+462,Leite e derivados,Queijo mozarela,SolidoContavel,330.0,22.6,25.2,80.0,3.0,NA,875.0,24.0,0.3,581.0,62.0,Traco,NA
+463,Leite e derivados,Queijo parmesao,SolidoContavel,453.0,35.6,33.5,106.0,1.7,NA,992.0,33.0,0.5,1844.0,96.0,Traco,Traco
+464,Leite e derivados,Queijo pasteurizado,SolidoContavel,303.0,9.4,27.4,82.0,5.7,NA,323.0,16.0,0.3,780.0,194.0,Traco,Traco
+465,Leite e derivados,Queijo petit suisse morango,SolidoContavel,121.0,5.8,2.8,12.0,18.5,NA,731.0,27.0,0.1,412.0,121.0,0.22,Traco
+466,Leite e derivados,Queijo prato,SolidoContavel,360.0,22.7,29.1,91.0,1.9,NA,940.0,28.0,0.3,580.0,73.0,Traco,NA
+467,Leite e derivados,Queijo requeijao cremoso,SolidoContavel,257.0,9.6,23.4,74.0,2.4,NA,259.0,12.0,0.1,558.0,93.0,Traco,Traco
+468,Leite e derivados,Queijo ricota,SolidoContavel,140.0,12.6,8.1,49.0,3.8,NA,253.0,12.0,0.1,283.0,112.0,Traco,Traco
+469,Bebidas (alcoolicas e nao alcoolicas),Bebida isotonica sabores variados,Liquido,26.0,0.0,0.0,NA,6.4,NA,1.0,Traco,0.7,44.0,13.0,NA,NA
+470,Bebidas (alcoolicas e nao alcoolicas),Cafe infusao 10%,Liquido,9.0,0.7,0.1,NA,1.5,NA,3.0,10.0,Traco,1.0,156.0,NA,NA
+471,Bebidas (alcoolicas e nao alcoolicas),Cana aguardente 1,Liquido,216.0,NA,NA,NA,NA,NA,Traco,Traco,Traco,3.0,Traco,Traco,NA
+472,Bebidas (alcoolicas e nao alcoolicas),Cana caldo de,Liquido,65.0,Traco,Traco,NA,18.2,0.1,9.0,12.0,0.8,Traco,18.0,Traco,2.8
+473,Bebidas (alcoolicas e nao alcoolicas),Cerveja pilsen 2,Liquido,41.0,0.6,Traco,NA,3.3,NA,5.0,7.0,Traco,4.0,29.0,Traco,Traco
+474,Bebidas (alcoolicas e nao alcoolicas),Cha erva-doce infusao 5%,Liquido,1.0,0.0,0.0,NA,0.4,NA,2.0,1.0,Traco,1.0,10.0,1.23,NA
+475,Bebidas (alcoolicas e nao alcoolicas),Cha mate infusao 5%,Liquido,3.0,0.0,0.1,NA,0.6,NA,1.0,2.0,Traco,Traco,5.0,0.89,NA
+476,Bebidas (alcoolicas e nao alcoolicas),Cha preto infusao 5%,Liquido,2.0,0.0,0.0,NA,0.6,NA,0.0,1.0,Traco,Traco,13.0,3.11,NA
+477,Bebidas (alcoolicas e nao alcoolicas),Coco agua de,Liquido,22.0,0.0,0.0,NA,5.3,0.1,19.0,5.0,Traco,2.0,162.0,0.01,2.4
+478,Bebidas (alcoolicas e nao alcoolicas),Refrigerante tipo agua tonica,Liquido,31.0,0.0,0.0,NA,8.0,NA,1.0,Traco,Traco,8.0,2.0,NA,NA
+479,Bebidas (alcoolicas e nao alcoolicas),Refrigerante tipo cola,Liquido,34.0,0.0,0.0,NA,8.7,NA,1.0,Traco,Traco,7.0,1.0,NA,NA
+480,Bebidas (alcoolicas e nao alcoolicas),Refrigerante tipo guarana,Liquido,39.0,0.0,0.0,NA,10.0,NA,1.0,Traco,Traco,9.0,1.0,NA,NA
+481,Bebidas (alcoolicas e nao alcoolicas),Refrigerante tipo laranja,Liquido,46.0,0.0,0.0,NA,11.8,NA,2.0,1.0,Traco,9.0,16.0,NA,NA
+482,Bebidas (alcoolicas e nao alcoolicas),Refrigerante tipo limao,Liquido,40.0,0.0,0.0,NA,10.3,NA,2.0,1.0,Traco,9.0,4.0,NA,NA
+483,Ovos e derivados,Omelete de queijo,SolidoContavel,268.0,15.6,22.0,384.0,0.4,NA,166.0,14.0,1.4,216.0,127.0,0.03,Traco
+484,Ovos e derivados,Ovo de codorna inteiro cru,SolidoContavel,177.0,13.7,12.7,568.0,0.8,NA,79.0,11.0,3.3,129.0,79.0,0.11,NA
+485,Ovos e derivados,Ovo de galinha clara cozida/10minutos,SolidoContavel,59.0,13.4,0.1,NA,0.0,NA,6.0,11.0,0.1,181.0,146.0,Traco,NA
+486,Ovos e derivados,Ovo de galinha gema cozida/10minutos,SolidoContavel,353.0,15.9,30.8,1272.0,1.6,NA,114.0,9.0,2.9,45.0,87.0,0.18,NA
+487,Ovos e derivados,Ovo de galinha inteiro cozido/10minutos,SolidoContavel,146.0,13.3,9.5,397.0,0.6,NA,49.0,11.0,1.5,146.0,139.0,0.08,NA
+488,Ovos e derivados,Ovo de galinha inteiro cru,SolidoContavel,143.0,13.0,8.9,356.0,1.6,NA,42.0,13.0,1.6,168.0,150.0,0.07,NA
+489,Ovos e derivados,Ovo de galinha inteiro frito,SolidoContavel,240.0,15.6,18.6,516.0,1.2,NA,73.0,16.0,2.1,166.0,184.0,0.06,Traco
+490,Produtos acucarados,Achocolatado po,SolidoNaoContavel,401.0,4.2,2.2,Traco,91.2,3.9,44.0,77.0,5.4,65.0,496.0,1.38,Traco
+491,Produtos acucarados,Acucar cristal,SolidoNaoContavel,387.0,0.3,Traco,NA,99.6,NA,8.0,1.0,0.2,Traco,3.0,NA,NA
+492,Produtos acucarados,Acucar mascavo,SolidoNaoContavel,369.0,0.8,0.1,NA,94.5,NA,127.0,80.0,8.3,25.0,522.0,Traco,Traco
+493,Produtos acucarados,Acucar refinado,SolidoNaoContavel,387.0,0.3,Traco,NA,99.5,NA,4.0,1.0,0.1,12.0,6.0,NA,NA
+494,Produtos acucarados,Chocolate ao leite,SolidoContavel,540.0,7.2,30.3,17.0,59.6,2.2,191.0,57.0,1.6,77.0,355.0,0.05,Traco
+495,Produtos acucarados,Chocolate ao leite com castanha do Para,SolidoContavel,559.0,7.4,34.2,16.0,55.4,2.5,171.0,80.0,1.5,64.0,431.0,0.04,1.4
+496,Produtos acucarados,Chocolate ao leite dietetico,SolidoContavel,557.0,6.9,33.8,13.0,56.3,2.8,188.0,67.0,3.3,85.0,458.0,0.31,2.0
+497,Produtos acucarados,Chocolate meio amargo,SolidoContavel,475.0,4.9,29.9,2.0,62.4,4.9,45.0,107.0,3.6,9.0,432.0,0.2,2.1
+498,Produtos acucarados,Cocada branca,SolidoContavel,449.0,1.1,13.6,NA,81.4,3.6,7.0,17.0,1.2,29.0,183.0,Traco,Traco
+499,Produtos acucarados,Doce de abobora cremoso,Liquido,199.0,0.9,0.2,NA,54.6,2.3,13.0,6.0,0.9,Traco,137.0,0.08,0.1
+500,Produtos acucarados,Doce de leite cremoso,Liquido,306.0,5.5,6.0,20.0,59.5,NA,195.0,16.0,0.1,120.0,259.0,0.05,Traco
+501,Produtos acucarados,Geleia mocoto natural,Liquido,106.0,2.1,0.1,Traco,24.2,NA,4.0,1.0,0.1,43.0,2.0,0.19,Traco
+502,Produtos acucarados,Glicose de milho,Liquido,292.0,0.0,0.0,NA,79.4,NA,6.0,2.0,0.1,59.0,5.0,NA,NA
+503,Produtos acucarados,Maria mole,SolidoContavel,301.0,3.8,0.2,NA,73.6,0.7,13.0,7.0,0.4,15.0,24.0,0.04,Traco
+504,Produtos acucarados,Maria mole coco queimado,SolidoContavel,307.0,3.9,0.1,NA,75.1,0.6,19.0,6.0,0.5,14.0,36.0,0.04,Traco
+505,Produtos acucarados,Marmelada,SolidoContavel,257.0,0.4,0.1,NA,70.8,4.1,11.0,6.0,0.7,11.0,83.0,Traco,Traco
+506,Produtos acucarados,Mel de abelha,Liquido,309.0,0.0,0.0,NA,84.0,NA,10.0,6.0,0.3,6.0,99.0,0.11,0.7
+507,Produtos acucarados,Melado,Liquido,297.0,0.0,0.0,NA,76.6,NA,102.0,115.0,5.4,4.0,395.0,Traco,Traco
+508,Produtos acucarados,Quindim,SolidoContavel,411.0,4.7,24.4,271.0,46.3,3.2,37.0,15.0,1.4,27.0,111.0,Traco,Traco
+509,Produtos acucarados,Rapadura,SolidoContavel,352.0,1.0,0.1,NA,90.8,NA,30.0,47.0,4.4,22.0,459.0,Traco,Traco
+510,Miscelaneas,Cafe po torrado,SolidoNaoContavel,419.0,14.7,11.9,NA,65.8,51.2,107.0,165.0,8.1,1.0,1609.0,Traco,Traco
+511,Miscelaneas,Capuccino po,SolidoNaoContavel,417.0,11.3,8.6,29.0,73.6,2.4,467.0,71.0,2.3,382.0,886.0,Traco,Traco
+512,Miscelaneas,Fermento em po quimico,SolidoNaoContavel,90.0,0.5,0.1,NA,43.9,NA,NA,NA,NA,10052.0,NA,NA,NA
+513,Miscelaneas,Fermento biologico levedura tablete,SolidoNaoContavel,90.0,17.0,1.5,NA,7.7,4.2,18.0,38.0,2.6,40.0,576.0,0.3,Traco
+514,Miscelaneas,Gelatina sabores variados po,SolidoNaoContavel,380.0,8.9,Traco,NA,89.2,NA,27.0,2.0,0.3,235.0,7.0,Traco,40.0
+515,Miscelaneas,Sal dietetico,SolidoNaoContavel,NA,NA,NA,NA,NA,NA,NA,NA,NA,23432.0,20468.0,NA,NA
+516,Miscelaneas,Sal grosso,SolidoNaoContavel,NA,NA,NA,NA,NA,NA,NA,NA,NA,39943.0,NA,NA,NA
+517,Miscelaneas,Shoyu,Liquido,61.0,3.3,0.3,NA,11.6,NA,15.0,24.0,0.5,5024.0,165.0,0.83,Traco
+518,Miscelaneas,Tempero a base de sal,SolidoNaoContavel,21.0,2.7,0.3,NA,2.1,0.6,NA,NA,NA,32560.0,NA,NA,NA
+519,Outros alimentos industrializados,Azeitona preta conserva,SolidoContavel,194.0,1.2,20.3,NA,5.5,4.6,59.0,5.0,5.5,1567.0,79.0,Traco,Traco
+520,Outros alimentos industrializados,Azeitona verde conserva,SolidoContavel,137.0,0.9,14.2,NA,4.1,3.8,46.0,4.0,0.2,1347.0,20.0,Traco,Traco
+521,Outros alimentos industrializados,Chantilly spray com gordura vegetal,Liquido,315.0,0.5,27.3,Traco,16.9,NA,2.0,1.0,Traco,110.0,5.0,0.07,NA
+522,Outros alimentos industrializados,Leite de coco,Liquido,166.0,1.0,18.4,NA,2.2,0.7,6.0,17.0,0.5,44.0,144.0,Traco,Traco
+523,Outros alimentos industrializados,Maionese tradicional com ovos,Liquido,302.0,0.6,30.5,42.0,7.9,NA,3.0,1.0,0.1,787.0,16.0,Traco,Traco
+524,Alimentos preparados,Acaraje,SolidoContavel,289.0,8.3,19.9,25.0,19.1,9.4,124.0,51.0,1.9,305.0,354.0,0.06,NA
+525,Alimentos preparados,Arroz carreteiro,SolidoContavel,154.0,10.8,7.1,36.0,11.6,1.5,13.0,9.0,1.0,1622.0,87.0,0.03,NA
+526,Alimentos preparados,Baiao de dois arroz e feijao-de-corda,SolidoContavel,136.0,6.2,3.2,4.0,20.4,5.1,33.0,19.0,0.6,93.0,157.0,0.04,Traco
+527,Alimentos preparados,Barreado,SolidoContavel,165.0,18.3,9.5,60.0,0.2,0.1,15.0,21.0,2.4,48.0,295.0,0.03,Traco
+528,Alimentos preparados,Bife a cavalo com contra file,SolidoContavel,291.0,23.7,21.1,257.0,0.0,NA,26.0,19.0,2.1,83.0,272.0,0.05,NA
+529,Alimentos preparados,Bolinho de arroz,SolidoContavel,274.0,8.0,8.3,70.0,41.7,2.7,24.0,13.0,2.1,59.0,96.0,0.08,Traco
+530,Alimentos preparados,Camarao a baiana,SolidoContavel,101.0,7.9,6.0,117.0,3.2,0.4,43.0,15.0,1.4,85.0,139.0,Traco,4.1
+531,Alimentos preparados,Charuto de repolho,SolidoContavel,78.0,6.8,1.1,21.0,10.1,1.5,23.0,13.0,0.9,12.0,184.0,0.03,4.8
+532,Alimentos preparados,Cuscuz de milho cozido com sal,SolidoContavel,113.0,2.2,0.7,NA,25.3,2.1,2.0,3.0,0.2,248.0,11.0,Traco,Traco
+533,Alimentos preparados,Cuscuz paulista,SolidoContavel,142.0,2.6,4.6,15.0,22.5,2.4,14.0,5.0,0.3,236.0,53.0,Traco,Traco
+534,Alimentos preparados,Cuxa molho,SolidoContavel,80.0,5.6,3.6,58.0,5.7,3.0,105.0,34.0,0.9,1344.0,124.0,0.04,10.3
+535,Alimentos preparados,Dobradinha,SolidoContavel,125.0,19.8,4.4,144.0,0.0,NA,11.0,8.0,1.0,29.0,58.0,Traco,NA
+536,Alimentos preparados,Estrogonofe de carne,SolidoContavel,173.0,15.0,10.8,66.0,3.0,NA,28.0,22.0,2.7,123.0,322.0,0.06,Traco
+537,Alimentos preparados,Estrogonofe de frango,SolidoContavel,157.0,17.6,8.0,80.0,2.6,NA,26.0,25.0,1.5,99.0,307.0,0.07,Traco
+538,Alimentos preparados,Feijao tropeiro mineiro,SolidoContavel,152.0,10.2,6.8,68.0,19.6,3.6,41.0,36.0,2.2,365.0,349.0,Traco,Traco
+539,Alimentos preparados,Feijoada,SolidoContavel,117.0,8.7,6.5,22.0,11.6,5.1,32.0,32.0,1.3,278.0,303.0,0.08,Traco
+540,Alimentos preparados,Frango com acafrao,SolidoContavel,113.0,9.7,6.2,50.0,4.1,0.2,13.0,16.0,0.8,29.0,256.0,0.03,5.3
+541,Alimentos preparados,Macarrao molho bolognesa,SolidoContavel,120.0,4.9,0.9,7.0,22.5,0.8,11.0,10.0,1.4,9.0,84.0,0.04,Traco
+542,Alimentos preparados,Manicoba,SolidoContavel,134.0,10.0,8.7,43.0,3.4,2.2,66.0,24.0,3.2,407.0,148.0,0.04,Traco
+543,Alimentos preparados,Quibebe,SolidoContavel,86.0,8.6,2.7,NA,6.6,1.7,8.0,10.0,0.8,247.0,153.0,Traco,Traco
+544,Alimentos preparados,Salada de legumes com maionese,SolidoContavel,96.0,1.1,7.0,7.0,8.9,2.2,12.0,9.0,0.2,228.0,141.0,0.04,Traco
+545,Alimentos preparados,Salada de legumes cozida no vapor,SolidoContavel,35.0,2.0,0.3,NA,7.1,2.5,33.0,19.0,0.4,3.0,244.0,0.05,29.4
+546,Alimentos preparados,Salpicao de frango,SolidoContavel,148.0,13.9,7.8,53.0,4.6,0.4,9.0,13.0,0.3,248.0,149.0,0.05,9.3
+547,Alimentos preparados,Sarapatel,SolidoContavel,123.0,18.5,4.4,315.0,1.1,NA,12.0,13.0,7.2,216.0,199.0,Traco,Traco
+548,Alimentos preparados,Tabule,SolidoContavel,57.0,2.0,1.2,NA,10.6,2.1,19.0,18.0,0.6,1.0,188.0,0.03,16.2
+549,Alimentos preparados,Tacaca,SolidoContavel,47.0,7.0,0.4,71.0,3.4,0.2,45.0,30.0,0.9,1349.0,240.0,0.05,Traco
+550,Alimentos preparados,Tapioca com manteiga,SolidoContavel,348.0,0.1,10.9,31.0,63.6,Traco,30.0,3.0,0.2,158.0,19.0,Traco,Traco
+551,Alimentos preparados,Tucupi com pimenta-de-cheiro,SolidoContavel,27.0,2.1,0.3,NA,4.7,0.2,28.0,42.0,1.1,5.0,391.0,Traco,46.4
+552,Alimentos preparados,Vaca atolada,SolidoContavel,145.0,5.1,9.3,19.0,10.1,2.3,63.0,16.0,0.7,26.0,220.0,Traco,Traco
+553,Alimentos preparados,Vatapa,SolidoContavel,255.0,6.0,23.2,44.0,9.7,1.7,47.0,39.0,1.4,880.0,209.0,Traco,Traco
+554,Alimentos preparados,Virado a paulista,SolidoContavel,307.0,10.2,25.6,66.0,14.1,2.2,41.0,22.0,1.1,346.0,237.0,0.14,Traco
+555,Alimentos preparados,Yakisoba,SolidoContavel,113.0,7.5,2.6,NA,18.3,1.1,14.0,13.0,0.6,794.0,159.0,0.16,Traco
+556,Leguminosas e derivados,Amendoim grao cru,SolidoContavel,544.0,27.2,43.9,NA,20.3,8.0,Traco,171.0,2.5,Traco,580.0,0.1,Traco
+557,Leguminosas e derivados,Amendoim torrado salgado,SolidoContavel,606.0,22.5,54.0,NA,18.7,7.8,39.0,159.0,1.3,376.0,496.0,0.08,Traco
+558,Leguminosas e derivados,Ervilha em vagem,SolidoNaoContavel,88.0,7.5,0.5,NA,14.2,9.7,24.0,42.0,1.4,Traco,311.0,0.27,12.4
+559,Leguminosas e derivados,Ervilha enlatada drenada,SolidoNaoContavel,74.0,4.6,0.4,NA,13.4,5.1,22.0,23.0,1.4,372.0,147.0,0.07,NA
+560,Leguminosas e derivados,Feijao carioca cozido,SolidoNaoContavel,76.0,4.8,0.5,NA,13.6,8.5,27.0,42.0,1.3,2.0,255.0,0.04,Traco
+561,Leguminosas e derivados,Feijao carioca cru,SolidoNaoContavel,329.0,20.0,1.3,NA,61.2,18.4,123.0,210.0,8.0,Traco,1352.0,0.17,NA
+562,Leguminosas e derivados,Feijao fradinho cozido,SolidoNaoContavel,78.0,5.1,0.6,NA,13.5,7.5,17.0,38.0,1.1,1.0,253.0,0.12,Traco
+563,Leguminosas e derivados,Feijao fradinho cru,SolidoNaoContavel,339.0,20.2,2.4,NA,61.2,23.6,78.0,178.0,5.1,10.0,1083.0,0.14,Traco
+564,Leguminosas e derivados,Feijao jalo cozido,SolidoNaoContavel,93.0,6.1,0.5,NA,16.5,13.9,29.0,44.0,1.9,1.0,348.0,0.13,Traco
+565,Leguminosas e derivados,Feijao jalo cru,SolidoNaoContavel,328.0,20.1,0.9,NA,61.5,30.3,98.0,170.0,7.0,25.0,1276.0,0.1,Traco
+566,Leguminosas e derivados,Feijao preto cozido,SolidoNaoContavel,77.0,4.5,0.5,NA,14.0,8.4,29.0,40.0,1.5,2.0,256.0,0.06,Traco
+567,Leguminosas e derivados,Feijao preto cru,SolidoNaoContavel,324.0,21.3,1.2,NA,58.8,21.8,111.0,188.0,6.5,Traco,1416.0,0.12,NA
+568,Leguminosas e derivados,Feijao rajado cozido,SolidoNaoContavel,85.0,5.5,0.4,NA,15.3,9.3,29.0,42.0,1.4,1.0,315.0,0.09,Traco
+569,Leguminosas e derivados,Feijao rajado cru,SolidoNaoContavel,326.0,17.3,1.2,NA,62.9,24.0,111.0,170.0,18.6,14.0,1135.0,0.07,Traco
+570,Leguminosas e derivados,Feijao rosinha cozido,SolidoNaoContavel,68.0,4.5,0.5,NA,11.8,4.8,19.0,43.0,1.2,2.0,241.0,Traco,Traco
+571,Leguminosas e derivados,Feijao rosinha cru,SolidoNaoContavel,337.0,20.9,1.3,NA,62.2,20.6,68.0,184.0,5.3,24.0,1109.0,0.16,Traco
+572,Leguminosas e derivados,Feijao roxo cozido,SolidoNaoContavel,77.0,5.7,0.5,NA,12.9,11.5,23.0,34.0,1.4,1.0,268.0,0.15,Traco
+573,Leguminosas e derivados,Feijao roxo cru,SolidoNaoContavel,331.0,22.2,1.2,NA,60.0,33.8,120.0,162.0,6.9,10.0,1221.0,0.26,Traco
+574,Leguminosas e derivados,Grao-de-bico cru,SolidoNaoContavel,355.0,21.2,5.4,NA,57.9,12.4,114.0,146.0,5.4,5.0,1116.0,0.52,Traco
+575,Leguminosas e derivados,Guandu cru,SolidoNaoContavel,344.0,19.0,2.1,NA,64.0,21.3,129.0,166.0,1.9,2.0,1215.0,1.06,1.5
+576,Leguminosas e derivados,Lentilha cozida,SolidoNaoContavel,93.0,6.3,0.5,NA,16.3,7.9,16.0,22.0,1.5,1.0,220.0,0.03,Traco
+577,Leguminosas e derivados,Lentilha crua,SolidoNaoContavel,339.0,23.2,0.8,NA,62.0,16.9,54.0,94.0,7.0,Traco,887.0,0.11,NA
+578,Leguminosas e derivados,Pacoca amendoim,SolidoContavel,487.0,16.0,26.1,NA,52.4,7.3,22.0,101.0,1.1,167.0,348.0,Traco,Traco
+579,Leguminosas e derivados,Pe-de-moleque amendoim,SolidoContavel,503.0,13.2,28.0,NA,54.7,3.4,27.0,108.0,1.3,16.0,355.0,0.04,Traco
+580,Leguminosas e derivados,Soja farinha,SolidoNaoContavel,404.0,36.0,14.6,NA,38.4,20.2,206.0,242.0,13.1,6.0,1922.0,0.2,Traco
+581,Leguminosas e derivados,Soja extrato soluvel natural fluido,Liquido,39.0,2.4,1.6,NA,4.3,0.4,17.0,15.0,0.4,57.0,121.0,Traco,Traco
+582,Leguminosas e derivados,Soja extrato soluvel po,SolidoNaoContavel,459.0,35.7,26.2,NA,28.5,7.3,359.0,216.0,7.0,83.0,1607.0,Traco,9.2
+583,Leguminosas e derivados,Soja queijo (tofu),SolidoContavel,64.0,6.6,4.0,NA,2.1,0.8,81.0,38.0,1.4,1.0,182.0,0.04,Traco
+584,Leguminosas e derivados,Tremoco cru,SolidoNaoContavel,381.0,33.6,10.3,NA,43.8,32.3,177.0,121.0,2.8,3.0,708.0,0.24,25.0
+585,Leguminosas e derivados,Tremoco em conserva,SolidoNaoContavel,121.0,11.1,3.8,NA,12.4,14.4,16.0,4.0,0.3,1809.0,5.0,Traco,Traco
+586,Nozes e sementes,Amendoa torrada salgada,SolidoContavel,581.0,18.6,47.3,NA,29.5,11.6,237.0,222.0,3.1,279.0,640.0,0.29,Traco
+587,Nozes e sementes,Castanha-de-caju torrada salgada,SolidoContavel,570.0,18.5,46.3,NA,29.1,3.7,33.0,237.0,5.2,125.0,671.0,0.29,Traco
+588,Nozes e sementes,Castanha-do-Brasil crua,SolidoContavel,643.0,14.5,63.5,NA,15.1,7.9,146.0,365.0,2.3,1.0,651.0,0.3,Traco
+589,Nozes e sementes,Coco cru,SolidoNaoContavel,406.0,3.7,42.0,NA,10.4,5.4,6.0,51.0,1.8,15.0,354.0,Traco,2.5
+590,Nozes e sementes,Coco  verde cru,SolidoContavel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+591,Nozes e sementes,Farinha de mesocarpo de babacu crua,SolidoNaoContavel,329.0,1.4,0.2,NA,79.2,17.9,61.0,39.0,18.3,12.0,362.0,Traco,Traco
+592,Nozes e sementes,Gergelim semente,SolidoNaoContavel,584.0,21.2,50.4,NA,21.6,11.9,825.0,361.0,5.4,3.0,546.0,0.94,Traco
+593,Nozes e sementes,Linhaca semente,SolidoNaoContavel,495.0,14.1,32.3,NA,43.3,33.5,211.0,347.0,4.7,9.0,869.0,0.12,Traco
+594,Nozes e sementes,Pinhao cozido,SolidoNaoContavel,174.0,3.0,0.7,NA,43.9,15.6,16.0,53.0,0.8,1.0,727.0,Traco,27.7
+595,Nozes e sementes,Pupunha cozida,SolidoNaoContavel,219.0,2.5,12.8,NA,29.6,4.3,28.0,25.0,0.5,1.0,303.0,Traco,2.2
+596,Nozes e sementes,Noz crua,SolidoContavel,620.0,14.0,59.4,NA,18.4,7.2,105.0,153.0,2.0,5.0,533.0,0.38,Traco

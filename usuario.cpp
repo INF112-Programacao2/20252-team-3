@@ -303,7 +303,7 @@ void Usuario::leituraDadosUsuario() {
     
     // Sexo
     while (true) {
-        std::cout << "\nSexo (Masculino/Feminino): ";
+        std::cout << "Sexo (Masculino/Feminino): ";
         std::cin >> sexo;
         if (sexo == "Masculino" || sexo == "Feminino")
             break;
@@ -318,12 +318,12 @@ void Usuario::leituraDadosUsuario() {
     std::string nivel_atividade;
 
     while (true) {
-        std::cout << "\nNivel de atividade fisica (selecione uma opcao):\n";
-        std::cout << "1 - Sedentario\n";
-        std::cout << "2 - Leve\n";
-        std::cout << "3 - Moderado\n";
-        std::cout << "4 - Ativo\n";
-        std::cout << "5 - Muito Ativo\n";
+		std::cout << "\nNivel de atividade fisica (selecione uma opcao):\n";
+        std::cout << "1. Sedentario (Maior parte do dia sentado, com pouco ou nenhum exercicio.)\n";
+		std::cout << "2. Leve (Exercicios leves ou caminhada por 30 a 60 minutos na maioria dos dias)\n";
+		std::cout << "3. Moderado (Exercicios de moderados, como correr ou nadar, por 30 a 60 minutos, tres a quatro vezes por semana.)\n";
+		std::cout << "4. Ativo (Exercicios intensos ou treinamento pesado na maioria dos dias da semana.)\n";
+		std::cout << "5. Muito Ativo (Exercicios intensos ou treinamento fisico profissional/extenuante diariamente.)\n";
         std::cout << "Digite uma opcao (1-5): ";
         
         resposta_int = ler_num_no_intervalo(1, 5);
@@ -384,16 +384,12 @@ void Usuario::leituraDadosUsuario() {
     }
     
     std::cout << "Meta calorica final (" << meta_calorica_final << " kcal) salva!\n";
-    std::cout << "Cadastro de dados do usuario concluido.\n";
+	verDadosUsuario();
 }
 
 void Usuario::verDadosUsuario() const {
-    std::cout << "\n========================================\n";
-    std::cout << "     RELATÓRIO DOS DADOS DO USUARIO\n";
-    std::cout << "========================================\n";
-
     // 1. Dados da classe Usuario
-    std::cout << "Nome: " << _nome << std::endl;
+    std::cout << "\nNome: " << _nome << std::endl;
     
     // 2. Dados acessados via _perfilNutricional (ponteiro)
     std::cout << "Idade: " << _perfilNutricional.getIdade() << " anos\n";
@@ -408,7 +404,6 @@ void Usuario::verDadosUsuario() const {
     // 3. Meta Calorica (CDT)
     std::cout << "Meta Calorica Diaria: " << _perfilNutricional.getCaloriasDiariasTotais() << " kcal" << std::endl;
     
-    std::cout << "========================================\n";
 }
 
 void Usuario::editarDadosUsuario() {
@@ -695,16 +690,17 @@ std::string Usuario::lerAlimento() {
 			catch (std::exception &e) {
 				std::cerr << "Erro inesperado " << e.what() << std::endl;
 			}
-			std::cout << i << ") " << nome_alimento;
+			std::cout << i << ") " << nome_alimento << std::endl;
 			
 		}
 		
 		// Decidir quais dos alimentos o usuario quer
 		while (true) {
-			std::cout << "Escolha uma opcao (1 - " << num_de_IDs_alimento_match << ")\n";
+			std::cout << "Escolha uma opcao (1 - " << num_de_IDs_alimento_match << "): ";
 			resposta_int = ler_num_no_intervalo(1, num_de_IDs_alimento_match);
 			if (!resposta_int)
 				continue;
+			break;
 		}
 		nome_alimento = _diario.buscarAlimentoPeloID(ID_alimento_match[resposta_int]);
 		std::cout << "Alimento escolhido " << nome_alimento << std::endl;
@@ -739,11 +735,11 @@ void Usuario::adicionarAlimentoAoDiario() {
 	char resposta_char;
 	bool confirmou_cadastro = false;
 	int num_medidas;
-	int quantidade;
+	double quantidade;
 	std::string unidade_medida;
 	std::vector<std::string> medidas_alimento;
 	std::string refeicao_escolhida;
-    std::string subclasse = alimento_modelo->getSubClasse();
+	std::string subclasse; // Apenas declaração
 			
 	switch (resposta_int) {
 		case 1:
@@ -785,22 +781,25 @@ void Usuario::adicionarAlimentoAoDiario() {
 				exit(0);
 			}
 
+			// ATRIBUIÇÃO MOVIDA
+			subclasse = alimento_modelo->getSubClasse();
+			
 			// 2) Instanciar o objeto da subclasse correta (Factory Manual)
-            
-            if (subclasse == "SolidoContavel") {
-                // Instancia um SolidoContavel usando o construtor de cópia do modelo
-                alimento_do_usuario.reset(new SolidoContavel(*static_cast<SolidoContavel*>(alimento_modelo)));
-            } else if (subclasse == "SolidoNaoContavel") {
-                // Instancia um SolidoNaoContavel usando o construtor de cópia do modelo
-                alimento_do_usuario.reset(new SolidoNaoContavel(*static_cast<SolidoNaoContavel*>(alimento_modelo)));
-            } else if (subclasse == "Liquido") {
-                // Instancia um Liquido usando o construtor de cópia do modelo
-                alimento_do_usuario.reset(new Liquido(*static_cast<Liquido*>(alimento_modelo)));
-            } else {
-                // Tratar o caso de subclasse desconhecida
-                std::cerr << "ERRO FATAL: Subclasse do alimento (" << subclasse << ") desconhecida.\n";
-                exit(0);
-            }
+			
+			if (subclasse == "SolidoContavel") {
+				// Instancia um SolidoContavel usando o construtor de cópia do modelo
+				alimento_do_usuario.reset(new SolidoContavel(*static_cast<SolidoContavel*>(alimento_modelo)));
+			} else if (subclasse == "SolidoNaoContavel") {
+				// Instancia um SolidoNaoContavel usando o construtor de cópia do modelo
+				alimento_do_usuario.reset(new SolidoNaoContavel(*static_cast<SolidoNaoContavel*>(alimento_modelo)));
+			} else if (subclasse == "Liquido") {
+				// Instancia um Liquido usando o construtor de cópia do modelo
+				alimento_do_usuario.reset(new Liquido(*static_cast<Liquido*>(alimento_modelo)));
+			} else {
+				// Tratar o caso de subclasse desconhecida
+				std::cerr << "ERRO FATAL: Subclasse do alimento (" << subclasse << ") desconhecida.\n";
+				exit(0);
+			}
 			
 			// O objeto alimento_do_usuario ja tem o nome e outras propriedades do modelo base.
 
@@ -819,6 +818,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 					std::cout << "Em " << medidas_alimento[i] << " (digite " << i+1 << ")\n";
 				}
 				std::cout << "Em outra unidade de medida (digite " << num_medidas+1 << ")\n";
+				std::cout << "Digite sua opcao (" << 1 << "-" << num_medidas+1 << "): ";
 				resposta_int = ler_num_no_intervalo(1, num_medidas+1);
 				if (!resposta_int)
 					continue;
@@ -833,6 +833,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 						for (int i=0; i<num_medidas; i++) {
 							std::cout << "Em " << medidas_alimento[i] << " (digite " << i+1 << ")\n";
 						}
+						std::cout << "Digite sua opcao (" << 1 << "-" << num_medidas << "): ";
 						resposta_int = ler_num_no_intervalo(1, num_medidas);
 						if (!resposta_int)
 							continue;
@@ -851,8 +852,8 @@ void Usuario::adicionarAlimentoAoDiario() {
 			alimento_do_usuario->setUnidadeDeMedida(unidade_medida);
 			
 			while (true) {
-				std::cout << "Digite a quantidade de alimento (em " << unidade_medida << "): ";
-				quantidade = ler_inteiro();
+				std::cout << "Digite a quantidade de alimento (em " << unidade_medida << ") (numero decimal com ponto): ";
+				quantidade = ler_double();
 				if (!quantidade)
 					continue;
 				break;
@@ -877,13 +878,13 @@ void Usuario::adicionarAlimentoAoDiario() {
 			}
 			
 			// Mapeamento da Refeição para a string para o cout (ajustado para usar o enum)
-            switch (static_cast<Refeicao>(resposta_int-1)) {
-                case Refeicao::Cafe_Manha: refeicao_escolhida = "Cafe da Manha"; break;
-                case Refeicao::Almoco: refeicao_escolhida = "Almoco"; break;
-                case Refeicao::Jantar: refeicao_escolhida = "Jantar"; break;
-                case Refeicao::Lanche: refeicao_escolhida = "Lanche"; break;
-                default: refeicao_escolhida = "Erro de Refeição"; break;
-            }
+			switch (static_cast<Refeicao>(resposta_int-1)) {
+				case Refeicao::Cafe_Manha: refeicao_escolhida = "Cafe da Manha"; break;
+				case Refeicao::Almoco: refeicao_escolhida = "Almoco"; break;
+				case Refeicao::Jantar: refeicao_escolhida = "Jantar"; break;
+				case Refeicao::Lanche: refeicao_escolhida = "Lanche"; break;
+				default: refeicao_escolhida = "Erro de Refeição"; break;
+			}
 			
 			// 4) Coloco a refeicao dentro do objeto alimento (DO USUARIO)
 			alimento_do_usuario->setRefeicao(static_cast<Refeicao>(resposta_int-1));
@@ -892,6 +893,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			std::cout << "Nome do alimento: " << nome_alimento << std::endl;
 			std::cout << "Quantidade: " << alimento_do_usuario->getQuantidade() << " " << alimento_do_usuario->getUnidadeDeMedida() << std::endl;
 			std::cout << "Refeicao: " << refeicao_escolhida << std::endl;
+			std::cout << "Categoria: " << alimento_do_usuario->getCategoria() << std::endl;
 			while (true) {
 				std::cout << "Adicionar alimento no Diario Alimentar [S/N]: ";
 				resposta_char = ler_S_ou_N();
@@ -909,7 +911,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 			// 5) Passar o objeto alimento (a NOVA instância) para o vetor do usuario
 			if (confirmou_cadastro) {
 				std::cout << "Alimento adicionado ao seu Diario!\n";
-				_diario.adicionarAlimentoAoVetorDoUsuario(std::move(alimento_do_usuario)); 
+				_diario.adicionarAlimentoAoVetorDoUsuario(std::move(alimento_do_usuario));
 			}
 			else {
 				std::cout << "Alimento nao adicionado ao Diario\n";
@@ -924,7 +926,7 @@ void Usuario::adicionarAlimentoAoDiario() {
 	
 	// 6) Adicionar mais alimentos (mantido)
 	while (true) {
-		std::cout << "Adicionar mais alimentos? [S/N]\n";
+		std::cout << "Adicionar mais alimentos? [S/N]: ";
 		resposta_char = ler_S_ou_N();
 		if (!resposta_char)
 			continue;
@@ -938,7 +940,6 @@ void Usuario::adicionarAlimentoAoDiario() {
 		return;
 	}
 }
-
 std::vector<std::string> Usuario::buscarMedidas(std::string subclasse_alimento) {
 	std::vector<std::string> medidas_solido_contaveis = {
 		"Unidades", "Meia Duzia", "Duzia"
@@ -1101,22 +1102,22 @@ void Usuario::verAlimentosAdicionados() {
     };
     
     // Vetor de mapeamento das categorias
-    const std::vector<std::string> map_categorias = {
-        "Todas",                                  // Índice 0: Mapeia opção 1
-        "Cereais e Derivados",                    // Índice 1: Mapeia opção 2
-        "Verduras, hortaliças e derivados",       // Índice 2: Mapeia opção 3
-        "Frutas e derivados",                     // Índice 3: Mapeia opção 4
-        "Leguminosas e derivados",                // Índice 4: Mapeia opção 5
-        "Nozes e sementes",                       // Índice 5: Mapeia opção 6
-        "Gorduras e óleos",                       // Índice 6: Mapeia opção 7
-        "Pescados e frutos do mar",               // Índice 7: Mapeia opção 8
-        "Carnes e derivados",                     // Índice 8: Mapeia opção 9
-        "Leite e derivados",                      // Índice 9: Mapeia opção 10
-        "Bebidas",                                // Índice 10: Mapeia opção 11
-        "Ovos e derivados",                       // Índice 11: Mapeia opção 12
-        "Miscelâneas",                            // Índice 12: Mapeia opção 13
-        "Outros alimentos industrializados",      // Índice 13: Mapeia opção 14
-        "Alimentos preparados"                    // Índice 14: Mapeia opção 15
+	const std::vector<std::string> map_categorias = {
+        "Todas",                                     // Índice 0: Mapeia opção 1
+        "Cereais e Derivados",                       // Índice 1: Mapeia opção 2
+        "Verduras, hortalicas e derivados",         // Índice 2: Mapeia opção 3
+        "Frutas e derivados",                        // Índice 3: Mapeia opção 4
+        "Leguminosas e derivados",                   // Índice 4: Mapeia opção 5
+        "Nozes e sementes",                          // Índice 5: Mapeia opção 6
+        "Gorduras e oleos",                          // Índice 6: Mapeia opção 7
+        "Pescados e frutos do mar",                  // Índice 7: Mapeia opção 8
+        "Carnes e derivados",                        // Índice 8: Mapeia opção 9
+        "Leite e derivados",                         // Índice 9: Mapeia opção 10
+        "Bebidas",                                   // Índice 10: Mapeia opção 11
+        "Ovos e derivados",                          // Índice 11: Mapeia opção 12
+        "Miscelaneas",                               // Índice 12: Mapeia opção 13
+        "Outros alimentos industrializados",          // Índice 13: Mapeia opção 14
+        "Alimentos preparados"                       // Índice 14: Mapeia opção 15
     };
 
 	std::cout << "\nAlimentos ja adicionados ao Diario Alimentar\n";
@@ -1142,11 +1143,11 @@ void Usuario::verAlimentosAdicionados() {
     // --- 2. Escolha da Categoria ---
 	while (true) {
 		std::cout << "\nEscolha uma categoria:\n";
-		std::cout << map_categorias[0] << " as categorias (digite 1)\n"; // Exibe "Todas as categorias"
+		std::cout << "1." << map_categorias[0] << " as categorias\n"; // Exibe "Todas as categorias"
         // Exibição baseada no vetor de mapeamento
 		for (size_t i = 0; i < map_categorias.size(); ++i) {
              if (i > 0) {
-			    std::cout << map_categorias[i] << " (digite " << i + 1 << ")\n";
+			    std::cout << i+1 << ". " << map_categorias[i] << "\n";
              }
 		}
 		std::cout << "Digite uma opcao (1 - " << map_categorias.size() << "): ";
@@ -1179,6 +1180,7 @@ void Usuario::editarAlimentosAdicionados() {
 		nome_alimento = ler_nome(); // nome do alimento é um nome valido (dentro do banco de dados)
 		if (nome_alimento.empty())
 			continue;
+		break;
 	}
 	// 3) Vejo se esse alimento esta no Diario (e aproveito para atualizar o nome)
 	if (!(_diario.buscarAlimentoNoDiario(nome_alimento))) // retorna false se nao encontrar o nome
